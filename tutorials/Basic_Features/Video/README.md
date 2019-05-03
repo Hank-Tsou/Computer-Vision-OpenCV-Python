@@ -1,65 +1,66 @@
-# What is Image
+# What is Video
 
-In computer vision perspective, image(digital image) is a numeric representation, contains a fixed number of pixels. Pixels are the smallest individual element in an image and each pixel has it's location (x, y) and channel value. The image shape should be " weidth x height x channels".
-- Color image has three channel, RGB (Red, Green, Blue), different method has different RGB order.
-- Gray scale image only has one channel.
+In computer vision perspective, video(Digital video) is an electronic representation of moving visual images in the form of encoded digital data. Basically, video is created by a series of image frames. Each image frame has shape width x height x channel.
+
 ```
-Note: it is possible for an image to have more than three channels.
+FPS: frame per second(FPS) is measure the rate at which frames are displayed is known as the frame rate.
 ```
 ## Getting Started with Image using OpenCV Python
 
 ### Outline:
-1. Read Image
-2. Display Image using OpenCV library
-3. Display image using matplotlib in jupyter notebook
-4. Save Image
+1. Read video from file and webcam
+2. Get video information
+3. Display video
+4. Save video
 
 ### Prerequisites
 
-The main library you need to install before starting ( [Full code in notebook](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Images/Images.ipynb))
+The main library you need to install before starting ( [Full code in notebook] (empty))
 
 ```
 pip install opencv-contrib-python
-pip install jupyter notebook
-pip install matplotlib
+pip install numpy
 ```
 
-### 1. Read Image
+### 1. Read Video from file and webcam
 
-#### - Use function cv2.imread("Argument_1", Argument_2) to read an image. 
+#### - Use function cv2.VideoCapture(Argument_1) to get a video. 
 
-- Argument_1: an image name in the working directory or full image path (String)        
+- Argument_1: An video name in the working directory or full video path (String).
+              If 0 is passed, it will open the default camera (webcam) (Integer).
+              
+#### - Use function cv2.VideoCapture(_).read() to read a video frame by frame. 
 
-- Argument_2:
-  - cv2.IMREAD_COLOR:      Loads a color image.
-  - cv2.IMREAD_GRAYSCALE:  Loads image in grayscale mode. 
-  - cv2.IMREAD_UNCHANGED:  Loads image as such including alpha channel.
+- no argument
 ```
-Note: Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.
-```
-
-### 2. Display image using openCV library
-
-#### - Use function cv2.imshow("Argument_1", Argument_2) to display an image.
-
-- Argument_1: image window name (String)
-
-- Argument_2: pass your image into the function
-```
-Function You Should Know: 
-
-  - cv2.waitKey(): a keyboard binding function. Its argument is the time in milliseconds. 
-                   If 0 is passed, it waits indefinitely for a key stroke.
-  - cv2.destroyAllWindows() simply destroys all the windows we created.
+Note: Use function "cv2.VideoCapture(_).isOpened()" to check get video success or not. (Boolean)
 ```
 
-### 3. Display image using matplotlib
+### 2. Get video information
 
-#### - Use function pyplot.imshow(Argument_1) to display an image.
-- Argument_1: pass your image into the function
+#### - Use function cv2.VideoCapture(_).get(Argument_1, Argument_2) to get video information.
+
+- Argument_1: passing video capture.
+
+- Argument_2: property identifier, some id show as below 
+  - [3] CV_CAP_PROP_FRAME_WIDTH Width of the frames in the video stream.
+  - [4] CV_CAP_PROP_FRAME_HEIGHT Height of the frames in the video stream.
+  - [5] CV_CAP_PROP_FPS Frame rate.
+  - [7] CV_CAP_PROP_FRAME_COUNT Number of frames in the video file.
 
 ```
-Note: import pyplot from matplotlib and add " %matplotlib inline " to show image on jyputer notebook
+Note: There are 22 identifiers in get() method, see more detail on OpenCV Documentation
+```
+[OpenCV Documentation Media I/O](https://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html?
+)
+
+### 3. Display video
+
+#### - Use function imshow(Argument_1) with while loop to display a video.
+- Argument_1: pass your video frame into the function
+
+```
+Note: Make sure proper versions of ffmpeg or gstreamer is installed. Sometimes, it is a headache to work with Video Capture mostly due to wrong installation of ffmpeg/gstreamer. (from OpenCV-Python Tutorial)
 ```
 
 ### 4. Save or Write image
