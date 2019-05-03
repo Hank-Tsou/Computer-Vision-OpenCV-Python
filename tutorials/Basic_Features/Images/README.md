@@ -26,47 +26,37 @@ pip install matplotlib
 
 ### Read Image
 
-#### Function: Use the function cv2.imread(Argument_1, Argument_2) to read an image. 
+#### Function: Use function cv2.imread(Argument_1, Argument_2) to read an image. 
 
-Argument_1: 
-- an image name in the working directory or full image path           
+- Argument_1: an image name in the working directory or full image path           
 
-Argument_2:
-- cv2.IMREAD_COLOR:      Loads a color image.
-- cv2.IMREAD_GRAYSCALE:  Loads image in grayscale mode. 
-- cv2.IMREAD_UNCHANGED:  Loads image as such including alpha channel.
+- Argument_2:
+  - cv2.IMREAD_COLOR:      Loads a color image.
+  - cv2.IMREAD_GRAYSCALE:  Loads image in grayscale mode. 
+  - cv2.IMREAD_UNCHANGED:  Loads image as such including alpha channel.
 
 ```
 Note: Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.
 ```
 
-And repeat
+### DISPLAY IMAGE using openCV library
+
+#### Function: Use function cv2.imshow(Argument_1, Argument_2) to display an image.
+
+- Argument_1: image window name
+
+- Argument_2: pass your image into the function
 
 ```
-until finished
+Other Function You Should Know: 
+  - cv2.waitKey() is a keyboard binding function. Its argument is the time in milliseconds. 
+    If 0 is passed, it waits indefinitely for a key stroke.
+
+  - cv2.destroyAllWindows() simply destroys all the windows we created.
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
