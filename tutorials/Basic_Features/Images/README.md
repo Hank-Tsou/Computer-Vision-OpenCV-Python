@@ -1,8 +1,8 @@
 # What is Image
 
-In computer vision perspective, image is a combination of pixels, the image shape should be "weidth x height x channels".
-- Color image has three channel, RGB.
-- Grayscale image only has one channel.
+In computer vision perspective, image is a combination of pixels, each pixel has it's location ( x, y ) and pixel value. So the image shape should be "image_weidth x image_height x number_of_channels".
+- Color image has three channel, RGB (Red, Green and Blue), different method has different RGB order.
+- Gray scale image only has one channel.
 
 Note: it is possible for an image to have more than three channels.
 
