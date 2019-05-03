@@ -16,7 +16,7 @@ Note: it is possible for an image to have more than three channels.
 
 ### Prerequisites
 
-The main library you need to install before starting
+The main library you need to install before starting ( [Full code in notebook](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Images/Images.ipynb))
 
 ```
 pip install opencv-contrib-python
@@ -59,12 +59,12 @@ Function You Should Know:
 - Argument_1: pass your image into the function
 
 ```
-Note: import pyplot from matplotlib and add %matplotlib inline to show image on jyputer notebook
+Note: import pyplot from matplotlib and add "%matplotlib inline" to show image on jyputer notebook
 ```
 
 ### 4. Save or Write image
 
-#### - Use function imwrite(Argument_1, Argument_2) to save an image.
+#### - Use function cv2.imwrite(Argument_1, Argument_2) to save an image.
 
 - Argument_1: image name, ex: my_image.jpg
 
@@ -72,6 +72,11 @@ Note: import pyplot from matplotlib and add %matplotlib inline to show image on 
 ```
 Note: The image will save under your work directory
 ```
+
+## Code
+- [Full code in jupyter notebook](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Images/Images.ipynb)
+- [Full code in python file] (empty)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
