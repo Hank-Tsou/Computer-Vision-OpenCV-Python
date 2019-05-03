@@ -92,6 +92,7 @@ to work with Video Capture mostly due to wrong installation of ffmpeg/gstreamer.
 
 #### Define the codec
 ```python 
+# FourCC is a 4-byte code used to specify the video codec.
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 ```
 #### create VideoWriter object by using function cv2.VideoWriter(arg_1, arg_2, arg_3, arg_4 [, arg_5])
