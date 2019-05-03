@@ -3,14 +3,14 @@
 In computer vision perspective, video(Digital video) is an electronic representation of moving visual images in the form of encoded digital data. Basically, video is created by a series of image frames. Each image frame has shape width x height x channel.
 
 ```
-FPS: frame per second is measure the rate at which frames are displayed is known as the frame rate.
+FPS: "frame per second" is measure the rate at which frames are displayed is known as the frame rate.
 ```
 
 ## Getting Started with Video using OpenCV Python
 
 ### Outline:
-1. Get video information
-2. Read video from file and webcam
+1. Get video source and information
+2. Read source video
 3. Display video
 4. Save video
 
@@ -23,12 +23,12 @@ pip install opencv-contrib-python
 pip install numpy
 ```
 
-### 1. Get video information
+### 1. Get video source and information
 
 #### - Use function cv2.VideoCapture(Argument_1) to "get" a video source. 
 
 - Argument_1: 
-  - Read from file: give a video name in the working directory or full video path (String).
+  - Read from video file: give a video name in the working directory or full video path (String).
   - Read from webcam: give 0, it will open the default camera (Integer).
 ```python
 # get video source from video file
@@ -44,6 +44,7 @@ Note: Use function "cv2.VideoCapture(_).isOpened()" to check get video success o
 #### - Use function cv2.VideoCapture(__).get(Argument_1) to get video information.
 
 - Argument_1: property identifier, some commonly use property show as below 
+
   - [3] cv2.CAP_PROP_FRAME_WIDTH:   Width of the frames in the video stream.
   - [4] cv2.CAP_PROP_FRAME_HEIGHT:  Height of the frames in the video stream.
   - [5] cv2.CAP_PROP_FPS:           Frame rate.
@@ -58,7 +59,7 @@ Note: There are 46 identifiers in get() method, see more detail on OpenCV Docume
 ```
 [OpenCV Documentation Flags for video I/O](https://docs.opencv.org/3.4/d4/d15/group__videoio__flags__base.html)
 
-### 2. Read Video from file and webcam
+### 2. Read source video
               
 #### - Use function cv2.VideoCapture(__).read() to "read" a video frame by frame. 
 
