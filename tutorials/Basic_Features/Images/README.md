@@ -1,27 +1,43 @@
 # What is Image
 
-One Paragraph of project description goes here
+In computer vision perspective, image is a combination of pixels, the image shape should be "weidth x height x channels".
+- Color image has three channel, RGB.
+- Grayscale image only has one channel.
 
-## Getting Started
+Note: it is possible for an image to have more than three channels.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Getting Started with Image using OpenCV Python
+
+### Outline:
+1. Read Image
+2. Display Image using OpenCV library
+3. Display image using matplotlib in jupyter notebook
+4. Save Image
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+The main library you need to install before starting
 
 ```
-Give examples
+pip install opencv-contrib-python
+pip install jupyter notebook
+pip install matplotlib
 ```
 
-### Installing
+### Read Image
 
-A step by step series of examples that tell you how to get a development env running
+#### Function: Use the function cv2.imread(Argument_1, Argument_2) to read an image. 
 
-Say what the step will be
+Argument_1: 
+- an image name in the working directory or full image path           
+
+Argument_2:
+- cv2.IMREAD_COLOR:      Loads a color image.
+- cv2.IMREAD_GRAYSCALE:  Loads image in grayscale mode. 
+- cv2.IMREAD_UNCHANGED:  Loads image as such including alpha channel.
 
 ```
-Give the example
+Note: Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.
 ```
 
 And repeat
