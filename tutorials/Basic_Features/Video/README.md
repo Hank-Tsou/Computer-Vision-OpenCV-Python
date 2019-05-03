@@ -72,9 +72,8 @@ ret, frame = cap.read()
 ### 3. Display video
 
 #### - Use function imshow(Argument_1, Argument_2) with while loop to display a video.
-- Argument_1: display window's name
-- Argument_2: passing the image frame
-
+- Argument_1: display window name (String)
+- Argument_2: pass your image frame into the function
 ```python 
 cv2.imshow('frame',frame)             # display frame image
 cv2.waitKey(10)                       # control the output speed of the video.
