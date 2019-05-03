@@ -51,6 +51,7 @@ Note: Use function "cv2.VideoCapture(_).isOpened()" to check get video success o
 
 ```
 Note: There are 22 identifiers in get() method, see more detail on OpenCV Documentation
+      Instead of these property, you can simply pass integers respectively (from 0 to 21).
 ```
 [OpenCV Documentation Media I/O](https://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html?
 )
