@@ -3,7 +3,7 @@
 In computer vision perspective, video(Digital video) is an electronic representation of moving visual images in the form of encoded digital data. Basically, video is created by a series of image frames. Each image frame has shape width x height x channel.
 
 ```
-FPS: frame per second(FPS) is measure the rate at which frames are displayed is known as the frame rate.
+FPS: frame per second is measure the rate at which frames are displayed is known as the frame rate.
 ```
 ## Getting Started with Image using OpenCV Python
 
