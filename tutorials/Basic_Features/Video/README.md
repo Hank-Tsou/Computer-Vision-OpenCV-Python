@@ -20,7 +20,6 @@ The main library you need to install before starting ( [Full code in python file
 
 ```
 pip install opencv-contrib-python
-pip install numpy
 ```
 
 ### 1. Get video source and information
