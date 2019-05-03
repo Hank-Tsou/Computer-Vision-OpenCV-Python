@@ -26,7 +26,7 @@ pip install matplotlib
 
 ### 1. Read Image
 
-#### Use function cv2.imread(Argument_1, Argument_2) to read an image. 
+#### - Use function cv2.imread(Argument_1, Argument_2) to read an image. 
 
 - Argument_1: an image name in the working directory or full image path           
 
@@ -40,13 +40,14 @@ Note: Instead of these three flags, you can simply pass integers 1, 0 or -1 resp
 
 ### 2. Display image using openCV library
 
-#### Use function cv2.imshow(Argument_1, Argument_2) to display an image.
+#### - Use function cv2.imshow(Argument_1, Argument_2) to display an image.
 
 - Argument_1: image window name
 
 - Argument_2: pass your image into the function
 ```
 Function You Should Know: 
+
   - cv2.waitKey(): a keyboard binding function. Its argument is the time in milliseconds. 
                    If 0 is passed, it waits indefinitely for a key stroke.
   - cv2.destroyAllWindows() simply destroys all the windows we created.
@@ -54,19 +55,16 @@ Function You Should Know:
 
 ### 3. Display image using matplotlib
 
-#### Use function imshow(Argument_1) to display an image.
+#### - Use function imshow(Argument_1) to display an image.
 - Argument_1: pass your image into the function
 
 ```
-Note: import pyplot from matplotlib and add second line to show image on jyputer notebook
-
-from matplotlib import pyplot as plt
-%matplotlib inline 
+Note: import pyplot from matplotlib and add %matplotlib inline to show image on jyputer notebook
 ```
 
 ### 4. Save or Write image
 
-#### Use function imwrite(Argument_1, Argument_2) to display an image.
+#### - Use function imwrite(Argument_1, Argument_2) to save an image.
 
 - Argument_1: image name, ex: my_image.jpg
 
@@ -82,4 +80,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
 * Matplotlib: https://matplotlib.org/api/pyplot_api.html
+* Wiki: https://en.wikipedia.org/wiki/Digital_image
 
