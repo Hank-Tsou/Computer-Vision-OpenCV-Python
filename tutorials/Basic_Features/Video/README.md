@@ -41,7 +41,7 @@ cap = cv2.VideoCapture(0)
 Note: Use function "cv2.VideoCapture(_).isOpened()" to check get video success or not. (Boolean)
 ```
 
-#### - Use function cv2.VideoCapture(_).get(Argument_1) to get video information.
+#### - Use function cv2.VideoCapture(__).get(Argument_1) to get video information.
 
 - Argument_1: property identifier, some commonly use property show as below 
   - [3] cv2.CAP_PROP_FRAME_WIDTH:   Width of the frames in the video stream.
@@ -60,7 +60,7 @@ Note: There are 46 identifiers in get() method, see more detail on OpenCV Docume
 
 ### 2. Read Video from file and webcam
               
-#### - Use function cv2.VideoCapture(_).read() to "read" a video frame by frame. 
+#### - Use function cv2.VideoCapture(__).read() to "read" a video frame by frame. 
 
 - no argument
 - return: (boolean, frame), When read a frame return true and frame image else return false.
@@ -71,7 +71,7 @@ ret, frame = cap.read()
 ### 3. Display video
 
 #### - Use function imshow(Argument_1, Argument_2) with while loop to display a video.
-- Argument_1: display window name
+- Argument_1: display window's name
 - Argument_2: passing the image frame
 
 ```python 
@@ -90,14 +90,35 @@ to work with Video Capture mostly due to wrong installation of ffmpeg/gstreamer.
 
 ### 4. Save or Write video
 
-#### - Use function cv2.imwrite("Argument_1", Argument_2) to save an image.
-
-- Argument_1: image name, ex: my_image_name.jpg
-
-- Argument_2: pass your image into the function
+#### Define the codec
+```python 
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
 ```
-Note: The image will save under your work directory
+#### create VideoWriter object by using function cv2.VideoWriter(arg_1, arg_2, arg_3, arg_4 [, arg_5])
+- arg_1: output file name, ex: output.avi
+- arg_2: fourcc
+- arg_3: number of frames per second (fps)
+- arg_4: frame size
+- arg_5: last one is isColor flag. If True(default), encoder expect color frame, otherwise works with grayscale frame.
+```python
+out = cv2.VideoWriter('output.avi',fourcc, 10.0, (640,480))
 ```
+
+#### - Use function  cv2.VideoWriter(__).imwrite(Argument_1) to save a video.
+- Argument_1: passing image frame
+```python
+out.write(frame)
+```
+
+
+
+
+
+
+
+
+
+
 
 ## Code
 - [Full code in jupyter notebook](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Images/Images.ipynb)
