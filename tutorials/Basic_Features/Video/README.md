@@ -33,11 +33,9 @@ pip install numpy
 Note: Use function "cv2.VideoCapture(_).isOpened()" to check get video success or not. (Boolean)
 ```
 
-#### - Use function cv2.VideoCapture(_).get(Argument_1, Argument_2) to get video information.
+#### - Use function cv2.VideoCapture(_).get(Argument_1) to get video information.
 
-- Argument_1: passing video capture.
-
-- Argument_2: property identifier, some commonly use property show as below 
+- Argument_1: property identifier, some commonly use property show as below 
   - [3] cv2.CAP_PROP_FRAME_WIDTH:   Width of the frames in the video stream.
   - [4] cv2.CAP_PROP_FRAME_HEIGHT:  Height of the frames in the video stream.
   - [5] cv2.CAP_PROP_FPS:           Frame rate.
@@ -56,20 +54,22 @@ Note: There are 46 identifiers in get() method, see more detail on OpenCV Docume
 - no argument
 - return: (boolean, frame), When read a frame return true and frame image else return false.
 
-
 ### 3. Display video
 
 #### - Use function imshow(Argument_1) with while loop to display a video.
 - Argument_1: pass your video frame into the function
 
 ```
+Note: - use waitKey() to control the output speed of the video.
+      - when everything done, use cv2.VideoCapture(_).release() to release the capture
+      - if cv2.waitKey(1) & 0xFF == ord('q'): break # ( PRESS "q" to exit )
+```
+```
 Note: Make sure proper versions of ffmpeg or gstreamer is installed. Sometimes, it is a headache 
-to work with Video Capture mostly due to wrong installation of ffmpeg/gstreamer. 
-
-                                                                   - from OpenCV-Python Tutorial
+to work with Video Capture mostly due to wrong installation of ffmpeg/gstreamer. (OpenCV-Python Tutorial)
 ```
 
-### 4. Save or Write image
+### 4. Save or Write video
 
 #### - Use function cv2.imwrite("Argument_1", Argument_2) to save an image.
 
