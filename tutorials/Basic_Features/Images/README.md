@@ -1,11 +1,11 @@
 # What is Image
 
-In computer vision perspective, image is a combination of pixels, each pixel has it's location ( x, y ) and pixel value. So the image shape should be "image_weidth x image_height x number_of_channels".
+In computer vision perspective, image is a combination of pixels, each pixel has it's location ( x, y ) and pixel value. So the image shape should be " weidth x height x channels".
 - Color image has three channel, RGB (Red, Green and Blue), different method has different RGB order.
 - Gray scale image only has one channel.
-
+```
 Note: it is possible for an image to have more than three channels.
-
+```
 ## Getting Started with Image using OpenCV Python
 
 ### Outline:
@@ -34,7 +34,6 @@ pip install matplotlib
   - cv2.IMREAD_COLOR:      Loads a color image.
   - cv2.IMREAD_GRAYSCALE:  Loads image in grayscale mode. 
   - cv2.IMREAD_UNCHANGED:  Loads image as such including alpha channel.
-
 ```
 Note: Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.
 ```
@@ -46,11 +45,10 @@ Note: Instead of these three flags, you can simply pass integers 1, 0 or -1 resp
 - Argument_1: image window name
 
 - Argument_2: pass your image into the function
-
 ```
 Function You Should Know: 
-  - cv2.waitKey() is a keyboard binding function. Its argument is the time in milliseconds. 
-    If 0 is passed, it waits indefinitely for a key stroke.
+  - cv2.waitKey(): a keyboard binding function. Its argument is the time in milliseconds. 
+                   If 0 is passed, it waits indefinitely for a key stroke.
   - cv2.destroyAllWindows() simply destroys all the windows we created.
 ```
 
@@ -73,9 +71,9 @@ from matplotlib import pyplot as plt
 - Argument_1: image name, ex: my_image.jpg
 
 - Argument_2: pass your image into the function
-
+```
 Note: The image will save under your work directory
-
+```
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
