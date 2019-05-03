@@ -58,10 +58,11 @@ cv2.destroyAllWindows()
 # The image will save under your work directory
 cv2.imwrite('test_save.png',img_gray)
 
-#---------------------------------------------------------#
-#                         Reference                       #
-#---------------------------------------------------------#
-# Opencv-Python Tutorials                                 #
-# Link: https://opencv-python-tutroals.                   #
-# readthedocs.io/en/latest/py_tutorials/py_tutorials.html #
-#---------------------------------------------------------#
+
+
+"""-----------------------------------------------------
+Reference:
+Website: Opencv-Python Tutorials
+Link: https://opencv-python-tutroals.readthedocs.io/
+en/latest/py_tutorials/py_tutorials.html
+-----------------------------------------------------"""
