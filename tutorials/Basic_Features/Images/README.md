@@ -26,9 +26,9 @@ pip install matplotlib
 
 ### 1. Read Image
 
-#### - Use function cv2.imread(Argument_1, Argument_2) to read an image. 
+#### - Use function cv2.imread("Argument_1", Argument_2) to read an image. 
 
-- Argument_1: an image name in the working directory or full image path           
+- Argument_1: an image name in the working directory or full image path (String)        
 
 - Argument_2:
   - cv2.IMREAD_COLOR:      Loads a color image.
@@ -40,9 +40,9 @@ Note: Instead of these three flags, you can simply pass integers 1, 0 or -1 resp
 
 ### 2. Display image using openCV library
 
-#### - Use function cv2.imshow(Argument_1, Argument_2) to display an image.
+#### - Use function cv2.imshow("Argument_1", Argument_2) to display an image.
 
-- Argument_1: image window name
+- Argument_1: image window name (String)
 
 - Argument_2: pass your image into the function
 ```
@@ -55,18 +55,18 @@ Function You Should Know:
 
 ### 3. Display image using matplotlib
 
-#### - Use function imshow(Argument_1) to display an image.
+#### - Use function pyplot.imshow(Argument_1) to display an image.
 - Argument_1: pass your image into the function
 
 ```
-Note: import pyplot from matplotlib and add "%matplotlib inline" to show image on jyputer notebook
+Note: import pyplot from matplotlib and add " %matplotlib inline " to show image on jyputer notebook
 ```
 
 ### 4. Save or Write image
 
-#### - Use function cv2.imwrite(Argument_1, Argument_2) to save an image.
+#### - Use function cv2.imwrite("Argument_1", Argument_2) to save an image.
 
-- Argument_1: image name, ex: my_image.jpg
+- Argument_1: image name, ex: my_image_name.jpg
 
 - Argument_2: pass your image into the function
 ```
