@@ -75,7 +75,7 @@ Note: The image will save under your work directory
 
 ## Code
 - [Full code in jupyter notebook](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Images/Images.ipynb)
-- [Full code in python file] (empty)
+- [Full code in python file](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Images/Images.py)
 
 ## License
 
