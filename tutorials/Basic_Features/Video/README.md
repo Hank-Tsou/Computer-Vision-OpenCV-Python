@@ -5,6 +5,7 @@ In computer vision perspective, video(Digital video) is an electronic representa
 ```
 FPS: frame per second is measure the rate at which frames are displayed is known as the frame rate.
 ```
+
 ## Getting Started with Video using OpenCV Python
 
 ### Outline:
@@ -15,7 +16,7 @@ FPS: frame per second is measure the rate at which frames are displayed is known
 
 ### Prerequisites
 
-The main library you need to install before starting ( [Full code in notebook] (empty))
+The main library you need to install before starting ( [Full code in python file] (empty))
 
 ```
 pip install opencv-contrib-python
@@ -29,6 +30,13 @@ pip install numpy
 - Argument_1: 
   - Read from file: give a video name in the working directory or full video path (String).
   - Read from webcam: give 0, it will open the default camera (Integer).
+```python
+# get video source from video file
+cap = cv2.VideoCapture("cat.mp4")
+
+# get video source from webcam
+cap = cv2.VideoCapture(0)
+```
 ```
 Note: Use function "cv2.VideoCapture(_).isOpened()" to check get video success or not. (Boolean)
 ```
@@ -40,7 +48,10 @@ Note: Use function "cv2.VideoCapture(_).isOpened()" to check get video success o
   - [4] cv2.CAP_PROP_FRAME_HEIGHT:  Height of the frames in the video stream.
   - [5] cv2.CAP_PROP_FPS:           Frame rate.
   - [7] cv2.CAP_PROP_FRAME_COUNT:   Number of frames in the video file.
-
+```python
+print("FPS: ", cap.get(cv2.CAP_PROP_FPS))
+print("FPS: ", cap.get(5))
+```
 ```
 Note: There are 46 identifiers in get() method, see more detail on OpenCV Documentation
       Instead of these property, you can simply pass integers respectively (from 0 to 45).
@@ -53,16 +64,24 @@ Note: There are 46 identifiers in get() method, see more detail on OpenCV Docume
 
 - no argument
 - return: (boolean, frame), When read a frame return true and frame image else return false.
+```python
+ret, frame = cap.read()
+```
 
 ### 3. Display video
 
-#### - Use function imshow(Argument_1) with while loop to display a video.
-- Argument_1: pass your video frame into the function
+#### - Use function imshow(Argument_1, Argument_2) with while loop to display a video.
+- Argument_1: display window name
+- Argument_2: passing the image frame
 
-```
-Note: - use waitKey() to control the output speed of the video.
-      - when everything done, use cv2.VideoCapture(_).release() to release the capture
-      - if cv2.waitKey(1) & 0xFF == ord('q'): break # ( PRESS "q" to exit )
+```python 
+cv2.imshow('frame',frame)             # display frame image
+cv2.waitKey(10)                       # control the output speed of the video.
+if cv2.waitKey(1) & 0xFF == ord('q'): # PRESS "q" to exit
+    break
+    
+cap.release()                          # When everything done, release the capture
+cv2.destroyAllWindows()                # destroy all the windows
 ```
 ```
 Note: Make sure proper versions of ffmpeg or gstreamer is installed. Sometimes, it is a headache 
