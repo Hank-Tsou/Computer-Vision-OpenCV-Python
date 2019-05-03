@@ -1,4 +1,4 @@
-# Project Title
+# What is Image
 
 One Paragraph of project description goes here
 
