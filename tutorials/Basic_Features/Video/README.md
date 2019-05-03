@@ -5,7 +5,7 @@ In computer vision perspective, video(Digital video) is an electronic representa
 ```
 FPS: frame per second is measure the rate at which frames are displayed is known as the frame rate.
 ```
-## Getting Started with Image using OpenCV Python
+## Getting Started with Video using OpenCV Python
 
 ### Outline:
 1. Read video from file and webcam
