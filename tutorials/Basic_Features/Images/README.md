@@ -1,7 +1,7 @@
 # What is Image
 
-In computer vision perspective, image is a combination of pixels, each pixel has it's location ( x, y ) and pixel value. So the image shape should be " weidth x height x channels".
-- Color image has three channel, RGB (Red, Green and Blue), different method has different RGB order.
+In computer vision perspective, image(digital image) is a numeric representation, contains a fixed number of pixels. Pixels are the smallest individual element in an image and each pixel has it's location (x, y) and channel value. The image shape should be " weidth x height x channels".
+- Color image has three channel, RGB (Red, Green, Blue), different method has different RGB order.
 - Gray scale image only has one channel.
 ```
 Note: it is possible for an image to have more than three channels.
@@ -58,7 +58,7 @@ Function You Should Know:
 - Argument_1: pass your image into the function
 
 ```
-# import pyplot from matplotlib and add second line in order to show image on jyputer notebook
+Note: import pyplot from matplotlib and add second line to show image on jyputer notebook
 
 from matplotlib import pyplot as plt
 %matplotlib inline 
