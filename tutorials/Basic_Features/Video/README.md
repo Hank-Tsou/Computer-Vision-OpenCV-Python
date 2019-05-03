@@ -8,8 +8,8 @@ FPS: frame per second is measure the rate at which frames are displayed is known
 ## Getting Started with Video using OpenCV Python
 
 ### Outline:
-1. Read video from file and webcam
-2. Get video information
+1. Get video information
+2. Read video from file and webcam
 3. Display video
 4. Save video
 
@@ -22,39 +22,40 @@ pip install opencv-contrib-python
 pip install numpy
 ```
 
-### 1. Read Video from file and webcam
+### 1. Get video information
 
-#### - Use function cv2.VideoCapture(Argument_1) to "get" a video. 
+#### - Use function cv2.VideoCapture(Argument_1) to "get" a video source. 
 
 - Argument_1: 
-  - Read from file: give an video name in the working directory or full video path (String).
+  - Read from file: give a video name in the working directory or full video path (String).
   - Read from webcam: give 0, it will open the default camera (Integer).
-              
-#### - Use function cv2.VideoCapture(_).read() to "read" a video frame by frame. 
-
-- no argument
 ```
 Note: Use function "cv2.VideoCapture(_).isOpened()" to check get video success or not. (Boolean)
 ```
-
-### 2. Get video information
 
 #### - Use function cv2.VideoCapture(_).get(Argument_1, Argument_2) to get video information.
 
 - Argument_1: passing video capture.
 
-- Argument_2: property identifier, some id show as below 
-  - [3] CV_CAP_PROP_FRAME_WIDTH Width of the frames in the video stream.
-  - [4] CV_CAP_PROP_FRAME_HEIGHT Height of the frames in the video stream.
-  - [5] CV_CAP_PROP_FPS Frame rate.
-  - [7] CV_CAP_PROP_FRAME_COUNT Number of frames in the video file.
+- Argument_2: property identifier, some commonly use property show as below 
+  - [3] cv2.CAP_PROP_FRAME_WIDTH:   Width of the frames in the video stream.
+  - [4] cv2.CAP_PROP_FRAME_HEIGHT:  Height of the frames in the video stream.
+  - [5] cv2.CAP_PROP_FPS:           Frame rate.
+  - [7] cv2.CAP_PROP_FRAME_COUNT:   Number of frames in the video file.
 
 ```
-Note: There are 22 identifiers in get() method, see more detail on OpenCV Documentation
-      Instead of these property, you can simply pass integers respectively (from 0 to 21).
+Note: There are 46 identifiers in get() method, see more detail on OpenCV Documentation
+      Instead of these property, you can simply pass integers respectively (from 0 to 45).
 ```
-[OpenCV Documentation Media I/O](https://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html?
-)
+[OpenCV Documentation Flags for video I/O](https://docs.opencv.org/3.4/d4/d15/group__videoio__flags__base.html)
+
+### 2. Read Video from file and webcam
+              
+#### - Use function cv2.VideoCapture(_).read() to "read" a video frame by frame. 
+
+- no argument
+- return: (boolean, frame), When read a frame return true and frame image else return false.
+
 
 ### 3. Display video
 
