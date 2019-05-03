@@ -24,9 +24,9 @@ pip install jupyter notebook
 pip install matplotlib
 ```
 
-### Read Image
+### 1. Read Image
 
-#### Function: Use function cv2.imread(Argument_1, Argument_2) to read an image. 
+#### Use function cv2.imread(Argument_1, Argument_2) to read an image. 
 
 - Argument_1: an image name in the working directory or full image path           
 
@@ -38,9 +38,9 @@ pip install matplotlib
 Note: Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.
 ```
 
-### Display image using openCV library
+### 2. Display image using openCV library
 
-#### Function: Use function cv2.imshow(Argument_1, Argument_2) to display an image.
+#### Use function cv2.imshow(Argument_1, Argument_2) to display an image.
 
 - Argument_1: image window name
 
@@ -52,9 +52,9 @@ Function You Should Know:
   - cv2.destroyAllWindows() simply destroys all the windows we created.
 ```
 
-### Display image using matplotlib
+### 3. Display image using matplotlib
 
-#### Function: Use function imshow(Argument_1) to display an image.
+#### Use function imshow(Argument_1) to display an image.
 - Argument_1: pass your image into the function
 
 ```
@@ -64,9 +64,9 @@ from matplotlib import pyplot as plt
 %matplotlib inline 
 ```
 
-### Save or Write image
+### 4. Save or Write image
 
-#### Function: Use function imwrite(Argument_1, Argument_2) to display an image.
+#### Use function imwrite(Argument_1, Argument_2) to display an image.
 
 - Argument_1: image name, ex: my_image.jpg
 
