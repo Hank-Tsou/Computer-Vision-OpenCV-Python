@@ -30,7 +30,7 @@ img_unchange = cv2.imread('OpenCV_Logo.png', -1)
 
 #---------- Display image using openCV library ----------#
 
-# If you uncomment Line 37 and run, you will find that no image shows
+# If you uncomment Line 35 and run, you will find that no image shows
 # that is because image shows and destroy in a very short of time
 # cv2.imshow('image', img_color)
 
