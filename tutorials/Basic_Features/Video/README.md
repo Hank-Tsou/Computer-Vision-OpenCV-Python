@@ -108,7 +108,9 @@ out = cv2.VideoWriter('output.avi',fourcc, 10.0, (640,480))
 #### - Use function  cv2.VideoWriter(__).imwrite(Argument_1) to save a video.
 - Argument_1: passing image frame
 ```python
-out.write(frame)
+out.write(frame) # save video 
+...
+out.release() # when finished, release video writer
 ```
 
 
