@@ -62,7 +62,10 @@ Note: There are 22 identifiers in get() method, see more detail on OpenCV Docume
 - Argument_1: pass your video frame into the function
 
 ```
-Note: Make sure proper versions of ffmpeg or gstreamer is installed. Sometimes, it is a headache to work with Video Capture mostly due to wrong installation of ffmpeg/gstreamer. (from OpenCV-Python Tutorial)
+Note: Make sure proper versions of ffmpeg or gstreamer is installed. Sometimes, it is a headache 
+to work with Video Capture mostly due to wrong installation of ffmpeg/gstreamer. 
+
+                                                                   - from OpenCV-Python Tutorial
 ```
 
 ### 4. Save or Write image
