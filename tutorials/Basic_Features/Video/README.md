@@ -24,13 +24,13 @@ pip install numpy
 
 ### 1. Read Video from file and webcam
 
-#### - Use function cv2.VideoCapture(Argument_1) to get a video. 
+#### - Use function cv2.VideoCapture(Argument_1) to "get" a video. 
 
 - Argument_1: 
   - Read from file: give an video name in the working directory or full video path (String).
   - Read from webcam: give 0, it will open the default camera (Integer).
               
-#### - Use function cv2.VideoCapture(_).read() to read a video frame by frame. 
+#### - Use function cv2.VideoCapture(_).read() to "read" a video frame by frame. 
 
 - no argument
 ```
