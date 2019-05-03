@@ -1,6 +1,4 @@
 
-### Getting Start with Images ###
-
 #------------------------------------#
 # Author: Yueh-Lin Tsou              #
 # Update: 5/2/2019                   #
