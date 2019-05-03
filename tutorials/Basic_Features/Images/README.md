@@ -39,7 +39,7 @@ pip install matplotlib
 Note: Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.
 ```
 
-### DISPLAY IMAGE using openCV library
+### Display image using openCV library
 
 #### Function: Use function cv2.imshow(Argument_1, Argument_2) to display an image.
 
@@ -48,39 +48,33 @@ Note: Instead of these three flags, you can simply pass integers 1, 0 or -1 resp
 - Argument_2: pass your image into the function
 
 ```
-Other Function You Should Know: 
+Function You Should Know: 
   - cv2.waitKey() is a keyboard binding function. Its argument is the time in milliseconds. 
     If 0 is passed, it waits indefinitely for a key stroke.
-
   - cv2.destroyAllWindows() simply destroys all the windows we created.
 ```
 
+### Display image using matplotlib
 
+#### Function: Use function imshow(Argument_1) to display an image.
+- Argument_1: pass your image into the function
 
+```
+# import pyplot from matplotlib and add second line in order to show image on jyputer notebook
 
-## Deployment
+from matplotlib import pyplot as plt
+%matplotlib inline 
+```
 
-Add additional notes about how to deploy this on a live system
+### Save or Write image
 
-## Built With
+#### Function: Use function imwrite(Argument_1, Argument_2) to display an image.
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+- Argument_1: image name, ex: my_image.jpg
 
-## Contributing
+- Argument_2: pass your image into the function
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Note: The image will save under your work directory
 
 ## License
 
@@ -88,7 +82,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
+* Matplotlib: https://matplotlib.org/api/pyplot_api.html
 
