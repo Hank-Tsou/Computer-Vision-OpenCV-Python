@@ -16,7 +16,7 @@ FPS: "frame per second" is measure the rate at which frames are displayed is kno
 
 ### Prerequisites
 
-The main library you need to install before starting ( [Full code in python file] (empty))
+The main library you need to install before starting ( [Full code in python file](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Video/Video.py))
 
 ```
 pip install opencv-contrib-python
@@ -112,19 +112,8 @@ out.write(frame) # save video
 out.release() # when finished, release video writer
 ```
 
-
-
-
-
-
-
-
-
-
-
 ## Code
-- [Full code in jupyter notebook](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Images/Images.ipynb)
-- [Full code in python file](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Images/Images.py)
+- [Full code in python file](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Video/Video.py)
 
 ## License
 
@@ -133,6 +122,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
-* Matplotlib: https://matplotlib.org/api/pyplot_api.html
-* Wiki: https://en.wikipedia.org/wiki/Digital_image
+* OpenCV Document: https://docs.opencv.org/3.4/
+* Wiki: https://en.wikipedia.org/wiki/Digital_video
 
