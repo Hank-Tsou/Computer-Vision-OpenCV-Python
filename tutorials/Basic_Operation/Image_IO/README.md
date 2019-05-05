@@ -38,6 +38,7 @@ pip install matplotlib
 Note: Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.
 ```
 ```python
+# read image in gray scale
 img_gray = cv2.imread('OpenCV_Logo.png', cv2.IMREAD_GRAYSCALE)
 img_gray = cv2.imread('OpenCV_Logo.png', 0)
 ```
