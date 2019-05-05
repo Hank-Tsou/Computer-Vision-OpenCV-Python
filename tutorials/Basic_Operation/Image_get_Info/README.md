@@ -33,6 +33,13 @@ Note:
 ```
 Note: Different method has different RGB order, the order with OpenCV imread() is BGR.
 ```
+```python
+# Get image pixel value
+pixel_value = img[ x, y ]
+pixel_value_B = img[ x, y, 0 ] # BLUE channel value
+pixel_value_G = img[ x, y, 1 ] # Green channel value
+pixel_value_R = img[ x, y, 2 ] # Red channel value
+```
 
 ## Code
 - [Full code in python file](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Operation/Image_get_Info/image_get_info.py)
