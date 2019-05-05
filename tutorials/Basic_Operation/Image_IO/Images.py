@@ -47,7 +47,14 @@ cv2.destroyAllWindows()
 # Display image using matplotlib
 #---------------------------------#
 
-# This part is used for display an image on jupyter notebook
+## import library or function
+# from matplotlib import pyplot as plt
+#
+## add "%matplotlib inline" to show image inline in jupyter notebook
+# %matplotlib inline
+#
+## Display color image on jupyter notebook
+# plt.imshow(img_color)
 
 #----------------------#
 # Save or write image
