@@ -33,7 +33,7 @@ Note: There are 46 identifiers in get() method, see more detail on OpenCV Docume
 print("FPS: ", cap.get(cv2.CAP_PROP_FPS))
 print("FPS: ", cap.get(5))
 ```
-[OpenCV Documentation Flags for video I/O](https://docs.opencv.org/3.4/d4/d15/group__videoio__flags__base.html)
+[OpenCV Documentation - Flags for video I/O](https://docs.opencv.org/3.4/d4/d15/group__videoio__flags__base.html)
 
 ## Code
 - [Full code in python file](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Operation/Video_get_info/video_get_info.py)
