@@ -16,7 +16,7 @@ Note: it is possible for an image to have more than three channels.
 
 ### Prerequisites
 
-The main library you need to install before starting ( [Full code in notebook](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Images/Images.ipynb))
+The main library you need to install before starting ( [Full code in notebook](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Operation/Image_IO/Images.ipynb))
 
 ```
 pip install opencv-contrib-python
@@ -74,8 +74,8 @@ Note: The image will save under your work directory
 ```
 
 ## Code
-- [Full code in jupyter notebook](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Images/Images.ipynb)
-- [Full code in python file](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Images/Images.py)
+- [Full code in jupyter notebook](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Operation/Image_IO/Images.ipynb)
+- [Full code in python file](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Operation/Image_IO/Images.py)
 
 ## License
 
