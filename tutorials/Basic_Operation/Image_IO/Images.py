@@ -56,9 +56,7 @@ cv2.destroyAllWindows()
 ## Display color image on jupyter notebook
 # plt.imshow(img_color)
 
-#----------------------#
-# Save or write image
-#----------------------#
+# ----------------- Save or write image -----------------#
 
 # The image will save under your work directory
 cv2.imwrite('test_save.png',img_gray)

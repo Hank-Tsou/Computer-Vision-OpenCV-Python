@@ -12,7 +12,7 @@
 # Import OpenCV Library
 import cv2
 
-# ------------------------- Get Video source --------------------------#
+# -------------------- Get Video source --------------------- #
 # NOTE: "cat.mp4" is in video_IO or input your video source
 
 # get video source from video file
@@ -21,11 +21,11 @@ cap = cv2.VideoCapture("cat.mp4")
 # get video source from webcam
 # cap = cv2.VideoCapture(0)
 
-# ---------------------------------------------------------------------#
+# ----------------------------------------------------------- #
 
 print("\ncheck video capture: ", cap.isOpened())
 
-# ----------------------- Get Video information -----------------------#
+# ------------------ Get Video information ------------------ #
 
 if(cap.isOpened()):
     print("\n-------- video information --------")
@@ -42,7 +42,7 @@ if(cap.isOpened()):
     print("FPS: ", cap.get(5))
     print("-----------------------------------")
 
-# ---------------------------------------------------------------------#
+# ---------------------------------------------------------- #
 
 
 

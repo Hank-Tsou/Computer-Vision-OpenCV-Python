@@ -15,7 +15,7 @@
 # Import OpenCV Library
 import cv2
 
-# ------------------------- Get Video source -------------------------#
+# --------------- Get Video source --------------- #
 
 # get video source from video file
 cap = cv2.VideoCapture("cat.mp4")
@@ -23,17 +23,17 @@ cap = cv2.VideoCapture("cat.mp4")
 # get video source from webcam
 # cap = cv2.VideoCapture(0)
 
-# ---------------------------------------------------------------------#
+# ------------------------------------------------ #
 
 print("\ncheck video capture: ", cap.isOpened())
 
-#------------------- object for write a video -------------------#
+#------------ object for write a video ------------#
 
 # Define the codec and create VideoWriter object for save video
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter('output.avi',fourcc, 20.0, (640,480))
 
-# ------------------------- Read Video ------------------------- #
+# ------------------ Read Video ------------------ #
 
 while(True):
 
