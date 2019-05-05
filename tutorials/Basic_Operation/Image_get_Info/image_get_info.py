@@ -14,10 +14,10 @@ import cv2
 
 # Load a color image
 img = cv2.imread("test.jpg")
+
 print("\n-------- image information --------")
 
 # ----------- Image property information ----------- #
-
 image_shape = img.shape  # image shape
 image_size = img.size    # image size
 image_dtype = img.dtype  # image data type
