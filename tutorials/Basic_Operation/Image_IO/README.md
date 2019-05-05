@@ -37,6 +37,10 @@ pip install matplotlib
 ```
 Note: Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.
 ```
+```python
+img_gray = cv2.imread('OpenCV_Logo.png', cv2.IMREAD_GRAYSCALE)
+img_gray = cv2.imread('OpenCV_Logo.png', 0)
+```
 
 ### 2. Display image using openCV library
 
@@ -52,12 +56,16 @@ Function You Should Know:
                    If 0 is passed, it waits indefinitely for a key stroke.
   - cv2.destroyAllWindows() simply destroys all the windows we created.
 ```
+```python
+cv2.imshow('image', img_gray) # display image
+cv2.waitKey(0)                # wait, press any key to continue
+cv2.destroyAllWindows()       # destroy all windows
+```
 
 ### 3. Display image using matplotlib
 
 #### - Use function pyplot.imshow(Argument_1) to display an image.
 - Argument_1: pass your image into the function
-
 ```
 Note: import pyplot from matplotlib and add " %matplotlib inline " to show image on jyputer notebook
 ```
@@ -71,6 +79,9 @@ Note: import pyplot from matplotlib and add " %matplotlib inline " to show image
 - Argument_2: pass your image into the function
 ```
 Note: The image will save under your work directory
+```
+```python
+cv2.imwrite('test_save.png',img_gray)
 ```
 
 ## Code
