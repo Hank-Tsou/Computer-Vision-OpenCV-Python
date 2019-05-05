@@ -1,3 +1,4 @@
+
 #------------------------------------#
 # Author: Yueh-Lin Tsou              #
 # Update: 5/4/2019                   #
@@ -12,6 +13,7 @@
 import cv2
 
 # ------------------------- Get Video source --------------------------#
+# NOTE: "cat.mp4" is in video_IO or input your video source
 
 # get video source from video file
 cap = cv2.VideoCapture("cat.mp4")
@@ -39,6 +41,8 @@ if(cap.isOpened()):
     print("FPS: ", cap.get(cv2.CAP_PROP_FPS))
     print("FPS: ", cap.get(5))
     print("-----------------------------------")
+
+# ---------------------------------------------------------------------#
 
 
 
