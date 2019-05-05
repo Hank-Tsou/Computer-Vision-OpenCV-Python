@@ -14,14 +14,13 @@ import cv2
 
 # Load a color image
 img = cv2.imread("test.jpg")
+print("\n-------- image information --------")
 
 # ----------- Image property information ----------- #
 
 image_shape = img.shape  # image shape
 image_size = img.size    # image size
 image_dtype = img.dtype  # image data type
-
-print("\n-------- image information --------")
 
 print("\nimage property")
 print(" -image_shape:\t", image_shape)
@@ -75,7 +74,6 @@ img.itemset((x,y,2),140) # change red channel value
 print("\nchange image pixel information (Numpy: array.itemset())")
 print(" -pixel value at (300, 150): ", img[x, y])
 print("\n-----------------------------------\n")
-
 
 
 
