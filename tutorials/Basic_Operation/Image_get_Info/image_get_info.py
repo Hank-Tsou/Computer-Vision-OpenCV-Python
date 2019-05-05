@@ -34,9 +34,9 @@ x = 200
 y = 100
 
 pixel_value = img[ x, y ]
-pixel_value_B = img[ x, y, 0 ] # BLUE channel
-pixel_value_G = img[ x, y, 1 ] # Green channel
-pixel_value_R = img[ x, y, 2 ] # Red channel
+pixel_value_B = img[ x, y, 0 ] # BLUE channel value
+pixel_value_G = img[ x, y, 1 ] # Green channel value
+pixel_value_R = img[ x, y, 2 ] # Red channel value
 
 print("\nimage pixel information")
 print(" -pixel value at (300, 150): ", pixel_value)
