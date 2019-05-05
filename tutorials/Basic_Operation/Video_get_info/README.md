@@ -24,13 +24,13 @@ pip install opencv-contrib-python
   - [4] cv2.CAP_PROP_FRAME_HEIGHT:  Height of the frames in the video stream.
   - [5] cv2.CAP_PROP_FPS:           Frame rate.
   - [7] cv2.CAP_PROP_FRAME_COUNT:   Number of frames in the video file.
-```python
-print("FPS: ", cap.get(cv2.CAP_PROP_FPS))
-print("FPS: ", cap.get(5))
-```
 ```
 Note: There are 46 identifiers in get() method, see more detail on OpenCV Documentation
       Instead of these property, you can simply pass integers respectively (from 0 to 45).
+```
+```python
+print("FPS: ", cap.get(cv2.CAP_PROP_FPS))
+print("FPS: ", cap.get(5))
 ```
 [OpenCV Documentation Flags for video I/O](https://docs.opencv.org/3.4/d4/d15/group__videoio__flags__base.html)
 
