@@ -13,7 +13,7 @@ pip install opencv-contrib-python
 
 ### 1. Get image information
 
-#### - Use function cv2.imread("Argument_1", Argument_2) to read an image. ( [More detail on image I/O](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Basic_Operation/Image_IO))
+#### - Use function cv2.imread() to read an image. ( [More detail on image I/O](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Basic_Operation/Image_IO))
 
 #### - Get image property information
 
