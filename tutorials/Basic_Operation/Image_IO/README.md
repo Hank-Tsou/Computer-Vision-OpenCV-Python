@@ -55,7 +55,7 @@ Function You Should Know:
 
   - cv2.waitKey(): a keyboard binding function. Its argument is the time in milliseconds. 
                    If 0 is passed, it waits indefinitely for a key stroke.
-  - cv2.destroyAllWindows() simply destroys all the windows we created.
+  - cv2.destroyAllWindows(): simply destroys all the windows we created.
 ```
 ```python
 cv2.imshow('image', img_gray) # display image
