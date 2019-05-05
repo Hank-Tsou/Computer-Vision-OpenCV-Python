@@ -54,25 +54,6 @@ print(" -pixel value at (300, 150): ", pixel_value)
 print(" -Blue  value at (300, 150): ", pixel_value_B)
 print(" -Green value at (300, 150): ", pixel_value_G)
 print(" -Red   value at (300, 150): ", pixel_value_R)
-print("\n-----------------------------------")
-
-# ----- Pixel accessing and editing using Numpy ----- #
-
-pixel_value_B = img.item(x, y, 0)
-pixel_value_G = img.item(x, y, 1)
-pixel_value_R = img.item(x, y, 2)
-
-print("\nimage pixel information (Numpy: array.item())")
-print(" -Blue  value at (300, 150): ", pixel_value_B)
-print(" -Green value at (300, 150): ", pixel_value_G)
-print(" -Red   value at (300, 150): ", pixel_value_R)
-
-img.itemset((x,y,0),122) # change blue channel value
-img.itemset((x,y,1),245) # change green channel value
-img.itemset((x,y,2),140) # change red channel value
-
-print("\nchange image pixel information (Numpy: array.itemset())")
-print(" -pixel value at (300, 150): ", img[x, y])
 print("\n-----------------------------------\n")
 
 
