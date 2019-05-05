@@ -82,6 +82,7 @@ Note: import pyplot from matplotlib and add " %matplotlib inline " to show image
 Note: The image will save under your work directory
 ```
 ```python
+# save image
 cv2.imwrite('test_save.png',img_gray)
 ```
 
