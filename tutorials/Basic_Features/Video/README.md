@@ -9,7 +9,7 @@ FPS: "frame per second" is measure the rate at which frames are displayed is kno
 ## Getting Started with Video using OpenCV Python
 
 ### Outline:
-1. Get video source and information
+1. Get video source
 2. Read source video
 3. Display video
 4. Save video
@@ -22,7 +22,7 @@ The main library you need to install before starting ( [Full code in python file
 pip install opencv-contrib-python
 ```
 
-### 1. Get video source and information
+### 1. Get video source
 
 #### - Use function cv2.VideoCapture(Argument_1) to "get" a video source. 
 
@@ -39,24 +39,6 @@ cap = cv2.VideoCapture(0)
 ```
 Note: Use function "cv2.VideoCapture(_).isOpened()" to check get video success or not. (Boolean)
 ```
-
-#### - Use function cv2.VideoCapture(__).get(Argument_1) to get video information.
-
-- Argument_1: property identifier, some commonly use property show as below 
-
-  - [3] cv2.CAP_PROP_FRAME_WIDTH:   Width of the frames in the video stream.
-  - [4] cv2.CAP_PROP_FRAME_HEIGHT:  Height of the frames in the video stream.
-  - [5] cv2.CAP_PROP_FPS:           Frame rate.
-  - [7] cv2.CAP_PROP_FRAME_COUNT:   Number of frames in the video file.
-```python
-print("FPS: ", cap.get(cv2.CAP_PROP_FPS))
-print("FPS: ", cap.get(5))
-```
-```
-Note: There are 46 identifiers in get() method, see more detail on OpenCV Documentation
-      Instead of these property, you can simply pass integers respectively (from 0 to 45).
-```
-[OpenCV Documentation Flags for video I/O](https://docs.opencv.org/3.4/d4/d15/group__videoio__flags__base.html)
 
 ### 2. Read source video
               
