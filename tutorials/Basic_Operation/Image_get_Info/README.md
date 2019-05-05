@@ -16,17 +16,23 @@ pip install opencv-contrib-python
 #### - Use function cv2.imread() to read an image. ( [More detail on image I/O](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Basic_Operation/Image_IO))
 
 #### - Get image property information (color image)
-  - img.shape:  It returns a tuple of number of [rows, columns, channels]. 
-  - img.size: Data size which calculate by rows x colums x channels
-    - Total number of pixels need to divided by number of channels
-  - img.dtype: Image datatype
+  - image.shape:  It returns a tuple of number of [rows, columns, channels]. 
+  - image.size: Data size which calculate by rows x colums x channels
+  - image.dtype: Image datatype
 ```
-Note: In grayscale image, img.shape returned only contains number of rows and columns.
+Note: 
+    - In grayscale image, image.shape returned only contains number of rows and columns.
+    - Total number of pixels = image.size divided by number of channels.
 ```
 
+#### - Get image pixel information (color image)
+  - pixel value at image ( x , y ) = image [ x , y ]
+    - Color image return [ B,G,R ]
+    - Grayscale image only return a value between ( 0-255 )
 
-
-
+```
+Note: Different method has different RGB order, the order with OpenCV imread() is BGR.
+```
 
 ## Code
 - [Full code in python file](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Operation/Image_get_Info/image_get_info.py)
