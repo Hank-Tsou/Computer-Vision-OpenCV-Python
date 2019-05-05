@@ -13,7 +13,7 @@ pip install opencv-contrib-python
 
 ### 1. Get video information
 
-### - Use cv2.VideoCapture() to get video source. ( [More detail on video I/O](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Basic_Operation/Video_IO))
+#### - Use cv2.VideoCapture() to get video source. ( [More detail on video I/O](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Basic_Operation/Video_IO))
 
 
 #### - Use function cv2.VideoCapture(__).get(Argument_1) to get video information.
@@ -35,7 +35,7 @@ Note: There are 46 identifiers in get() method, see more detail on OpenCV Docume
 [OpenCV Documentation Flags for video I/O](https://docs.opencv.org/3.4/d4/d15/group__videoio__flags__base.html)
 
 ## Code
-- [Full code in python file](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Features/Video/Video.py)
+- [Full code in python file](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Basic_Operation/Video_get_info/video_get_info.py)
 
 ## License
 
