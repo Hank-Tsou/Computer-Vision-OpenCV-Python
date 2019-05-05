@@ -29,6 +29,7 @@ Note: There are 46 identifiers in get() method, see more detail on OpenCV Docume
       Instead of these property, you can simply pass integers respectively (from 0 to 45).
 ```
 ```python
+# print video FPS info
 print("FPS: ", cap.get(cv2.CAP_PROP_FPS))
 print("FPS: ", cap.get(5))
 ```
