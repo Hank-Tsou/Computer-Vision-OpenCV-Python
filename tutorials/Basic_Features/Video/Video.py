@@ -6,7 +6,7 @@
 #------------------------------------#
 
 """---------------------------------
-1. Get video source and information
+1. Get video source
 2. Read source video
 3. Display video
 4. Save Video
@@ -15,7 +15,7 @@
 # Import OpenCV Library
 import cv2
 
-# --------------- Get Video source and basic informarion ---------------#
+# ------------------------- Get Video source -------------------------#
 
 # get video source from video file
 cap = cv2.VideoCapture("cat.mp4")
@@ -26,21 +26,6 @@ cap = cv2.VideoCapture("cat.mp4")
 # ---------------------------------------------------------------------#
 
 print("\ncheck video capture: ", cap.isOpened())
-
-if(cap.isOpened()):
-    print("\n-------- video information --------")
-    print("frame width: ", cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-    print("frame width: ", cap.get(3))
-
-    print("frame height: ", cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-    print("frame height: ", cap.get(4))
-
-    print("Total number of frames: ", cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    print("Total number of frames: ", cap.get(7))
-
-    print("FPS: ", cap.get(cv2.CAP_PROP_FPS))
-    print("FPS: ", cap.get(5))
-    print("-----------------------------------")
 
 #------------------- object for write a video -------------------#
 
