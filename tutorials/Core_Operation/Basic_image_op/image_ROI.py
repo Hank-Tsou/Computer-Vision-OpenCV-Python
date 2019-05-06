@@ -34,6 +34,7 @@ def ROI_selection(image):
 # -------------------------- main -------------------------- #
 if __name__ == '__main__':
     # read input from terminal
+    # command line >> python image_ROI.py --image opencv.png
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", required=True, help="Path to the input image")
     args = vars(ap.parse_args())
