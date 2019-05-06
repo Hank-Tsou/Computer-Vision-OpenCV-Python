@@ -14,7 +14,6 @@ import cv2
 import argparse
 
 # --------------- Function for ROI Selection --------------- #
-
 def ROI_selection(image):
 
     # Select ROI
