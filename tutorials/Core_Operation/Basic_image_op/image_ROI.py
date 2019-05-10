@@ -13,10 +13,10 @@
 import cv2
 import argparse
 
-# --------------- Function for ROI Selection --------------- #
-def ROI_selection(image):
+# ----- Function for ROI Selection using bonding box ----- #
+def ROI_selection_BondingBox(image):
 
-    # Select ROI
+    # Select ROI by bonding box selection
     r = cv2.selectROI(image)
     print("(x, y, width, height) = ", r) # print the return information
 
@@ -30,6 +30,18 @@ def ROI_selection(image):
     if k == 27:
         cv2.destroyAllWindows()
 
+# ----- Function for ROI Selection using bonding box ----- #
+def ROI_selection_PixelRange(image):
+
+    # Select ROI by pixel range (select logo without words)
+    ROI_img = image[22:265, 60:331]
+    cv2.imshow("Image", ROI_img) # show image
+    # cv2.imwrite('ROI_'+args["image"], ROI_img) # save image
+
+    k = cv2.waitKey(0)
+    if k == 27:
+        cv2.destroyAllWindows()
+        
 # -------------------------- main -------------------------- #
 if __name__ == '__main__':
     # read input from terminal
@@ -41,8 +53,11 @@ if __name__ == '__main__':
     # Read image
     image = cv2.imread(args["image"])
 
-    # function for ROI selection
-    ROI_selection(image)
+    # function for ROI selection by using bonding box
+    # ROI_selection_BondingBox(image)
+
+    # function for ROI selection by using pixel range
+    ROI_selection_PixelRange(image)
 
 
 
