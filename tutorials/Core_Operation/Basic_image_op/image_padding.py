@@ -5,14 +5,16 @@
 # E-mail: hank630280888@gmail.com    #
 #------------------------------------#
 
-import cv2
-import argparse
-from matplotlib import pyplot as plt
-
 """------------------
 - image padding
 ------------------"""
 
+# Import OpenCV Library and command line interface
+import cv2
+import argparse
+from matplotlib import pyplot as plt
+
+# --------------- Function for image padding --------------- #
 def image_padding(img1):
 
     BLUE = [255,0,0]
@@ -66,7 +68,7 @@ def image_padding(img1):
 # -------------------------- main -------------------------- #
 if __name__ == '__main__':
     # read input from terminal
-    # command line >> python image_ROI.py --image opencv.png
+    # command line >> python image_ROI.py --image padding_source.png.png
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", required=True, help="Path to the input image")
     args = vars(ap.parse_args())
