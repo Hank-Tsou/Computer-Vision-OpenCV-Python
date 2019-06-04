@@ -68,7 +68,7 @@ def image_padding(img1):
 # -------------------------- main -------------------------- #
 if __name__ == '__main__':
     # read input from terminal
-    # command line >> python image_ROI.py --image padding_source.png.png
+    # command line >> python image_ROI.py --image padding_source.png
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", required=True, help="Path to the input image")
     args = vars(ap.parse_args())
