@@ -41,7 +41,7 @@ def ROI_selection_PixelRange(image):
     k = cv2.waitKey(0)
     if k == 27:
         cv2.destroyAllWindows()
-        
+
 # -------------------------- main -------------------------- #
 if __name__ == '__main__':
     # read input from terminal
