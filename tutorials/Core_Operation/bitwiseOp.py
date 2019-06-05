@@ -38,7 +38,7 @@ def image_blending_bitwise_topLeft(image, ontop):
     image[0:200, 0:200] = dst
 
     cv2.imshow("result", image)
-    cv2.imwrite("topleft.jpg", image)
+    # cv2.imwrite("topleft.jpg", image)
 
     cv2.waitKey(0)
     if k == 27:
@@ -68,8 +68,7 @@ def image_blending_bitwise_middle(image, ontop):
     dst = cv2.add(backGround,foreGround)
 
     cv2.imshow("result", dst)
-    cv2.imwrite("middle.jpg", dst)
-
+    # cv2.imwrite("middle.jpg", dst)
 
     cv2.waitKey(0)
     # if k == 27:
