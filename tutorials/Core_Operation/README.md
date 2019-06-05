@@ -37,3 +37,33 @@ NOTE: r = (x, y, width, height), we can use these return region values to crop t
 ```
 
 ### 2. Image padding
+```
+- Input image: padding_source.png
+- Command Line: python image_ROI.py --padding_source.png
+```
+![](README_IMG/image_padding.png)
+
+#### - Method: Use cv2.copyMakeBorder(Source, top, bottom, left, right, borderType)
+```
+void cv::copyMakeBorder	( InputArray src,
+                          OutputArray dst,
+                          int 	top,
+                          int 	bottom,
+                          int 	left,
+                          int 	right,
+                          int 	borderType,
+                          const Scalar & value = Scalar() 
+)	
+```
+```python
+* replicate = cv2.copyMakeBorder(..,cv2.BORDER_REPLICATE)
+* reflect = cv2.copyMakeBorder(..,cv2.BORDER_REFLECT)
+* wrap = cv2.copyMakeBorder(..,,cv2.BORDER_WRAP)
+* constant= cv2.copyMakeBorder(..,cv2.BORDER_CONSTANT,value=BLUE)
+```
+
+### 2. Image blending
+```
+- Input image: Background image: dog.jpg, foreground image: moon.jpg
+- Command Line: python image_ROI.py --image dog.jpg --ontop moon.jpg
+```
