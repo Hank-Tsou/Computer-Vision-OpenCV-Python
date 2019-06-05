@@ -27,7 +27,7 @@ def imageBlending(image_1, image_2):
 # -------------------------- main -------------------------- #
 if __name__ == '__main__':
     # read two input from terminal
-    # command line >> python image_ROI.py --image dog.jpg --ontop moon.jpg
+    # command line >> python image_blending.py --image dog.jpg --ontop moon.jpg
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", required=True, help="Path to the input image")
     ap.add_argument("-o", "--ontop", required=True, help="Path to the ontop image")

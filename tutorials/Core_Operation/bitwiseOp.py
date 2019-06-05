@@ -38,6 +38,7 @@ def image_blending_bitwise_topLeft(image, ontop):
     image[0:200, 0:200] = dst
 
     cv2.imshow("result", image)
+    cv2.imwrite("topleft.jpg", image)
 
     cv2.waitKey(0)
     if k == 27:
@@ -60,13 +61,15 @@ def image_blending_bitwise_middle(image, ontop):
 
 
     # background image: image without ontop region(black)
-    backGround = cv2.bitwise_and(roi, roi, mask = mask)
+    backGround = cv2.bitwise_and(image, image, mask = mask)
     # foreground image: ontop image without background region(black)
     foreGround = cv2.bitwise_and(ontop, ontop, mask = mask_inv)
     # combine two images
     dst = cv2.add(backGround,foreGround)
 
     cv2.imshow("result", dst)
+    cv2.imwrite("middle.jpg", dst)
+
 
     cv2.waitKey(0)
     # if k == 27:
@@ -75,7 +78,7 @@ def image_blending_bitwise_middle(image, ontop):
 # -------------------------- main -------------------------- #
 if __name__ == '__main__':
     # read input from terminal
-    # command line >> python image_ROI.py --image dog.jpg --ontop opencv.png 
+    # command line >> python bitwiseOp.py --image dog.jpg --ontop opencv.png
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", required=True, help="Path to the input image")
     ap.add_argument("-o", "--ontop", required=True, help="Path to the ontop image")
@@ -86,7 +89,7 @@ if __name__ == '__main__':
     ontop = cv2.imread(args["ontop"])
 
     # bitwise image blending
-    image_blending_bitwise_middle(image, ontop)
+    # image_blending_bitwise_middle(image, ontop)
     image_blending_bitwise_topLeft(image, ontop)
 
 
