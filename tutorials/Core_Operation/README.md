@@ -64,6 +64,28 @@ void cv::copyMakeBorder	( InputArray src,
 
 ### 2. Image blending
 ```
-- Input image: Background image: dog.jpg, foreground image: moon.jpg
-- Command Line: python image_ROI.py --image dog.jpg --ontop moon.jpg
+- Input image: 
+  * Background image: dog.jpg
+  * foreground image: moon.jpg
+- Command Line: python image_blending.py --image dog.jpg --ontop moon.jpg
 ```
+![](README_IMG/image_blending.png)
+
+#### - Method: Use cv2.addWeighted(src_1,alpha,src_2,beta,gamma)
+```
+This function calculates the weighted sum of two images.
+dst(I) = Saturate(src(I)*alpha + src(I)*beta + gamma)
+```
+
+### 2. Bitwise operation
+```
+- Input image: 
+  * Background image: dog.jpg
+  * foreground image: opencv.png
+- Command Line: bitwiseOp.py --image dog.jpg --ontop opencv.png
+```
+#### - Function 1: Overlap two images
+![](README_IMG/middle.jpg)
+
+#### - Function 2: Add foreground image on the top left (or any desire position)
+![](README_IMG/topleft.jpg)
