@@ -16,10 +16,23 @@
 - Input image: opencv.png
 - Command Line: python image_ROI.py --image opencv.png
 ```
+![](README_IMG/ROI_result.png)
 
-
-
-
+#### - method 1: use pixel range to select the region
+```python
+ROI_image = Input_Image[22:265, 60:311]
+```
+```
+ROI region x: from pixel 22 to 265, y: from pixel 60 to 311
+```
+#### - method 2: use cv2.selectROI("input_image") to select the region
+```python
+r = cv2.selectROI(Input_Image)
+ROI_img = image[int(r[1]):int(r[1]+r[3]), int(r[0]):int(r[0]+r[2])]
+```
+```
+NOTE: r = (x, y, width, height), we can use these return region values to crop the image
+```
 
 
 
