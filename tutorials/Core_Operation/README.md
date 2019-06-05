@@ -24,7 +24,7 @@ ROI_image = Input_Image[22:265, 60:311]
 ```
 ```
 NOTE: 
-  - notice that the image pixel x, y position in OpenCV is Input_Image[y ,x].
+  - notice that the image pixel x, y position in OpenCV is Input_Image[y, x].
   - ROI region x axis: from pixel 60 to 311, y axis: from pixel 22 to 265.
 ```
 #### - Method 2: Use cv2.selectROI("input_image") to select the region
