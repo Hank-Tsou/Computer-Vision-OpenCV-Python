@@ -11,7 +11,7 @@
 3. Image blending
 4. Bitwise operation
 
-### 1. Image ROI [Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_ROI.py)
+### 1. Image ROI ([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_ROI.py))
 ```
 - Input image: opencv.png
 - Command Line: python image_ROI.py --image opencv.png
@@ -36,7 +36,7 @@ ROI_img = image[int(r[1]):int(r[1]+r[3]), int(r[0]):int(r[0]+r[2])]
 NOTE: r = (x, y, width, height), we can use these return region values to crop the image.
 ```
 
-### 2. Image padding [Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_padding.py)
+### 2. Image padding ([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_padding.py))
 ```
 - Input image: padding_source.png
 - Command Line: python image_ROI.py --padding_source.png
@@ -62,7 +62,7 @@ void cv::copyMakeBorder	( InputArray src,
 * constant= cv2.copyMakeBorder(..,cv2.BORDER_CONSTANT,value=BLUE)
 ```
 
-### 2. Image blending [Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
+### 2. Image blending ([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py))
 ```
 - Input image: 
   * Background image: dog.jpg
@@ -77,7 +77,7 @@ This function calculates the weighted sum of two images.
 dst(I) = Saturate(src(I)*alpha + src(I)*beta + gamma)
 ```
 
-### 2. Bitwise operation [Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/bitwiseOp.py)
+### 2. Bitwise operation ([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/bitwiseOp.py))
 ```
 - Input image: 
   * Background image: dog.jpg
@@ -137,10 +137,10 @@ Usage: https://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.html
 ![](README_IMG/topleft.jpg)
 
 ## Code
-- [Image ROI](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_ROI.py)
-- [Image Padding](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_padding.py)
-- [Image blending](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
-- [Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/bitwiseOp.py)
+- [Image ROI in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_ROI.py)
+- [Image Padding in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_padding.py)
+- [Image blending in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
+- [Bitwise Operation in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/bitwiseOp.py)
 
 ## License
 
