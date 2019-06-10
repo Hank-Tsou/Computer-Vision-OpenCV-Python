@@ -130,6 +130,7 @@ NOTE: Use function "cv2.bitwise_not(mask)" which inverts every bit to get opposi
 * cv2.bitwise_xor
 
 Usage: https://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.html
+Code in bitwiseOp.py
 ```
 ![](README_IMG/middle.jpg)
 
