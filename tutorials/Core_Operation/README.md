@@ -11,7 +11,7 @@
 3. Image blending
 4. Bitwise operation
 
-### 1. Image ROI 
+### 1. Image ROI [Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_ROI.py)
 ```
 - Input image: opencv.png
 - Command Line: python image_ROI.py --image opencv.png
@@ -36,7 +36,7 @@ ROI_img = image[int(r[1]):int(r[1]+r[3]), int(r[0]):int(r[0]+r[2])]
 NOTE: r = (x, y, width, height), we can use these return region values to crop the image.
 ```
 
-### 2. Image padding
+### 2. Image padding [Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_padding.py)
 ```
 - Input image: padding_source.png
 - Command Line: python image_ROI.py --padding_source.png
@@ -62,7 +62,7 @@ void cv::copyMakeBorder	( InputArray src,
 * constant= cv2.copyMakeBorder(..,cv2.BORDER_CONSTANT,value=BLUE)
 ```
 
-### 2. Image blending
+### 2. Image blending [Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
 ```
 - Input image: 
   * Background image: dog.jpg
@@ -77,7 +77,7 @@ This function calculates the weighted sum of two images.
 dst(I) = Saturate(src(I)*alpha + src(I)*beta + gamma)
 ```
 
-### 2. Bitwise operation
+### 2. Bitwise operation [Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/bitwiseOp.py)
 ```
 - Input image: 
   * Background image: dog.jpg
@@ -133,9 +133,21 @@ Usage: https://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.html
 ```
 ![](README_IMG/middle.jpg)
 
-#### - Function 2: Add foreground image on the top left (or any desire position): Similar to Funtion 1
+#### - Function 2: Add foreground image on the top left (or any desire position): Method similar to Funtion 1.
 ![](README_IMG/topleft.jpg)
 
-#### Reference
-(resize) Link: https://docs.opencv.org/2.4/modules/imgproc/doc/geometric_transformations.html?highlight=resize
-(threshold) Link: https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html
+## Code
+- [Image ROI](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_ROI.py)
+- [Image Padding](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_padding.py)
+- [Image blending](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
+- [Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/bitwiseOp.py)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
+* (resize) Link: https://docs.opencv.org/2.4/modules/imgproc/doc/geometric_transformations.html?highlight=resize
+* (threshold) Link: https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html
