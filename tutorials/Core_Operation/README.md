@@ -84,8 +84,55 @@ dst(I) = Saturate(src(I)*alpha + src(I)*beta + gamma)
   * foreground image: opencv.png
 - Command Line: bitwiseOp.py --image dog.jpg --ontop opencv.png
 ```
+```
+NOTE: two images need to be same shape.
+```
 #### - Function 1: Overlap two images
+**STEP 1.** If two images not in the same shape, use function "cv2.resize()" to resize the image.
+```
+cv2.resize(src, (height, width), interpolation)
+  - interpolation:
+    * INTER_NEAREST - a nearest-neighbor interpolation
+    * INTER_LINEAR - a bilinear interpolation (used by default)
+    * INTER_AREA - resampling using pixel area relation. 
+    * INTER_CUBIC - a bicubic interpolation over 4x4 pixel neighborhood
+    * INTER_LANCZOS4 - a Lanczos interpolation over 8x8 pixel neighborhood
+```
+**STEP 2.** Create mask by using grayscale image and threshold. 
+```
+Convert color(BGR) image to grayscale image. 
+
+Function: cv2.cvtColor(input_image, flag)
+  - Flag:
+    * cv2.COLOR_BGR2GRAY: BGR to Gray conversion. 
+    * cv2.COLOR_BGR2HSV: BGR to HSV conversion.
+```
+```
+Thresholding: If pixel value is greater than a threshold value, it is assigned one value, else it is assigned another value 
+
+Function: ret,thresh1 = cv.threshold(src, threshold, maxval, type)
+  - type:
+    * cv.THRESH_BINARY
+    * cv.THRESH_BINARY_INV
+    * cv.THRESH_TRUNC
+    * cv.THRESH_TOZERO
+    * cv.THRESH_TOZERO_INV
+```
+**STEP 3.** Use function "cv2.bitwise_and()" to get background and foreground area on two images. Then add together.
+```
+NOTE: Use function "cv2.bitwise_not(mask)" which inverts every bit to get opposite mask.
+```
+```
+* cv2.bitwise_and
+* cv2.bitwise_or
+* cv2.bitwise_xor
+
+Usage: https://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.html
+```
 ![](README_IMG/middle.jpg)
 
 #### - Function 2: Add foreground image on the top left (or any desire position)
 ![](README_IMG/topleft.jpg)
+
+resize Link: https://docs.opencv.org/2.4/modules/imgproc/doc/geometric_transformations.html?highlight=resize
+threshold Link: https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html
