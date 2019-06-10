@@ -118,6 +118,8 @@ Function: ret,thresh1 = cv.threshold(src, threshold, maxval, type)
     * cv.THRESH_TOZERO
     * cv.THRESH_TOZERO_INV
 ```
+![](README_IMG/threshold.png)
+
 **STEP 3.** Use function "cv2.bitwise_and()" to get background and foreground area on two images. Then add together.
 ```
 NOTE: Use function "cv2.bitwise_not(mask)" which inverts every bit to get opposite mask.
@@ -131,8 +133,9 @@ Usage: https://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.html
 ```
 ![](README_IMG/middle.jpg)
 
-#### - Function 2: Add foreground image on the top left (or any desire position)
+#### - Function 2: Add foreground image on the top left (or any desire position): Similar to Funtion 1
 ![](README_IMG/topleft.jpg)
 
-resize Link: https://docs.opencv.org/2.4/modules/imgproc/doc/geometric_transformations.html?highlight=resize
-threshold Link: https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html
+#### Reference
+(resize) Link: https://docs.opencv.org/2.4/modules/imgproc/doc/geometric_transformations.html?highlight=resize
+(threshold) Link: https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html
