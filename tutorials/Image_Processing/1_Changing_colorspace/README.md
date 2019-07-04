@@ -58,4 +58,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
-* (inrange) Link: https://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.html
+* (inRange()) Link: https://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.html
