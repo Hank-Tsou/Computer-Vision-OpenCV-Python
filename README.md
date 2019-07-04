@@ -1,4 +1,4 @@
-# Computer Vision OpenCV-python Tutorial
+# Computer Vision OpenCV-Python Tutorial
 
 ## Descrption:
 This tutorial is basically from opencv-python documentation with some of my implementation and description.
@@ -31,3 +31,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
+
+## Contact
+hank630280888@gmail.com
