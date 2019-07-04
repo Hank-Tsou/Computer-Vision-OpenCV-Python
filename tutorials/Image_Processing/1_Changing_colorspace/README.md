@@ -44,7 +44,7 @@ cv2.inRange(src_image, lowerbound, upperbound)
     - lowerbound and upperbound are the color range of the target.
 ```
 
-[Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation)
+[More detail on Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation)
 
 ## Code
 - [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/1_Changing_colorspace/Changing_Colorspace.py)
