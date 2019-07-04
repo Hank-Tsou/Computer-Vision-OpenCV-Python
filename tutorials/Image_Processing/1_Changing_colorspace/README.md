@@ -32,6 +32,7 @@ NOTE: HSV image has three parameter [Hue, Saturation, Value].
     - Value: Describes the brightness or intensity of the color, from 0-100 percent.
 ```
 ([Wiki: HSL and HSV](https://en.wikipedia.org/wiki/HSL_and_HSV))
+
 ![](README_IMG/RGBtoHSV.png)
 
 ### 2. Extract Object 
@@ -50,6 +51,7 @@ cv2.inRange(src_image, lowerbound, upperbound)
 ```
 
 [More detail for Step 4. Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation)
+
 ![](README_IMG/Extract_Obj.png)
 
 ## Code
