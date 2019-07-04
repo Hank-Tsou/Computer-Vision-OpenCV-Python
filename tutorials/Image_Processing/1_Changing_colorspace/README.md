@@ -39,12 +39,14 @@ Method:
     3. Using "cv2.inRange" to generate mask for the target bject
     4. Using "cv2.bitwise_and" to extract the object
 ```
-```python
+```
+For Step 2: Define color range use function "cv2.inRange()"
+
 cv2.inRange(src_image, lowerbound, upperbound)
     - lowerbound and upperbound are the color range of the target.
 ```
 
-[More detail on Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation)
+[More detail for STEP 4. Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation)
 
 ## Code
 - [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/1_Changing_colorspace/Changing_Colorspace.py)
