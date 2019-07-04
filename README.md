@@ -3,7 +3,10 @@
 ## Descrption:
 This tutorial is basically from opencv-python documentation with some of my example and description.
 
-### Outline (Quick Link):
+```
+Below are the Outlines and Quick Links for this tutorial. Thank You!
+```
+
 ### Basic Operation
 1. [Image and Video I/O](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Basic_Operation)
 
