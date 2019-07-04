@@ -1,7 +1,7 @@
 # Computer Vision OpenCV python Tutorial
 
 ## Descrption:
-This tutorial is basically from opencv-python documentation with some of my example and description.
+This tutorial is basically from opencv-python documentation with some of my implementation and description.
 
 ```
 Below are the Outlines and Quick Links for this tutorial. Thank You!
