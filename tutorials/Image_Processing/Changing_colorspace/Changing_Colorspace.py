@@ -18,7 +18,7 @@ import cv2
 import numpy as np
 import argparse
 
-# ----- Function to convert RGB imge to grayscale image ----- #
+# ------- Function to convert RGB imge to grayscale image ------- #
 def RGB_to_Gray(img):
     Gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     cv2.imshow("grayscale.png", Gray_img)
@@ -27,7 +27,7 @@ def RGB_to_Gray(img):
     cv2.waitKey(1000)
     cv2.destroyAllWindows()
 
-# ----- Function to convert RGB imge to HSV image ----- #
+# ---------- Function to convert RGB imge to HSV image ---------- #
 def RGB_to_HSV(img):
     HSV_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     cv2.imshow("HSV.png", HSV_img)
@@ -36,7 +36,7 @@ def RGB_to_HSV(img):
     cv2.waitKey(1000)
     cv2.destroyAllWindows()
 
-# ----- Function to extact object by color ----- #
+# ------------- Function to extact object by color ------------- #
 def extract_obj(img):
     HSV_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
@@ -68,7 +68,7 @@ if __name__ == '__main__':
     # Read image
     image = cv2.imread(args["image"])
 
-    # Functions, will automatically show the three result images one by one. 
+    # Functions, will automatically show the three result images one by one.
     RGB_to_Gray(image)
     RGB_to_HSV(image)
     extract_obj(image)

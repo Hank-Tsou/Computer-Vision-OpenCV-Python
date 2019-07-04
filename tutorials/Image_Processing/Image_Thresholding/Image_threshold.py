@@ -17,10 +17,8 @@ import numpy as np
 import argparse
 from matplotlib import pyplot as plt # use to show the result
 
-# ----- Function to do simple thresholding ----- #
+# ------------------- Function to do simple thresholding ------------------- #
 def sim_thresh(img):
-    # Example: ret, dst = cv2.threshold(src, thresh, maxValue, method)
-
     ret,thresh1 = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
     # if src(x,y) > thresh
     #   dst(x,y) = maxValue
@@ -51,7 +49,7 @@ def sim_thresh(img):
     # else
     #   dst(x,y) = src(x,y)
 
-    # Show the image using matplotlib
+    ## Show the images using matplotlib
     titles = ['Origin','BINARY','BINARY_INV','TRUNC','TOZERO','TOZERO_INV']
     images = [img, thresh1, thresh2, thresh3, thresh4, thresh5]
 
@@ -62,10 +60,8 @@ def sim_thresh(img):
 
     plt.show()
 
-# ----- Function to do adaptive thresholding ----- #
+# ------------------- Function to do adaptive thresholding ------------------- #
 def ada_thresh(img):
-    # Example: adaptiveThreshold(src, maxValue, adaptiveMethod(thresh), thresholdType, blockSize, C)
-
     # simple threshold for compare
     ret,th1 = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
 
@@ -75,7 +71,7 @@ def ada_thresh(img):
     # thresh value using the weighted sum of neighbourhood values by gaussian filter
     th3 = cv2.adaptiveThreshold(img,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,11,2)
 
-    # Show the images using matplotlib
+    ## Show the images using matplotlib
     titles = ['Original Image', 'Global Thresholding (v = 127)',
                 'Adaptive Mean Thresholding', 'Adaptive Gaussian Thresholding']
     images = [img, th1, th2, th3]
@@ -86,9 +82,8 @@ def ada_thresh(img):
         plt.xticks([]),plt.yticks([])
     plt.show()
 
-# ----- Function to do Otsu’s Binarization thresholding ----- #
+# -------------- Function to do Otsu’s Binarization thresholding -------------- #
 def otsu_thresh(img):
-
     # simple thresholding for compare
     ret1,th1 = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
 
@@ -99,7 +94,7 @@ def otsu_thresh(img):
     blur = cv2.GaussianBlur(img,(5,5),0)
     ret3,th3 = cv2.threshold(blur,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 
-    # show all the images and their histograms
+    ## show all the images and their histograms
     images = [img, 0, th1,img, 0, th2,blur, 0, th3]
     titles = ['Original Noisy Image','Histogram','Global Thresholding (v=127)',
               'Original Noisy Image','Histogram',"Otsu's Thresholding",
