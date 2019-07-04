@@ -107,8 +107,10 @@ Function: cv2.cvtColor(input_image, flag)
     * cv2.COLOR_BGR2GRAY: BGR to Gray conversion. 
     * cv2.COLOR_BGR2HSV: BGR to HSV conversion.
 ```
+[More detail on Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
 ```
-Thresholding: If pixel value is greater than a threshold value, it is assigned one value, else it is assigned another value 
+Thresholding: If pixel value is greater than a threshold value, it is assigned one value, 
+              else it is assigned another value 
 
 Function: ret,thresh1 = cv.threshold(src, threshold, maxval, type)
   - type:
@@ -118,6 +120,8 @@ Function: ret,thresh1 = cv.threshold(src, threshold, maxval, type)
     * cv.THRESH_TOZERO
     * cv.THRESH_TOZERO_INV
 ```
+[More detail on Image Thresholding](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/2_Image_Thresholding)
+
 ![](README_IMG/threshold.png)
 
 **STEP 3.** Use function "cv2.bitwise_and()" to get background and foreground area on two images. Then add together.
