@@ -40,7 +40,7 @@ Method:
     Step 4. Using "cv2.bitwise_and" to extract the object
 ```
 ```
-For Step 2: Define color range use function "cv2.inRange()"
+For Step 3: Generate object mask by using function "cv2.inRange()"
 
 cv2.inRange(src_image, lowerbound, upperbound)
     - lowerbound and upperbound are the color range of the target.
