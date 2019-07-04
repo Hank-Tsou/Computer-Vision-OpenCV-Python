@@ -19,6 +19,8 @@ NOTE:
   - RGB color image: each pixel (x,y) has three channals [Red, Green, Blue].
   - Grayscale image: each pixel (x,y) only has one channel from 0-255. (0 = Black, 255 = white)
 ```
+![](README_IMG/RGBtoGray.png)
+
 #### - Method 2: Color image to HSV image
 ```python
 HSV_image = cv2.cvtColor(source_image, cv2.COLOR_BGR2HSV)
@@ -30,6 +32,7 @@ NOTE: HSV image has three parameter [Hue, Saturation, Value].
     - Value: Describes the brightness or intensity of the color, from 0-100 percent.
 ```
 ([Wiki: HSL and HSV](https://en.wikipedia.org/wiki/HSL_and_HSV))
+![](README_IMG/RGBtoHSV.png)
 
 ### 2. Extract Object 
 ```
@@ -47,6 +50,7 @@ cv2.inRange(src_image, lowerbound, upperbound)
 ```
 
 [More detail for Step 4. Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation)
+![](README_IMG/Extract_Obj.png)
 
 ## Code
 - [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/1_Changing_colorspace/Changing_Colorspace.py)
