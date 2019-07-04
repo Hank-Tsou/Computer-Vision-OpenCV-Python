@@ -1,31 +1,23 @@
-# Basic_Operation
+# Changing Colorspace
 
-## Descrption:
-- know how to select a ROI (region of interest) in an image.
-- know how to do "image padding" to fill the edge of an image.
-- know how to use "image blending" and "birwise operation" to combine two images.
+## Outline:
+- Changing Color Space for an image
+- Extract specific color object ([Can apply on object tracking](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/edit/master/tutorials/Image_Processing/1_Changing_colorspace/README.md))(unavailable 7/4/2019)
 
-### Outline:
-1. Image ROI
-2. Image padding
-3. Image blending
-4. Bitwise operation
-
-### 1. Image ROI ([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_ROI.py))
+### 1. Changing Colorspace  ([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/1_Changing_colorspace/Changing_Colorspace.py))
 ```
 - Input image: opencv.png
-- Command Line: python image_ROI.py --image opencv.png
+- Command Line: python Changing_Colorspace.py -i opencv.png
 ```
-![](README_IMG/ROI_result.png)
 
-#### - Method 1: Use pixel range to select the region
+#### - Method 1: Color image to Grayscale image
 ```python
-ROI_image = Input_Image[22:265, 60:311]
+Grayscale_image = cv2.cvtColor(source_image, cv2.COLOR_BGR2GRAY)
 ```
 ```
 NOTE: 
-  - notice that the image pixel x, y position in OpenCV is Input_Image[y, x].
-  - ROI region x axis: from pixel 60 to 311, y axis: from pixel 22 to 265.
+  - RGB color image: each pixel (x,y) has three channals [Red, Green, Blue].
+  - Grayscale image: each pixel (x,y) only has one channel from 0-255. (0 = Black, 255 = white)
 ```
 #### - Method 2: Use cv2.selectROI("input_image") to select the region
 ```python
