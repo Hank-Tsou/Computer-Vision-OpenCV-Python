@@ -76,8 +76,8 @@ Otsu’s Binarization thresholding and math description:
 
 - This method is better to use with "bimodal image" which is an image whose histogram has two peaks.
 - cv2.THRESH_OTSU
-  This method automatically calculates a threshold value from image histogram for a bimodal image. (For images which are not 
-  bimodal, binarization won’t be accurate.)
+  This method automatically calculates a threshold value from image histogram for a bimodal image. 
+  (For images which are not bimodal, binarization won’t be accurate.)
 ```
 ![](README_IMG/Otsus_thresh.png)
 
