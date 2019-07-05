@@ -79,7 +79,7 @@ Otsu’s Binarization thresholding and math description:
   This method automatically calculates a threshold value from image histogram for a bimodal image. (For images which are not 
   bimodal, binarization won’t be accurate.)
 ```
-![](README_IMG/Otsus_thresh.png)![](README_IMG/otsu_opencv_example.png)
+![](README_IMG/Otsus_thresh.png)
 
 [How Otsu's Binarization Works?](https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html)
 
