@@ -90,16 +90,11 @@ def otsu_thresh(img):
     # Otsu's thresholding
     ret2,th2 = cv2.threshold(img,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 
-    # Otsu's thresholding after Gaussian filtering
-    blur = cv2.GaussianBlur(img,(5,5),0)
-    ret3,th3 = cv2.threshold(blur,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
-
     ## show all the images and their histograms
-    images = [img, 0, th1,img, 0, th2,blur, 0, th3]
-    titles = ['Original Noisy Image','Histogram','Global Thresholding (v=127)',
-              'Original Noisy Image','Histogram',"Otsu's Thresholding",
-              'Gaussian filtered Image','Histogram',"Otsu's Thresholding"]
-    for i in range(3):
+    images = [img, 0, th1,img, 0, th2]
+    titles = ['Original Noisy Image','Histogram','Global Thresholding',
+              'Original Noisy Image','Histogram',"Otsu's Thresholding"]
+    for i in range(2):
         plt.subplot(3,3,i*3+1),plt.imshow(images[i*3],'gray')
         plt.title(titles[i*3]), plt.xticks([]), plt.yticks([])
         plt.subplot(3,3,i*3+2),plt.hist(images[i*3].ravel(),256)
@@ -112,7 +107,7 @@ def otsu_thresh(img):
 if __name__ == '__main__':
     # read one input from terminal
     # (1) command line for sim and ada >> python Image_threshold.py -i thresh.jpg
-    # (2) command line for otsu >> python Image_threshold.py -i noise.jpg
+    # (2) command line for otsu >> python Image_threshold.py -i noise.png
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", required=True, help="Path to the input image")
     args = vars(ap.parse_args())
@@ -122,8 +117,8 @@ if __name__ == '__main__':
     image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) # should input grayscale imge for thresholding
 
     # Functions, the input image should be grayscale image
-    sim_thresh(image)
-    ada_thresh(image)
+    # sim_thresh(image)
+    # ada_thresh(image)
     otsu_thresh(image)
 
 
