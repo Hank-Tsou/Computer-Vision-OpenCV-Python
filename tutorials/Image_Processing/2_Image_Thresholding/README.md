@@ -77,6 +77,7 @@ Otsu’s Binarization thresholding and math description:
   bimodal, binarization won’t be accurate.)
 ```
 [How Otsu's Binarization Works?](https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html)
+
 [Youtube](https://www.youtube.com/watch?v=mnmjZOLjoBA)
 
 ## Code
