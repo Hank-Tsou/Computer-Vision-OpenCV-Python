@@ -54,7 +54,7 @@ Function: th = cv2.adaptiveThreshold(src_img, maxValue, adaptiveMethod, threshol
 Adaptive method and math description:
 
 - cv2.ADAPTIVE_THRESH_MEAN_C:
-  The threshold value T(x,y) is a mean of the blockSize x blockSize neighborhood of (x, y) minus C .
+  The threshold value T(x,y) is a mean of the blockSize x blockSize neighborhood of (x, y) minus C.
 
 - cv2.ADAPTIVE_THRESH_GAUSSIAN_C:
   The threshold value T(x, y) is a weighted sum (cross-correlation with a Gaussian window) of the 
