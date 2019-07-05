@@ -117,8 +117,8 @@ if __name__ == '__main__':
     image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) # should input grayscale imge for thresholding
 
     # Functions, the input image should be grayscale image
-    # sim_thresh(image)
-    # ada_thresh(image)
+    sim_thresh(image)
+    ada_thresh(image)
     otsu_thresh(image)
 
 
