@@ -60,6 +60,7 @@ Adaptive method and math description:
   The threshold value T(x, y) is a weighted sum (cross-correlation with a Gaussian window) of the 
   blockSize x blockSize neighborhood of (x, y) minus C
 ```
+![](README_IMG/adaptive_thresh)
 
 #### 3. Otsu’s Binarization thresholding
 ```
@@ -78,6 +79,8 @@ Otsu’s Binarization thresholding and math description:
   This method automatically calculates a threshold value from image histogram for a bimodal image. (For images which are not 
   bimodal, binarization won’t be accurate.)
 ```
+![](README_IMG/Otsus_thresh)![](README_IMG/otsu_opencv_example)
+
 [How Otsu's Binarization Works?](https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html)
 
 [Youtube](https://www.youtube.com/watch?v=mnmjZOLjoBA)
