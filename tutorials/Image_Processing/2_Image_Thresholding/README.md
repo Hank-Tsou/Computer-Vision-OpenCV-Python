@@ -1,31 +1,53 @@
-# Basic_Operation
+# Image Thresholding
 
-## Descrption:
-- know how to select a ROI (region of interest) in an image.
-- know how to do "image padding" to fill the edge of an image.
-- know how to use "image blending" and "birwise operation" to combine two images.
+## Outline:
+- Simple thresholding 
+- Adaptive thresholding
+- Otsu’s thresholding
 
-### Outline:
-1. Image ROI
-2. Image padding
-3. Image blending
-4. Bitwise operation
+([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/2_Image_Thresholding/Image_Threshold.py))
 
-### 1. Image ROI ([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_ROI.py))
+### 1. Simple thresholding 
 ```
-- Input image: opencv.png
-- Command Line: python image_ROI.py --image opencv.png
+- Input image: thresh.jpg
+- Command Line: python Image_threshold.py -i thresh.jpg
 ```
-![](README_IMG/ROI_result.png)
-
-#### - Method 1: Use pixel range to select the region
 ```python
-ROI_image = Input_Image[22:265, 60:311]
+Function: ret,thresh = cv2.threshold(src_img, threshValue, maxValue, thresholdMethod)
+```
+```python
+Threshold method and math description:
+
+- cv2.THRESH_BINARY             - cv2.THRESH_BINARY_INV              - cv2.THRESH_TRUNC
+  # if src(x,y) > thresh          # if src(x,y) > thresh               # if src(x,y) > thresh
+  #   dst(x,y) = maxValue         #   dst(x,y) = 0                     #   dst(x,y) = thresh
+  # else                          # else                               # else
+  #   dst(x,y) = 0                #   dst(x,y) = maxValue              #   dst(x,y) = src(x,y)
+  
+- cv2.THRESH_TOZERO             - cv2.THRESH_TOZERO_INV
+  # if src(x,y) > thresh          # if src(x,y) > thresh
+  #   dst(x,y) = src(x,y)         #   dst(x,y) = 0
+  # else                          # else
+  #   dst(x,y) = 0                #   dst(x,y) = src(x,y)
+```
+
+#### 1. Adaptive thresholding
+```
+- Input image: thresh.jpg
+- Command Line: python Image_threshold.py -i thresh.jpg
+```
+```python
+Function: th = cv2.adaptiveThreshold(src_img, maxValue, adaptiveMethod, thresholdType, blockSize, C)
 ```
 ```
-NOTE: 
-  - notice that the image pixel x, y position in OpenCV is Input_Image[y, x].
-  - ROI region x axis: from pixel 60 to 311, y axis: from pixel 22 to 265.
+Adaptive method and math description:
+
+- cv2.ADAPTIVE_THRESH_MEAN_C
+  the threshold value T(x,y) is a mean of the blockSize x blockSize neighborhood of (x, y) minus C .
+
+- cv2.ADAPTIVE_THRESH_GAUSSIAN_C
+  the threshold value T(x, y) is a weighted sum (cross-correlation with a Gaussian window) of the 
+  blockSize x blockSize neighborhood of (x, y) minus C
 ```
 #### - Method 2: Use cv2.selectROI("input_image") to select the region
 ```python
@@ -41,7 +63,7 @@ NOTE: r = (x, y, width, height), we can use these return region values to crop t
 - Input image: padding_source.png
 - Command Line: python image_ROI.py --padding_source.png
 ```
-![](README_IMG/image_padding.png)
+![](README_IMG/image_padding.png)```jkl```
 
 #### - Method: Use cv2.copyMakeBorder(Source, top, bottom, left, right, borderType)
 ```
