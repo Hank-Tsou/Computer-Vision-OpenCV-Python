@@ -60,7 +60,7 @@ Adaptive method and math description:
   The threshold value T(x, y) is a weighted sum (cross-correlation with a Gaussian window) of the 
   blockSize x blockSize neighborhood of (x, y) minus C
 ```
-![](README_IMG/adaptive_thresh.png)
+![](README_IMG/adaptive_thresh_opencv_example.png)
 
 #### 3. Otsu’s Binarization thresholding
 ```
