@@ -24,6 +24,7 @@ Function: ret,thresh = cv2.threshold(src_img, threshValue, maxValue, thresholdTy
     * cv.THRESH_TOZERO
     * cv.THRESH_TOZERO_INV)
 ```
+![](README_IMG/simp_opencv_example.png)
 ```python
 Threshold type and math description:
 
@@ -39,6 +40,7 @@ Threshold type and math description:
   # else                          # else
   #   dst(x,y) = 0                #   dst(x,y) = src(x,y)
 ```
+![](README_IMG/simple_thresh.png)
 
 #### 2. Adaptive thresholding
 ```
