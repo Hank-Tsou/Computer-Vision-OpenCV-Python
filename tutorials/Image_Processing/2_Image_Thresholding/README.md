@@ -71,9 +71,13 @@ ThresholdType: cv2.THRESH_BINARY+cv2.THRESH_OTSU
 ```python
 Otsu’s Binarization thresholding and math description:
 
+- This method is better to use with "bimodal image" which is an image whose histogram has two peaks.
 - cv2.THRESH_OTSU
-
+  This method automatically calculates a threshold value from image histogram for a bimodal image. (For images which are not 
+  bimodal, binarization won’t be accurate.)
 ```
+[How Otsu's Binarization Works?](https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html)
+[Youtube](https://www.youtube.com/watch?v=mnmjZOLjoBA)
 
 ## Code
 - [Image Thresholding](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/2_Image_Thresholding/Image_Threshold.py)
@@ -85,5 +89,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
-* (Adaptive thresholding) Link: https://docs.opencv.org/2.4/modules/imgproc/doc/miscellaneous_transformations.html?highlight=adaptivethreshold
 * (threshold) Link: https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html
