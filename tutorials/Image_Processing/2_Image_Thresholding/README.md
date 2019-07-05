@@ -85,7 +85,7 @@ Otsu’s Binarization thresholding and math description:
 NOTE: Can apply Gaussian filter on the image to improve the result
       - Function: cv2.GaussianBlur(src_img,(kernel size),sigma)
 ```
-[[see "Smoothing Images" for more detail on Gaussian Filtering]](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/edit/master/tutorials/Image_Processing/2_Image_Thresholding/README.md)] (Unavailable)
+[(see "Smoothing Images" for more detail on Gaussian Filtering)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/edit/master/tutorials/Image_Processing/2_Image_Thresholding/README.md)] (Unavailable)
 
 [How Otsu's Binarization Works?](https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html)
 
