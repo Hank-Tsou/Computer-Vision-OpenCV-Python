@@ -117,7 +117,7 @@ def Perspective_transformation(img):
 if __name__ == '__main__':
     # read one input from terminal
     # (1) command line >> python Image_Transformation.py -i opencv.png
-    # (2) command line >> python Image_Transformation.py -i aff_img.jpg
+    # (2) command line >> python Image_Transformation.py -i perspect_img.png
 
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", required=True, help="Path to the input image")
