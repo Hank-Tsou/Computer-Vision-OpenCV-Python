@@ -106,6 +106,10 @@ NOTE:
   - iterations: Number of times erosion and dilation are applied.
 ```
 ![](README_IMG/eorsion_dilation.png)
+```
+Tips: 
+  erosion: increase black, dilation: increase white.
+```
 
  #### b. Function MorphologyEx()
  ```python
