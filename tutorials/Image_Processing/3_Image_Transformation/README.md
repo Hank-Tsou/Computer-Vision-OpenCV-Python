@@ -77,7 +77,7 @@ Rotattion_Matrix = cv2.getRotationMatrix2D(center, angle, scale)
 Function: prespec_img = cv2.warpAffine(src_img, Matrix, output_size)
 ```
 ```python
-Matrix = cv2.getAffineTransform(points_1, points_2)
+Matrix = cv2.getAffineTransform(points_1(3 points), points_2(3 points)), see code.
 ```
 ![](README_IMG/affin.png)
 
