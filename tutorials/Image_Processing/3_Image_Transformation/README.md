@@ -35,7 +35,6 @@ Interpolation method:
    - INTER_CUBIC: a bicubic interpolation over 4x4 pixel neighborhood
 ```
 
-
 #### b. Image translation
 ```python
 Function: trans_img = cv2.warpAffine(src_img, Translation_Matrix, output_size)
