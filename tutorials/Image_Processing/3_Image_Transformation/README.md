@@ -12,39 +12,71 @@
   - Image dilation
   - Function MorphologyEx()
 
-### 1. Simple thresholding 
+### 1. Geometric Transformations
 ```
-- Input image: thresh.jpg
-- Command Line: python Image_threshold.py -i thresh.jpg
-```
-```python
-Function: ret,thresh = cv2.threshold(src_img, threshValue, maxValue, thresholdType)
-  - type:
-    * cv.THRESH_BINARY
-    * cv.THRESH_BINARY_INV
-    * cv.THRESH_TRUNC
-    * cv.THRESH_TOZERO
-    * cv.THRESH_TOZERO_INV)
-```
-![](README_IMG/simp_opencv_example.png)
-```python
-Threshold type and math description:
+Input image: opencv.png (for scaling, translation, rotation), perspect_img.png (for transformation)
 
-- cv2.THRESH_BINARY             - cv2.THRESH_BINARY_INV              - cv2.THRESH_TRUNC
-  # if src(x,y) > thresh          # if src(x,y) > thresh               # if src(x,y) > thresh
-  #   dst(x,y) = maxValue         #   dst(x,y) = 0                     #   dst(x,y) = thresh
-  # else                          # else                               # else
-  #   dst(x,y) = 0                #   dst(x,y) = maxValue              #   dst(x,y) = src(x,y)
-  
-- cv2.THRESH_TOZERO             - cv2.THRESH_TOZERO_INV
-  # if src(x,y) > thresh          # if src(x,y) > thresh
-  #   dst(x,y) = src(x,y)         #   dst(x,y) = 0
-  # else                          # else
-  #   dst(x,y) = 0                #   dst(x,y) = src(x,y)
+(1) command line >> python Geometric_Transformations.py -i opencv.png
+(2) command line >> python Geometric_Transformations.py -i perspect_img.png
+```
+```
+NOTE: see instruction in main part
+```
+#### a. Image scaling
+```python
+Function: scale_img = cv2.resize(src_img, output_size, method)
+```
+```python
+Interpolation method:
+   - INTER_NEAREST: a nearest-neighbor interpolation
+   - INTER_LINEAR: a bilinear interpolation (used by default)
+   - INTER_AREA: resampling using pixel area relation. It's a preferred method for image decimation, 
+                 But when the image is zoomed, it is similar to the INTER_NEAREST method.
+   - INTER_CUBIC: a bicubic interpolation over 4x4 pixel neighborhood
 ```
 ![](README_IMG/simple_thresh.png)
 
-#### 2. Adaptive thresholding
+#### b. Image translation
+```python
+Function: trans_img = cv2.warpAffine(src_img, Translation_Matrix, output_size)
+```
+```
+Translation_Matrix:
+  - (x, y) = original location, (x', y') = result location
+
+x' = x + a.     in matirx                  [ 1 0 ]  
+y' = y + b.    ----------->    [x, y, 1] * [ 0 1 ]  = [x + a, y + b] = [x', y']
+                                           [ a b ]
+```
+```python
+Translation_Matrix: trans_Matrix = np.float32([[1, 0, x_moving_scale],[0, 1, y_moving_scale]])
+```
+
+![](README_IMG/simple_thresh.png)
+
+#### c. Image rotation
+```python
+Function: rotate_img = cv2.warpAffine(src_img, rotation_Matrix, output_size)
+```
+```
+Translation_Matrix:
+  - (x, y): original location = (r*cos(a), y*sin(a))  
+  - (x', y'): result location (rotate 'b' degree) = (r*cos(a+b), y*sin(a+b))
+
+x' = r * cos(a+b) = r*cos(a)cos(b) - r*sin(a)sin(b) = xcos(a) - ysin(a)  
+y' = r * sin(a+b) = r*sin(a)cos(b) + r*cos(a)sin(b) = xsin(a) + ycos(a)  
+
+ in matrix                [ cos(a) -sin(a) ]
+----------->   [x', y'] = [ sin(a)  cos(a) ] * [x, y]
+```
+```python
+Rotattion_Matrix = cv2.getRotationMatrix2D(center, angle, scale)
+```
+
+#### d. Image transformation
+
+
+### 2. Morphological Transformations
 ```
 - Input image: thresh.jpg
 - Command Line: python Image_threshold.py -i thresh.jpg
