@@ -1,4 +1,6 @@
 # Image Filtering
+Images can be filtered with various filters. "Low Pass Filter" helps in removing noise, or blurring the image. 
+"High Pass Filter" helps in finding edges in an image.
 
 ## Outline:
 - Image filtering (Image Blurring, Image Smoothing) ([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/4_Image_Filtering/Image_filtering.py))
@@ -8,37 +10,16 @@
     - Median Filtering
     - Bilateral Filtering
 
-### 1. Simple thresholding 
+### 1. Image Filtering 
 ```
-- Input image: thresh.jpg
-- Command Line: python Image_threshold.py -i thresh.jpg
+- Input image: noise.png
+- Command Line: python Image_filtering.py -i noise.png
 ```
 ```python
-Function: ret,thresh = cv2.threshold(src_img, threshValue, maxValue, thresholdType)
-  - type:
-    * cv.THRESH_BINARY
-    * cv.THRESH_BINARY_INV
-    * cv.THRESH_TRUNC
-    * cv.THRESH_TOZERO
-    * cv.THRESH_TOZERO_INV)
+NOTE: 
+  - Use numpy to generate kernel
+    kernel = np.ones(kernel_size, np.float32)
 ```
-![](README_IMG/simp_opencv_example.png)
-```python
-Threshold type and math description:
-
-- cv2.THRESH_BINARY             - cv2.THRESH_BINARY_INV              - cv2.THRESH_TRUNC
-  # if src(x,y) > thresh          # if src(x,y) > thresh               # if src(x,y) > thresh
-  #   dst(x,y) = maxValue         #   dst(x,y) = 0                     #   dst(x,y) = thresh
-  # else                          # else                               # else
-  #   dst(x,y) = 0                #   dst(x,y) = maxValue              #   dst(x,y) = src(x,y)
-  
-- cv2.THRESH_TOZERO             - cv2.THRESH_TOZERO_INV
-  # if src(x,y) > thresh          # if src(x,y) > thresh
-  #   dst(x,y) = src(x,y)         #   dst(x,y) = 0
-  # else                          # else
-  #   dst(x,y) = 0                #   dst(x,y) = src(x,y)
-```
-![](README_IMG/simple_thresh.png)
 
 #### 2. Adaptive thresholding
 ```
