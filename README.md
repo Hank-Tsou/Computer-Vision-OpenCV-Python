@@ -20,8 +20,8 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
 1. [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
 2. [Image Thesholding](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/2_Image_Thresholding)
 3. [Image Transformation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/3_Image_Transformation)
-  - Geometric Transformations
-  - Morphological Transformations
+    - Geometric Transformations
+    - Morphological Transformations
 
 ```
 CONTINUE...
