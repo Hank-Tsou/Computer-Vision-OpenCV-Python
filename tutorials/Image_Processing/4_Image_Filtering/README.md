@@ -1,14 +1,12 @@
 # Image Filtering
 
 ## Outline:
-- Image filtering (Image Blurring, Image Smoothing)
+- Image filtering (Image Blurring, Image Smoothing) ([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/4_Image_Filtering/Image_filtering.py))
     - 2D convolution Filtering
     - Averaging Filtering
     - Gaussian Filtering
     - Median Filtering
     - Bilateral Filtering
-
-([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/4_Image_Filtering/Image_filtering.py))
 
 ### 1. Simple thresholding 
 ```
