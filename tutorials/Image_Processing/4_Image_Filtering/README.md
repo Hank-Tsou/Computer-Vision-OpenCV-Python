@@ -54,7 +54,7 @@ Function: median = cv2.medianBlur(src_img, ksize)
     - ksize: aperture linear size; it must be odd and greater than 1.
 ```
 ```
-This function smoothes an image using the median filter with the ksize * ksize aperture.
+NOTE: This function smoothes an image using the median filter with the ksize * ksize aperture.
 ```
 [- YOUTUBE: Median Filtering](https://www.youtube.com/watch?v=TYNbTdzm-5w)
 
