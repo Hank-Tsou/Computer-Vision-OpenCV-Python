@@ -8,8 +8,7 @@
   - Image transformation
 
 - Morphological Transformations ([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/3_Image_Transformation/Morphological_Transformations.py))
-  - Image erosion
-  - Image dilation
+  - Image erosion & Image dilation
   - Function MorphologyEx()
 
 ### 1. Geometric Transformations
@@ -91,8 +90,32 @@ Matrix = cv2.getPerspectiveTransform(points_1, points_2)
 
 ### 2. Morphological Transformations
 
-
-
+#### a. Image erosion & Image dilation
+```python
+Function: 
+  - erosion = cv2.erode(src_img, kernel, iterations)
+  - dilation = cv2.dilate(src_img, kernel, iterations)
+```
+```python
+Use numpy to generate kernel
+kernel = np.ones(kernel_size, np.uint8)
+```
+ #### b. Function MorphologyEx()
+ ```python
+Function: cv2.morphologyEx(src_img, operation, kernel)
+```
+```
+Morphological operation:
+  - cv2.MORPH_OPEN: an opening operation, erosion followed by dilation. 
+  - cv2.MORPH_CLOSE: a closing operation, Dilation followed by Erosion.
+  - cv2.MORPH_GRADIENT: a morphological gradient, difference between dilation and erosion of an image.
+  - cv2.MORPH_TOPHAT: Difference between input image and Opening of the image.
+  - cv2.MORPH_BLACKHAT: Difference between the closing of the input image and input image.
+```
+```python
+Use numpy to generate kernel
+kernel = np.ones(kernel_size, np.uint8)
+```
 
 ## Code
 - [Image Thresholding](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/2_Image_Thresholding/Image_Threshold.py)
@@ -105,3 +128,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
 * (threshold) Link: https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html
+https://docs.opencv.org/2.4/modules/imgproc/doc/geometric_transformations.html
