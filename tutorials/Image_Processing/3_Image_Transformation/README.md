@@ -107,8 +107,7 @@ NOTE:
 ```
 ![](README_IMG/eorsion_dilation.png)
 ```
-Tips: 
-  erosion: increase black, dilation: increase white.
+Tips: [erosion] increase black, [dilation] increase white.
 ```
 
  #### b. Function MorphologyEx()
