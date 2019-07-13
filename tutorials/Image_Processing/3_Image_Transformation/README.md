@@ -33,7 +33,7 @@ Interpolation method:
                  But when the image is zoomed, it is similar to the INTER_NEAREST method.
    - INTER_CUBIC: a bicubic interpolation over 4x4 pixel neighborhood
 ```
-![](README_IMG/simple_thresh.png)
+
 
 #### b. Image translation
 ```python
@@ -50,8 +50,7 @@ y' = y + b.    ----------->    [x, y, 1] * [ 0 1 ]  = [x + a, y + b] = [x', y']
 ```python
 Translation_Matrix: trans_Matrix = np.float32([[1, 0, x_moving_scale],[0, 1, y_moving_scale]])
 ```
-
-![](README_IMG/simple_thresh.png)
+![](README_IMG/translation.png)
 
 #### c. Image rotation
 ```python
@@ -71,6 +70,7 @@ y' = r * sin(a+b) = r*sin(a)cos(b) + r*cos(a)sin(b) = xsin(a) + ycos(a)
 ```python
 Rotattion_Matrix = cv2.getRotationMatrix2D(center, angle, scale)
 ```
+![](README_IMG/rotation.png)
 
 #### d. Image transformation (Affine_transformation)
 ```python
@@ -79,6 +79,7 @@ Function: prespec_img = cv2.warpAffine(src_img, Matrix, output_size)
 ```python
 Matrix = cv2.getAffineTransform(points_1, points_2)
 ```
+![](README_IMG/affin.png)
 
 #### e. Image transformation (Perspective_transformation)
 ```python
@@ -87,6 +88,7 @@ Function: prespec_img = cv2.warpPerspective(src_img, Matrix, output_size)
 ```python
 Matrix = cv2.getPerspectiveTransform(points_1, points_2)
 ```
+![](README_IMG/perspective.png)
 
 ### 2. Morphological Transformations
 
@@ -103,6 +105,8 @@ NOTE:
   
   - iterations: Number of times erosion and dilation are applied.
 ```
+![](README_IMG/eorsion_dilation.png)
+
  #### b. Function MorphologyEx()
  ```python
 Function: cv2.morphologyEx(src_img, operation, kernel)
@@ -130,6 +134,7 @@ NOTE:
   - Use numpy to generate kernel
     kernel = np.ones(kernel_size, np.uint8)
 ```
+![](README_IMG/morpho_img.png)
 
 ## Code
 - [Geometric Transformations](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/3_Image_Transformation/Geometric_Transformations.py)
