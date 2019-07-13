@@ -132,7 +132,8 @@ NOTE:
 ```
 
 ## Code
-- [Image Thresholding](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/2_Image_Thresholding/Image_Threshold.py)
+- [Geometric Transformations](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/3_Image_Transformation/Geometric_Transformations.py)
+- [Morphological Transformations](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/3_Image_Transformation/Morphological_Transformations.py)
 
 ## License
 
@@ -141,5 +142,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
-* (threshold) Link: https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html
-https://docs.opencv.org/2.4/modules/imgproc/doc/geometric_transformations.html
+* (Geometric)https://docs.opencv.org/2.4/modules/imgproc/doc/geometric_transformations.html
+* (Morphological)https://docs.opencv.org/3.0-beta/modules/imgproc/doc/filtering.html?highlight=morphologyex
