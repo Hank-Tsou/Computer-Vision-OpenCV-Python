@@ -20,9 +20,10 @@ import argparse
 from matplotlib import pyplot as plt
 
 def Morphological_Transformations(img):
+    # 6 by 6 kernel
     kernel = np.ones((6,6),np.uint8)
-    erosion = cv2.erode(img,kernel,iterations = 2)
-    dilation = cv2.dilate(img,kernel,iterations = 2)
+    erosion = cv2.erode(img, kernel, iterations = 2)
+    dilation = cv2.dilate(img, kernel, iterations = 2)
 
     # show result images
     plt.subplot(131),plt.imshow(img),plt.title('Original')
@@ -69,7 +70,7 @@ if __name__ == '__main__':
     image = cv2.imread(args["image"])
 
     # Functions
-    # Morphological_Transformations(image)
+    Morphological_Transformations(image)
     morphologyEx(image)
 
 
