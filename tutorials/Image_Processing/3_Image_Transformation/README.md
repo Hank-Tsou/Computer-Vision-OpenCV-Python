@@ -82,7 +82,7 @@ Function: prespec_img = cv2.warpAffine(src_img, Matrix, output_size)
 Matrix = cv2.getAffineTransform(points_1[3 points], points_2[3 points]), see code.
 ```
 ```
-NOTE: Matrix need three points from input image and their corresponding locations in output image. 
+NOTE: Matrix need 3 points from input image and their corresponding locations in output image. 
 ```
 ![](README_IMG/affin.png)
 
@@ -92,6 +92,9 @@ Function: prespec_img = cv2.warpPerspective(src_img, Matrix, output_size)
 ```
 ```python
 Matrix = cv2.getPerspectiveTransform(points_1[4 points], points_2[4 points]), see code.
+```
+```
+NOTE: Matrix need 4 points on the input image and corresponding points on the output image. 
 ```
 ![](README_IMG/perspective.png)
 
