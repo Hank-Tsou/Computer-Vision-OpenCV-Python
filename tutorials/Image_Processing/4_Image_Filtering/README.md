@@ -61,9 +61,9 @@ Function: bilateral = cv2.bilateralFilter(src_img, d, sigmaColor, sigmaSpace)
     - sigmaColor: Filter sigma in the color space. 
     - sigmaSpace: Filter sigma in the coordinate space. 
 ```
-[see opencv-python documentation](https://docs.opencv.org/2.4/modules/imgproc/doc/filtering.html)
+[- See opencv-python documentation](https://docs.opencv.org/2.4/modules/imgproc/doc/filtering.html)
 
-[Paper: Bilateral Filtering for Gray and Color Images](http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/MANDUCHI1/Bilateral_Filtering.html)
+[- Paper: Bilateral Filtering for Gray and Color Images](http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/MANDUCHI1/Bilateral_Filtering.html)
 
 ## Code
 - [Image Filtering](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/4_Image_Filtering/Image_filtering.py)
