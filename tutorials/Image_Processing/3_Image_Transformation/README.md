@@ -106,6 +106,7 @@ Function: cv2.morphologyEx(src_img, operation, kernel)
 ```
 ```
 Morphological operation:
+
   - cv2.MORPH_OPEN: an opening operation, erosion followed by dilation. 
     * dilate(erode(src, element))
     
