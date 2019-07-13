@@ -27,10 +27,11 @@ Function: scale_img = cv2.resize(src_img, output_size, method)
 ```
 ```python
 Interpolation method:
+
    - INTER_NEAREST: a nearest-neighbor interpolation
    - INTER_LINEAR: a bilinear interpolation (used by default)
    - INTER_AREA: resampling using pixel area relation. It's a preferred method for image decimation, 
-                 But when the image is zoomed, it is similar to the INTER_NEAREST method.
+                 but when the image is zoomed, it is similar to the INTER_NEAREST method.
    - INTER_CUBIC: a bicubic interpolation over 4x4 pixel neighborhood
 ```
 
@@ -69,6 +70,7 @@ y' = r * sin(a+b) = r*sin(a)cos(b) + r*cos(a)sin(b) = xsin(a) + ycos(a)
 ```
 ```python
 Rotattion_Matrix = cv2.getRotationMatrix2D(center, angle, scale)
+  - scale: Isotropic scale factor.
 ```
 ![](README_IMG/rotation.png)
 
@@ -78,6 +80,9 @@ Function: prespec_img = cv2.warpAffine(src_img, Matrix, output_size)
 ```
 ```python
 Matrix = cv2.getAffineTransform(points_1[3 points], points_2[3 points]), see code.
+```
+```
+NOTE: Matrix need three points from input image and their corresponding locations in output image. 
 ```
 ![](README_IMG/affin.png)
 
