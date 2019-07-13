@@ -26,22 +26,43 @@ NOTE:
   - Use numpy to generate kernel
     kernel = np.ones(kernel_size, np.float32)
 ```
+```
+Below is how convolution filter work on an image:
+```
+![](README_IMG/translation.png)
+
 #### b. Averaging Filtering
 ```
-Function: average = cv2.blur(src_img,(5,5))
+Function: average = cv2.blur(src_img, kernel_size)
+```
+```
+The function using kernel:
+
+K = 1/(kernel_width * kernel_height) * np.ones(kernel_size, np.float32) [opecv-python documentation]
 ```
 #### c. Gaussian Filtering
 ```
-Function: gaussian = cv2.GaussianBlur(src_img,(5,5),0)
+Function: gaussian = cv2.GaussianBlur(src_img, kernel size, sigmaX)
+    - sigmaX: Gaussian kernel standard deviation in X direction. Here set to 0.
+    - sigmaY: Gaussian kernel standard deviation in Y direction. Set to 0 by default.
 ```
 #### d. Median Filtering
 ```
-Function: median = cv2.medianBlur(src_img,5)
+Function: median = cv2.medianBlur(src_img, ksize)
+    - ksize: aperture linear size; it must be odd and greater than 1.
+```
+```
+This function smoothes an image using the median filter with the ksize * ksize aperture.
 ```
 #### e. Bilateral Filtering
 ```
-Function: bilateral = cv2.bilateralFilter(src_img,9,75,75)
+Function: bilateral = cv2.bilateralFilter(src_img, d, sigmaColor, sigmaSpace)
+    - d: Diameter of each pixel neighborhood that is used during filtering. 
+    - sigmaColor: Filter sigma in the color space. 
+    - sigmaSpace: Filter sigma in the coordinate space. 
 ```
+[see opencv-python documentation](https://docs.opencv.org/2.4/modules/imgproc/doc/filtering.html)
+[Paper: Bilateral Filtering for Gray and Color Images](http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/MANDUCHI1/Bilateral_Filtering.html)
 
 ## Code
 - [Image Filtering](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/4_Image_Filtering/Image_filtering.py)
@@ -53,4 +74,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
-* (Filtering) Link: https://docs.opencv.org/2.4/modules/imgproc/doc/filtering.html
+* (Conv_filter GIF) Link: https://icecreamlabs.com/2018/08/19/3x3-convolution-filters%E2%80%8A-%E2%80%8Aa-popular-choice/
+* (Filtering) https://docs.opencv.org/2.4/modules/imgproc/doc/filtering.html
