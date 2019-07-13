@@ -1,14 +1,16 @@
-# Image Thresholding
-```
-If pixel value is greater than a threshold value, it is assigned one value, else it is assigned 
-another value 
-```
-## Outline:
-- Simple thresholding 
-- Adaptive thresholding
-- Otsu’s thresholding
+# Image Transformation
 
-([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/2_Image_Thresholding/Image_Threshold.py))
+## Outline:
+- Geometric Transformations ([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/3_Image_Transformation/Geometric_Transformations.py))
+  - Image scaling
+  - Image translation
+  - Image rotation
+  - Image transformation
+
+- Morphological Transformations ([Full code in python](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/3_Image_Transformation/Morphological_Transformations.py))
+  - Image erosion
+  - Image dilation
+  - Function MorphologyEx()
 
 ### 1. Simple thresholding 
 ```
