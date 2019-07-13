@@ -31,7 +31,7 @@ Below is how convolution filter work on an image:
 ```
 ![](README_IMG/conv_filter.gif)
 
-#### b. Averaging Filtering
+#### b. Averaging Filtering (blur, smoothing)
 ```
 Function: average = cv2.blur(src_img, kernel_size)
 ```
@@ -40,7 +40,7 @@ The function using kernel:
 
 K = 1/(kernel_width * kernel_height) * np.ones(kernel_size, np.float32) [opecv-python documentation]
 ```
-#### c. Gaussian Filtering
+#### c. Gaussian Filtering (resuce noise, smoothing)
 ```
 Function: gaussian = cv2.GaussianBlur(src_img, kernel size, sigmaX)
     - sigmaX: Gaussian kernel standard deviation in X direction. Here set to 0.
@@ -48,7 +48,7 @@ Function: gaussian = cv2.GaussianBlur(src_img, kernel size, sigmaX)
 ```
 ![](README_IMG/Gaussian_filter.png)
 
-#### d. Median Filtering
+#### d. Median Filtering (reduce noise, remain edge)
 ```
 Function: median = cv2.medianBlur(src_img, ksize)
     - ksize: aperture linear size; it must be odd and greater than 1.
@@ -56,6 +56,8 @@ Function: median = cv2.medianBlur(src_img, ksize)
 ```
 This function smoothes an image using the median filter with the ksize * ksize aperture.
 ```
+[- YOUTUBE: Median Filtering](https://www.youtube.com/watch?v=TYNbTdzm-5w)
+
 #### e. Bilateral Filtering
 ```
 Function: bilateral = cv2.bilateralFilter(src_img, d, sigmaColor, sigmaSpace)
