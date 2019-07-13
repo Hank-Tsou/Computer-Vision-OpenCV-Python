@@ -23,7 +23,7 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
     - Geometric Transformations
     - Morphological Transformations
 4. [Image Filtering](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
-
+    - [Median Filter Implementaion](https://github.com/Hank-Tsou/Implement-median_filter)
 ```
 CONTINUE...
 ```
