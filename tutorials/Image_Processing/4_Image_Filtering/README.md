@@ -48,7 +48,7 @@ Function: gaussian = cv2.GaussianBlur(src_img, kernel size, sigmaX)
 ```
 ![](README_IMG/Gaussian_filter.png)
 
-#### d. Median Filtering (reduce noise, remain edge)
+#### d. Median Filtering (reduce noise, remain edge) [Implementation](https://github.com/Hank-Tsou/Implement-median_filter)
 ```
 Function: median = cv2.medianBlur(src_img, ksize)
     - ksize: aperture linear size; it must be odd and greater than 1.
