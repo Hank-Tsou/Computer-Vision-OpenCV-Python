@@ -134,7 +134,7 @@ NOTE:
   - Use numpy to generate kernel
     kernel = np.ones(kernel_size, np.uint8)
 ```
-![](README_IMG/morpho_img.png)
+![](README_IMG/morphology.png)
 
 ## Code
 - [Geometric Transformations](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/3_Image_Transformation/Geometric_Transformations.py)
