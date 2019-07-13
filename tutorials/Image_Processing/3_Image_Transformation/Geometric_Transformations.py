@@ -54,7 +54,7 @@ def Image_translation(img):
 
     # show result image
     cv2.imshow('img',trans_img)
-    cv2.waitKey(1000)
+    cv2.waitKey(10000)
     cv2.destroyAllWindows()
 
 # -------------- Function to do image rotation -------------- #
@@ -70,7 +70,7 @@ def Image_rotation(img):
 
     # show result image
     cv2.imshow('img',rotate_img)
-    cv2.waitKey(1000)
+    cv2.waitKey(10000)
     cv2.destroyAllWindows()
 
 # -------------- Function to do Affine transformation -------------- #
@@ -90,7 +90,7 @@ def Affine_transformation(img):
 
     # show result image
     cv2.imshow('img',trans_img)
-    cv2.waitKey(1000)
+    cv2.waitKey(10000)
     cv2.destroyAllWindows()
 
 # -------------- Function to do Perspective transformation -------------- #
@@ -128,13 +128,13 @@ if __name__ == '__main__':
 
     ## Functions
     ## -- Input image opencv.png (first command line input) --
-    Image_scaling(image)
+    # Image_scaling(image)
     # Image_translation(image)
     # Image_rotation(image)
 
     ## -- Input image change to perspect_img.png (second command line input) --
-    # Affine_transformation(image)
-    # Perspective_transformation(image)
+    Affine_transformation(image)
+    Perspective_transformation(image)
 
 
 # Reference:
