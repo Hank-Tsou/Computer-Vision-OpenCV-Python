@@ -66,8 +66,8 @@ Translation_Matrix:
 x' = r * cos(a+b) = r*cos(a)cos(b) - r*sin(a)sin(b) = xcos(a) - ysin(a)  
 y' = r * sin(a+b) = r*sin(a)cos(b) + r*cos(a)sin(b) = xsin(a) + ycos(a)  
 
- in matrix                [ cos(a) -sin(a) ]
------------>   [x', y'] = [ sin(a)  cos(a) ] * [x, y]
+ in matrix     [x'] = [ cos(a) -sin(a) ] * [x]
+----------->   [y']   [ sin(a)  cos(a) ]   [y]
 ```
 ```python
 Rotattion_Matrix = cv2.getRotationMatrix2D(center, angle, scale)
