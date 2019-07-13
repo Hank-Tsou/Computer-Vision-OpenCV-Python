@@ -22,6 +22,7 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
 3. [Image Transformation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/3_Image_Transformation)
     - Geometric Transformations
     - Morphological Transformations
+4. [Image Filtering](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
 
 ```
 CONTINUE...
