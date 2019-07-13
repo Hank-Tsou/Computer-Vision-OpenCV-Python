@@ -132,7 +132,7 @@ if __name__ == '__main__':
     # Image_translation(image)
     # Image_rotation(image)
 
-    ## -- Input image change to aff_img.jpg (second command line input) --
+    ## -- Input image change to perspect_img.png (second command line input) --
     # Affine_transformation(image)
     # Perspective_transformation(image)
 
