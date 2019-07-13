@@ -142,5 +142,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
-* (Geometric)https://docs.opencv.org/2.4/modules/imgproc/doc/geometric_transformations.html
-* (Morphological)https://docs.opencv.org/3.0-beta/modules/imgproc/doc/filtering.html?highlight=morphologyex
+* (Geometric) https://docs.opencv.org/2.4/modules/imgproc/doc/geometric_transformations.html
+* (Morphological) https://docs.opencv.org/3.0-beta/modules/imgproc/doc/filtering.html?highlight=morphologyex
