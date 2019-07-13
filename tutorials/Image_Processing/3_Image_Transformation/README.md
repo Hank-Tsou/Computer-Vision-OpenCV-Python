@@ -97,8 +97,11 @@ Function:
   - dilation = cv2.dilate(src_img, kernel, iterations)
 ```
 ```python
-Use numpy to generate kernel
-kernel = np.ones(kernel_size, np.uint8)
+NOTE: 
+  - Use numpy to generate kernel
+    kernel = np.ones(kernel_size, np.uint8)
+  
+  - iterations: Number of times erosion and dilation are applied.
 ```
  #### b. Function MorphologyEx()
  ```python
@@ -123,8 +126,9 @@ Morphological operation:
     * close(src, element) - src
 ```
 ```python
-Use numpy to generate kernel
-kernel = np.ones(kernel_size, np.uint8)
+NOTE: 
+  - Use numpy to generate kernel
+    kernel = np.ones(kernel_size, np.uint8)
 ```
 
 ## Code
