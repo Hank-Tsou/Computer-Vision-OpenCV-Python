@@ -108,12 +108,16 @@ Function: cv2.morphologyEx(src_img, operation, kernel)
 Morphological operation:
   - cv2.MORPH_OPEN: an opening operation, erosion followed by dilation. 
     * dilate(erode(src, element))
+    
   - cv2.MORPH_CLOSE: a closing operation, Dilation followed by Erosion.
     * erode(dilate(src, element))
+    
   - cv2.MORPH_GRADIENT: Difference between dilation and erosion of an image.
     * dilate(src, element) - erode(src, element)
+    
   - cv2.MORPH_TOPHAT: Difference between input image and Opening of the image.
     * src - open(src, element)
+    
   - cv2.MORPH_BLACKHAT: Difference between the closing of the input image and input image.
     * close(src, element) - src
 ```
