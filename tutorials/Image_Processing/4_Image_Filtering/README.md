@@ -23,7 +23,7 @@ Function: conv_filtering = cv2.filter2D(src_img, ddepth, kernel)
 ```
 ```python
 NOTE: 
-  - Use numpy to generate kernel
+  - Use numpy to generate kernel (Filter)
     kernel = np.ones(kernel_size, np.float32)
 ```
 ```
@@ -62,6 +62,7 @@ Function: bilateral = cv2.bilateralFilter(src_img, d, sigmaColor, sigmaSpace)
     - sigmaSpace: Filter sigma in the coordinate space. 
 ```
 [see opencv-python documentation](https://docs.opencv.org/2.4/modules/imgproc/doc/filtering.html)
+
 [Paper: Bilateral Filtering for Gray and Color Images](http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/MANDUCHI1/Bilateral_Filtering.html)
 
 ## Code
