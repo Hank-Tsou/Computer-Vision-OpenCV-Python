@@ -1,5 +1,5 @@
 # Image Gradient
-Use image gradient to get edge in an image, on edges the pixel intensity changes. So we use derivative to express these kind of changes.
+Use image gradient to find edges in an image, on edge the pixel intensity changes. So we use derivative to express these kind of changes.
 
 ## Outline:
 - Sobel Derivatives 
