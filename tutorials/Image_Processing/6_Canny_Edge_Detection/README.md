@@ -17,6 +17,7 @@ Noise will effect the accuracy of the result, so the first step of canny edge de
 The equation is as follow (assume image matrix = 'I'):
 ```
 * First derivative: Gx = I * sobel_x, Gy = I * sobel_y
+
 * Edge gradient: G = sqrt(Gx^2 + Gy^2)
 * Edge direction: A = arctan(Gy/Gx)
 ```
