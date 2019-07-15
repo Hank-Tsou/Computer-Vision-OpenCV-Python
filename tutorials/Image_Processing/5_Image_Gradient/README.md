@@ -40,7 +40,7 @@ Horizontal changes: result =  [-2 0 +2] * I    Vertical changes: result =  [ 0  
 
 NOTE: Use function cv2.addWeighted() to combine two result. [(Image Blending)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation) [(Code)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
 
-![](README_IMG/conv_filter.gif)
+![](README_IMG/sobel_result.png)
 
 #### b. Scharr Derivatives
 ```
@@ -59,7 +59,7 @@ Horizontal changes: result =  [-10 0 +10] * I    Vertical changes: result =  [ 0
 
 NOTE: Use function cv2.addWeighted() to combine two result. [(Image Blending)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation) [(Code)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
 
-![](README_IMG/conv_filter.gif)
+![](README_IMG/scharr_result.png)
 
 #### c. Laplacian Derivatives
 ```
@@ -70,6 +70,7 @@ We can observe the figure below, the second derivative on an edge is zero. So, w
 
 ![](README_IMG/laplace.png)
 
+![](README_IMG/laplace_result.png)
 
 ## Code
 - [Image Gradient](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/5_Image_Gradient/Image_Gradient.py)
