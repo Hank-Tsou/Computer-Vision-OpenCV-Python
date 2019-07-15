@@ -31,7 +31,7 @@ then clasify each pixel into 0, 45, 90 and 135 degree
 This step is going to remove unwanted pixel by checking if it is a local maximum in its neighborhood in the direction of gradient.
 
 ```
-Below explanation is from "openCV-python documentation"
+Below explanation is from "openCV-python documentation:"
 ```
 ![](README_IMG/suppression.png)
 
@@ -41,7 +41,7 @@ Point A is on the edge ( in vertical direction). Gradient direction is normal to
 This step need to find two threshold values, minVal and maxVal to determine the edges.
 
 ```
-Below explanation is from "openCV-python documentation"
+Below explanation is from "openCV-python documentation:"
 ```
 ![](README_IMG/thresh.png)
 
