@@ -16,8 +16,8 @@ To be more graphical. An edge is shown by the “jump” in intensity in the plo
 ![](README_IMG/conv_filter.gif)
 
 ```
-NOTE: we can find an edge by calculate pixel locations where the gradient is higher than its neighbors 
-(or to generalize, higher than a threshold).
+NOTE: we can find an edge by calculate pixel locations where the gradient is higher than its 
+neighbors (or to generalize, higher than a threshold).
 ```
 #### a. Sobel Derivatives 
 ```python
