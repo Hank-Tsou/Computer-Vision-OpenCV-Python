@@ -1,5 +1,5 @@
 # Image Gradient
-Use image gradient to find edges in an image, on edge the pixel intensity changes. So we use derivative to express these kind of changes.
+Use image gradient to find edges in an image, in an edge the pixel intensity changes or a sharp change in color. So we use derivative to express these kind of changes.
 
 ## Outline:
 - Sobel Derivatives 
@@ -11,19 +11,33 @@ Use image gradient to find edges in an image, on edge the pixel intensity change
 - Input image: chess_board.png
 - Command Line: python Image_Gradient.py -i chess_board.png
 ```
-
+```
+To be more graphical. An edge is shown by the “jump” in intensity in the plot below:
+```
+```
+NOTE: we can find an edge by calculate pixel locations where the gradient is higher than its neighbors (or to generalize, higher than a threshold).
+```
 #### a. Sobel Derivatives 
 ```
-Function: 
+Function: sobel = cv2.Sobel(src_img, ddepth, dx, dy, ksize)
+  - ddepth: The depth of the output image. We set it to cv2.CV_64F to avoid overflow.
 ```
-```python
-NOTE: 
-  - Use numpy to generate kernel (Filter)
-    kernel = np.ones(kernel_size, np.float32)
+```
+Sobel Operator combines Gaussian smoothing and differentiation. It computes an approximation of 
+the gradient by placing the gradient matrix over each pixel of an image. 
 ```
 ```
 Below is how convolution filter work on an image:
+
+* Assume 'I' is an image matrix
+
+                              [-1 0 +1]                                     [-1 -2 -1]
+Horizontal changes: result =  [-2 0 +2] * I   Horizontal changes: result =  [ 0  0  0] * I  
+                              [-1 0 +1]                                     [+1 +2 +1]
 ```
+
+NOTE: Use function cv2.addWeighted() to combine two result. [(Image Blending)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation) [(Code)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
+
 ![](README_IMG/conv_filter.gif)
 
 #### b. Scharr Derivatives
