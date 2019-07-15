@@ -26,7 +26,7 @@ Function: sobel = cv2.Sobel(src_img, ddepth, dx, dy, ksize)
   - ddepth: The depth of the output image. We set it to cv2.CV_64F to avoid overflow.
 ```
 
-Sobel Operator combines Gaussian smoothing and differentiation. It computes an approximation of the gradient by placing the gradient matrix over each pixel of an image. [(Image Filtering)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
+Sobel Operator combines Gaussian smoothing and differentiation. It computes an approximation of the gradient by placing the gradient matrix over each pixel of an image. [(see Image Filtering)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
 
 ```
 Below is how matrix filter work on an image:
@@ -38,7 +38,7 @@ Horizontal changes: result =  [-2 0 +2] * I    Vertical changes: result =  [ 0  
                               [-1 0 +1]                                    [+1 +2 +1]
 ```
 
-NOTE: Use function cv2.addWeighted() to combine two result. [(Image Blending)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation) [(Code)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
+NOTE: Use function cv2.addWeighted() to combine two result. [(see Image Blending)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation) [(Code)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
 
 ![](README_IMG/sobel_result.png)
 
@@ -57,7 +57,7 @@ Horizontal changes: result =  [-10 0 +10] * I    Vertical changes: result =  [ 0
                               [-3  0 +3 ]                                    [+3 +10 +3]
 ```
 
-NOTE: Use function cv2.addWeighted() to combine two result. [(Image Blending)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation) [(Code)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
+NOTE: Use function cv2.addWeighted() to combine two result. [(see Image Blending)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation) [(Code)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
 
 ![](README_IMG/scharr_result.png)
 
