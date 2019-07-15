@@ -28,7 +28,7 @@ This step is going to remove unwanted pixel by checking if it is a local maximum
 ```
 Below explanation is from "openCV-python documentation"
 ```
-![](README_IMG/thresh.png)
+![](README_IMG/suppression.png)
 
 Point A is on the edge ( in vertical direction). Gradient direction is normal to the edge. Point B and C are in gradient directions. So point A is checked with point B and C to see if it forms a local maximum. If so, it is considered for next stage, otherwise, it is suppressed ( put to zero).
 
