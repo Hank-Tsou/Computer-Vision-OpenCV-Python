@@ -21,30 +21,44 @@ def Image_Gradient(img):
     # Laplacian Derivatives
     laplacian = cv2.Laplacian(img,cv2.CV_64F)
 
+    # show result images
+    plt.subplot(1,2,1),plt.imshow(img,cmap = 'gray')
+    plt.title('Original'), plt.xticks([]), plt.yticks([])
+    plt.subplot(1,2,2),plt.imshow(laplacian,cmap = 'gray')
+    plt.title('laplacian'), plt.xticks([]), plt.yticks([])
+    plt.show()
+
     # Sobel Derivatives
     sobelx = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5)
     sobely = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5)
+    sobel_combine = cv2.addWeighted(sobelx,0.5,sobely,0.5,0)
+
+    # show result images
+    plt.subplot(1,4,1),plt.imshow(img,cmap = 'gray')
+    plt.title('Original'), plt.xticks([]), plt.yticks([])
+    plt.subplot(1,4,2),plt.imshow(sobelx,cmap = 'gray')
+    plt.title('sobelx'), plt.xticks([]), plt.yticks([])
+    plt.subplot(1,4,3),plt.imshow(sobely,cmap = 'gray')
+    plt.title('sobely'), plt.xticks([]), plt.yticks([])
+    plt.subplot(1,4,4),plt.imshow(sobel_combine,cmap = 'gray')
+    plt.title('combine'), plt.xticks([]), plt.yticks([])
+    plt.show()
 
     # Scharr Derivatives
     Scharrx = cv2.Scharr(img, -1, 1, 0)
     Scharry = cv2.Scharr(img, -1, 0, 1)
+    Scharr_combine = cv2.addWeighted(Scharrx,0.5,Scharry,0.5,0)
 
     # show result images
-    plt.subplot(2,4,2),plt.imshow(img,cmap = 'gray')
+    plt.subplot(1,4,1),plt.imshow(img,cmap = 'gray')
     plt.title('Original'), plt.xticks([]), plt.yticks([])
-    plt.subplot(2,4,3),plt.imshow(laplacian,cmap = 'gray')
-    plt.title('Laplacian'), plt.xticks([]), plt.yticks([])
-    plt.subplot(2,4,5),plt.imshow(sobelx,cmap = 'gray')
-    plt.title('Sobel X'), plt.xticks([]), plt.yticks([])
-    plt.subplot(2,4,6),plt.imshow(sobely,cmap = 'gray')
-    plt.title('Sobel Y'), plt.xticks([]), plt.yticks([])
-    plt.subplot(2,4,7),plt.imshow(Scharrx,cmap = 'gray')
-    plt.title('Scharr X'), plt.xticks([]), plt.yticks([])
-    plt.subplot(2,4,8),plt.imshow(Scharry,cmap = 'gray')
-    plt.title('Scharr Y'), plt.xticks([]), plt.yticks([])
-
+    plt.subplot(1,4,2),plt.imshow(Scharrx,cmap = 'gray')
+    plt.title('Scharrx'), plt.xticks([]), plt.yticks([])
+    plt.subplot(1,4,3),plt.imshow(Scharry,cmap = 'gray')
+    plt.title('Scharry'), plt.xticks([]), plt.yticks([])
+    plt.subplot(1,4,4),plt.imshow(Scharr_combine,cmap = 'gray')
+    plt.title('combine'), plt.xticks([]), plt.yticks([])
     plt.show()
-
 
 # -------------------------- main -------------------------- #
 if __name__ == '__main__':
@@ -61,7 +75,6 @@ if __name__ == '__main__':
 
     ## Functions
     Image_Gradient(Grayscale_image)
-
 
 
 
