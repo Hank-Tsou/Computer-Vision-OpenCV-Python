@@ -14,7 +14,7 @@ Use image gradient to find edges in an image, in an edge the pixel intensity cha
 To be more graphical. An edge is shown by the “jump” in intensity in the plot below:
 (It shows more clearly if we take the first derivative on f(t))
 
-![](README_IMG/conv_filter.gif)
+![](README_IMG/sobel.png)
 
 ```
 NOTE: we can find an edge by calculate pixel locations where the gradient is higher than its 
@@ -68,7 +68,7 @@ Function: laplacian = cv2.Laplacian(src_img, ddepth)
 ```
 We can observe the figure below, the second derivative on an edge is zero. So, we can also use this criterion to attempt to detect edges in an image. 
 
-![](README_IMG/Gaussian_filter.png)
+![](README_IMG/laplace.png)
 
 
 ## Code
