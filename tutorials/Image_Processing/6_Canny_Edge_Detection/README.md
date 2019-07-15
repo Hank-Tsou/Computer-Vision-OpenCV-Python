@@ -1,5 +1,5 @@
 # Canny Edge Detection
-Link to Canny Edge Detection implementation from scratch. [(Edge detection)](https://github.com/Hank-Tsou/Implement-Edge-Detection)
+Link to "Canny Edge Detection" implementation from scratch. [(Edge detection)](https://github.com/Hank-Tsou/Implement-Edge-Detection)
 
 ## Step of the process
 - (1) Noise Reduction
