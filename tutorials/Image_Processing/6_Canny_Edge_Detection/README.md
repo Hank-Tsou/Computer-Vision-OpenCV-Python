@@ -1,7 +1,10 @@
 # Canny Edge Detection
 
-## Step:
+## Step of the process
 - Noise Reduction
+- Find Intensity Gradient and Orientation of the Image
+- Non-maximum Suppression
+- Hysteresis Thresholding
 
 ### Step 1. Noise Reduction
 Noise will effect the accuracy of the result, so the first step of canny edge detection is to reduce noise by using 5x5 Gaussian filter. [(see Image Filtering)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
