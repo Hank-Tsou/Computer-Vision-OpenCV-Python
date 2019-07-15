@@ -60,6 +60,7 @@ The edge A is above the maxVal, so considered as “sure-edge”. Although edge 
 
 ## Code
 - [Canny Edge Detection](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/6_Canny_Edge_Detection)
+- [(Implementation from scratch)](https://github.com/Hank-Tsou/Implement-Edge-Detection)
 
 ## License
 
