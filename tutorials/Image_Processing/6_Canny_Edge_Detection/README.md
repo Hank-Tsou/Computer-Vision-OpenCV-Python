@@ -1,4 +1,5 @@
 # Canny Edge Detection
+Link to Canny Edge Detection implementation from scratch. [(see Image Filtering)](https://github.com/Hank-Tsou/Implement-Edge-Detection)
 
 ## Step of the process
 - (1) Noise Reduction
