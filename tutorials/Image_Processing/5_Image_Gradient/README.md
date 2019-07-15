@@ -11,17 +11,20 @@ Use image gradient to find edges in an image, in an edge the pixel intensity cha
 - Input image: chess_board.png
 - Command Line: python Image_Gradient.py -i chess_board.png
 ```
-```
 To be more graphical. An edge is shown by the “jump” in intensity in the plot below:
+
+![](README_IMG/conv_filter.gif)
+
 ```
-```
-NOTE: we can find an edge by calculate pixel locations where the gradient is higher than its neighbors (or to generalize, higher than a threshold).
+NOTE: we can find an edge by calculate pixel locations where the gradient is higher than its neighbors 
+(or to generalize, higher than a threshold).
 ```
 #### a. Sobel Derivatives 
 ```python
 Function: sobel = cv2.Sobel(src_img, ddepth, dx, dy, ksize)
   - ddepth: The depth of the output image. We set it to cv2.CV_64F to avoid overflow.
 ```
+
 Sobel Operator combines Gaussian smoothing and differentiation. It computes an approximation of the gradient by placing the gradient matrix over each pixel of an image. 
 
 ```
