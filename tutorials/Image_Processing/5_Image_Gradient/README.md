@@ -14,7 +14,7 @@ Use image gradient to find edges in an image. In an edge the pixel intensity cha
 To be more graphical. An edge is shown by the “jump” in intensity in the plot below:
 (It shows more clearly if we take the first derivative on f(t))
 
-![](README_IMG/sobel.png)
+![](README_IMG/gradient.png)
 
 ```
 NOTE: we can find an edge by calculate pixel locations where the gradient is higher than its 
