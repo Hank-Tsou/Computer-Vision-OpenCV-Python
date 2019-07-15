@@ -11,9 +11,9 @@ Link to "Canny Edge Detection" implementation from scratch. [(Edge detection)](h
 Noise will effect the accuracy of the result, so the first step of canny edge detection is to reduce noise by using 5x5 Gaussian filter. [(see Image Filtering)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
 
 ### Step 2. Find Intensity Gradient (magnitude) and Orientation of the Image
-(a) Use Sobel kernel in both horizontal and vertical direction to get first derivative of both direction Gx, Gy. 
+(a) Use [Sobel kernel](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/5_Image_Gradient) in both horizontal and vertical direction to get first derivative of both direction Gx, Gy. 
 
-(b) Then we can find edge gradient and direction for each pixel with the above two result images.
+(b) Then we can find [edge gradient](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/5_Image_Gradient) and direction for each pixel with the above two result images.
 
 The equation is as follow (assume image matrix = 'I'):
 ```
