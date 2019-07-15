@@ -1,9 +1,27 @@
 # Canny Edge Detection
 
-## Outline:
-- Canny Edge Detection
+## Step:
+- Noise Reduction
 
-### 1. Canny Edge Detection
+### Step 1. Noise Reduction
+Noise will effect the accuracy of the result, so the first step of canny edge detection is to reduce noise by using 5x5 Gaussian filter. [(see Image Filtering)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
+
+
+
+
+
+
+
+
+
+
+
+
+### Step 1. Noise Reduction
+### Step 1. Noise Reduction
+### Step 1. Noise Reduction
+### Step 1. Noise Reduction
+
 ```
 - Input image: chess_board.png
 - Command Line: python Image_Gradient.py -i chess_board.png
