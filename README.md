@@ -25,8 +25,11 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
 4. [Image Filtering](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
     - [Median Filter Implementaion](https://github.com/Hank-Tsou/Implement-median_filter)
 5. [Image Gradients](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/5_Image_Gradient)
-6 [Canny Edge Detection](...)
+
+6 [Canny Edge Detection](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/6_Canny_Edge_Detection)
     
+    - [Canny Edge Detection Implementaion](https://github.com/Hank-Tsou/Implement-Edge-Detection)
+
     
     
 ```
