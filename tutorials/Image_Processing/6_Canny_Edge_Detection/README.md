@@ -9,32 +9,46 @@ Noise will effect the accuracy of the result, so the first step of canny edge de
 ### Step 2. Find Intensity Gradient (magnitude) and Orientation of the Image
 (a) Use Sobel kernel in both horizontal and vertical direction to get first derivative of both direction Gx, Gy. 
 
-(b) Then we can find edge gradient and direction for each pixel with the two result image.
+(b) Then we can find edge gradient and direction for each pixel with the above two result images.
 
-The equation is as follow (assume image matrix 'I'):
+The equation is as follow (assume image matrix = 'I'):
 ```
 * First derivative: Gx = I * sobel_x, Gy = I * sobel_y
 * Edge gradient: G = sqrt(Gx^2 + Gy^2)
 * Edge direction: A = arctan(Gy/Gx)
 ```
+```
+NOTE: In implementation, we need to transform orientation value to degree (orientation*180/pi), 
+then clasify each pixel into 0, 45, 90 and 135 degree
+```
 
-
-### Step 1. Noise Reduction
-### Step 1. Noise Reduction
-### Step 1. Noise Reduction
+### Step 3. Non-maximum Suppression
+This step is going to remove unwanted pixel by checking if it is a local maximum in its neighborhood in the direction of gradient.
 
 ```
-- Input image: chess_board.png
-- Command Line: python Image_Gradient.py -i chess_board.png
+Below explanation is from "openCV-python documentation"
 ```
-To be more graphical. An edge is shown by the “jump” in intensity in the plot below:
-(It shows more clearly if we take the first derivative on f(t))
-
 ![](README_IMG/thresh.png)
 
+Point A is on the edge ( in vertical direction). Gradient direction is normal to the edge. Point B and C are in gradient directions. So point A is checked with point B and C to see if it forms a local maximum. If so, it is considered for next stage, otherwise, it is suppressed ( put to zero).
+
+### Step 4. Hysteresis Thresholding
+This step need to find two threshold values, minVal and maxVal to determine the edges.
+
 ```
-NOTE: we can find an edge by calculate pixel locations where the gradient is higher than its 
-neighbors (or to generalize, higher than a threshold).
+Below explanation is from "openCV-python documentation"
+```
+![](README_IMG/thresh.png)
+
+The edge A is above the maxVal, so considered as “sure-edge”. Although edge C is below maxVal, it is connected to edge A, so that also considered as valid edge and we get that full curve. But edge B, although it is above minVal and is in same region as that of edge C, it is not connected to any “sure-edge”, so that is discarded. So it is very important that we have to select minVal and maxVal accordingly to get the correct result.
+
+
+
+### Canny Edge Detection
+
+```
+- Input image: Lenna.jpg
+- Command Line: python Canny_Edge_Detection.py -i Lenna.jpg
 ```
 
 ![](README_IMG/canny_edge.png)
