@@ -24,6 +24,11 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
     - Morphological Transformations
 4. [Image Filtering](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
     - [Median Filter Implementaion](https://github.com/Hank-Tsou/Implement-median_filter)
+5. [Image Gradients](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/5_Image_Gradient)
+    - [Canny Edge Detection](...)
+    
+    
+    
 ```
 CONTINUE...
 ```
