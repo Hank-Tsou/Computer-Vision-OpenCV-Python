@@ -1,5 +1,5 @@
 # Image Gradient
-Use image gradient to find edges in an image, in an edge the pixel intensity changes or a sharp change in color. So we use derivative to express these kind of changes.
+Use image gradient to find edges in an image. In an edge the pixel intensity changes or a sharp change in color. So we use derivative to express these kind of changes.
 
 ## Outline:
 - Sobel Derivatives 
@@ -26,10 +26,10 @@ Function: sobel = cv2.Sobel(src_img, ddepth, dx, dy, ksize)
   - ddepth: The depth of the output image. We set it to cv2.CV_64F to avoid overflow.
 ```
 
-Sobel Operator combines Gaussian smoothing and differentiation. It computes an approximation of the gradient by placing the gradient matrix over each pixel of an image. 
+Sobel Operator combines Gaussian smoothing and differentiation. It computes an approximation of the gradient by placing the gradient matrix over each pixel of an image. [(Image Filtering)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
 
 ```
-Below is how convolution filter work on an image:
+Below is how matrix filter work on an image:
 
 * Assume 'I' is an image matrix
 
@@ -61,7 +61,7 @@ NOTE: Use function cv2.addWeighted() to combine two result. [(Image Blending)](h
 
 ![](README_IMG/scharr_result.png)
 
-#### c. Laplacian Derivatives
+#### c. Laplacian Derivatives (second derivative)
 ```
 Function: laplacian = cv2.Laplacian(src_img, ddepth)
   - ddepth: The depth of the output image. We set it to cv2.CV_64F to avoid overflow.
