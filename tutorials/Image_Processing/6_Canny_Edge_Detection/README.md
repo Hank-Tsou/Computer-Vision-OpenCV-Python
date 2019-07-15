@@ -6,18 +6,12 @@
 ### Step 1. Noise Reduction
 Noise will effect the accuracy of the result, so the first step of canny edge detection is to reduce noise by using 5x5 Gaussian filter. [(see Image Filtering)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
 
+### Step 2. Find Intensity Gradient (magnitude) and Orientation of the Image
+(a) Use Sobel kernel in both horizontal and vertical direction to get first derivative of both direction. 
+(b) Then we can find edge gradient and direction for each pixel with the two result image.
+The equation is as follow:
 
 
-
-
-
-
-
-
-
-
-
-### Step 1. Noise Reduction
 ### Step 1. Noise Reduction
 ### Step 1. Noise Reduction
 ### Step 1. Noise Reduction
