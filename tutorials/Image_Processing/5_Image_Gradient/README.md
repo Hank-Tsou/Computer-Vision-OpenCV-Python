@@ -12,6 +12,7 @@ Use image gradient to find edges in an image, in an edge the pixel intensity cha
 - Command Line: python Image_Gradient.py -i chess_board.png
 ```
 To be more graphical. An edge is shown by the “jump” in intensity in the plot below:
+(It shows more clearly if we take the first derivative on f(t))
 
 ![](README_IMG/conv_filter.gif)
 
@@ -32,9 +33,9 @@ Below is how convolution filter work on an image:
 
 * Assume 'I' is an image matrix
 
-                              [-1 0 +1]                                     [-1 -2 -1]
-Horizontal changes: result =  [-2 0 +2] * I   Horizontal changes: result =  [ 0  0  0] * I  
-                              [-1 0 +1]                                     [+1 +2 +1]
+                              [-1 0 +1]                                    [-1 -2 -1]
+Horizontal changes: result =  [-2 0 +2] * I    Vertical changes: result =  [ 0  0  0] * I  
+                              [-1 0 +1]                                    [+1 +2 +1]
 ```
 
 NOTE: Use function cv2.addWeighted() to combine two result. [(Image Blending)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation) [(Code)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
@@ -43,22 +44,31 @@ NOTE: Use function cv2.addWeighted() to combine two result. [(Image Blending)](h
 
 #### b. Scharr Derivatives
 ```
-Function: 
+Function: Scharr = cv2.Scharr(src_img, ddepth, dx, dy)
+  - ddepth: The depth of the output image. Here we set to -1.
 ```
 ```
-The function using kernel:
+This is as fast but "more accurate" than the standard Sobel function. It implements the following kernels:
 
-K = 1/(kernel_width * kernel_height) * np.ones(kernel_size, np.float32) [opecv-python documentation]
+* Assume 'I' is an image matrix
+
+                              [-3  0 +3 ]                                    [-3 -10 -3]
+Horizontal changes: result =  [-10 0 +10] * I    Vertical changes: result =  [ 0   0  0] * I  
+                              [-3  0 +3 ]                                    [+3 +10 +3]
 ```
+
+NOTE: Use function cv2.addWeighted() to combine two result. [(Image Blending)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation) [(Code)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Core_Operation/image_blending.py)
+
+![](README_IMG/conv_filter.gif)
+
 #### c. Laplacian Derivatives
 ```
-Function: 
+Function: laplacian = cv2.Laplacian(src_img, ddepth)
+  - ddepth: The depth of the output image. We set it to cv2.CV_64F to avoid overflow.
 ```
+We can observe the figure below, the second derivative on an edge is zero. So, we can also use this criterion to attempt to detect edges in an image. 
+
 ![](README_IMG/Gaussian_filter.png)
-
-
-
-
 
 
 ## Code
