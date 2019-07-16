@@ -13,7 +13,7 @@
 #### 1. Gaussian pyramids
 Each pixel is constructed by calculating a gaussian weighted average of the neighboring pixels of a source image and scaling the image down. 
 
-During down sampling process a M * N image becomes M/2 * N/2 image. So area reduces to 1/4 of original area. The opposite process as doing up sampling.
+During down sampling process a M * N image becomes M/2 * N/2 image. So area reduces to 1/4 of original area. The opposite process for doing up sampling.
 
 ```python
 down_sampling = cv2.pyrDown(src_img, dst_size)
