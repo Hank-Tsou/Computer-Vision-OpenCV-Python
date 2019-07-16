@@ -11,7 +11,7 @@
 - Command Line: python Image_Pyramid.py -i dog.jpg
 ```
 #### 1. Gaussian pyramids
-Each pixel is constructed by calculating a gaussian weighted average of the neighboring pixels of a source image and scaling the image down. 
+Each pixel is constructed by calculating a gaussian weighted average of the neighboring pixels of a source image then remove every even-numbered row and column to scale the image down. 
 
 During down sampling process a M * N image becomes M/2 * N/2 image. So area reduces to 1/4 of original area. The opposite process for doing up sampling.
 
@@ -56,4 +56,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
-
+(Gaussian pyramid) https://docs.opencv.org/2.4/doc/tutorials/imgproc/pyramids/pyramids.html
