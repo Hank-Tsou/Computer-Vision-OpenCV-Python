@@ -27,10 +27,12 @@ lost information during down sampling.
 ```
 
 #### 2. Laplacian pyramids
+Laplacian Pyramids are formed from the Gaussian Pyramids. A level in Laplacian Pyramid is formed by the difference between that level in Gaussian Pyramid and expanded version of its upper level in Gaussian Pyramid. The process show as below:
 
+```
+NOTE: Should adjust the screen brighter to see the contour of the image or it will be all black.
+```
 ![](README_IMG/Laplacian.png)
-
-
 
 ## Code
 - [Image pyramids](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/7_Image_Pyramids)
