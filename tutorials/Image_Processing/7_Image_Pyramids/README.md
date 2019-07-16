@@ -22,7 +22,7 @@ up_sampling   = cv2.pyrUp(src_img, dst_size)
 ```
 ![](README_IMG/Gaussian.png)
 ```
-NOTE: In figure above, while doing up sampling, image decrease the resolution because the process 
+NOTE: In figure above, while doing up sampling, image decrease resolution because the process 
 lost information during down sampling.
 ```
 
