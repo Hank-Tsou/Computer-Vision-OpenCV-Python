@@ -30,7 +30,7 @@ lost information during down sampling.
 Laplacian Pyramids are formed from the Gaussian Pyramids. A level in Laplacian Pyramid is formed by the difference between that level in Gaussian Pyramid and expanded version of its upper level in Gaussian Pyramid. The process show as below:
 
 ```
-    Generate Laplacian Pyramids:                 Re-construct the image using Laplasian pyramid:
+  * Generate Laplacian Pyramids:               * Re-construct the image using Laplasian pyramid:
 
     L0 = G0 - G1(Expand)                         re-construct(3) = L3 + L4(Expand)
     L1 = G1 - G2(Expand)                         re-construct(2) = L2 + re-construct(3)(Expand)
