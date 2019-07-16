@@ -58,3 +58,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
 * (Gaussian pyramid) https://docs.opencv.org/2.4/doc/tutorials/imgproc/pyramids/pyramids.html
+* (Laplacian process) http://www.eng.tau.ac.il/~ipapps/Slides/lecture05.pdf
