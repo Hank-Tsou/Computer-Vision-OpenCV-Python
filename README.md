@@ -27,7 +27,8 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
 5. [Image Gradients](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/5_Image_Gradient)
 6. [Canny Edge Detection](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/6_Canny_Edge_Detection)
     - [Canny Edge Detection Implementaion](https://github.com/Hank-Tsou/Implement-Edge-Detection)
-
+7. [Image Pyramids](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/7_Image_Pyramids)
+    - [Image Blending Using Image Pyramid Implementaion](https://github.com/Hank-Tsou/Image-Pyramids)
     
     
 ```
