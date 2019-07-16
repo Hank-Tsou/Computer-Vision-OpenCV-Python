@@ -57,4 +57,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
-(Gaussian pyramid) https://docs.opencv.org/2.4/doc/tutorials/imgproc/pyramids/pyramids.html
+* (Gaussian pyramid) https://docs.opencv.org/2.4/doc/tutorials/imgproc/pyramids/pyramids.html
