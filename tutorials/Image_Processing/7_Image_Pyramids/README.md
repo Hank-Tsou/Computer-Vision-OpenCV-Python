@@ -20,10 +20,14 @@ original area. The similar process as doing up sampling.
 ```
 ```python
 down_sampling = cv2.pyrDown(src_img, dst_size)
-up_sampling = cv2.pyrUp(src_img, dst_size)
+up_sampling   = cv2.pyrUp(src_img, dst_size)
     - dst_size: result image size
 ```
 ![](README_IMG/Gaussian.png)
+```
+NOTE: In figure above, while doing up sampling, image decrease the resolution because the process 
+lost information during down sampling 
+```
 
 #### 2. Laplacian pyramids
 
