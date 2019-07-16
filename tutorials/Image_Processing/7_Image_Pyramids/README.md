@@ -23,21 +23,17 @@ down_sampling = cv2.pyrDown(src_img, dst_size)
 up_sampling = cv2.pyrUp(src_img, dst_size)
     - dst_size: result image size
 ```
-![](README_IMG/canny_edge.png)
+![](README_IMG/Gaussian.png)
+
 #### 2. Laplacian pyramids
 
+![](README_IMG/Laplacian.png)
 
 
-
-
-
-
-
-![](README_IMG/canny_edge.png)
 
 ## Code
-- [Canny Edge Detection](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/6_Canny_Edge_Detection)
-- [Implementation from scratch](https://github.com/Hank-Tsou/Implement-Edge-Detection)
+- [Image pyramids](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/7_Image_Pyramids)
+- [Implement pyramid image blending](https://github.com/Hank-Tsou/Image-Pyramids)
 
 ## License
 
