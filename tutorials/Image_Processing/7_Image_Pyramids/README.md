@@ -41,7 +41,8 @@ Laplacian Pyramids are formed from the Gaussian Pyramids. A level in Laplacian P
 ```
 ![](README_IMG/pyramid.png)
 ```
-NOTE: Can adjust the screen brighter to see the contour of the image below or it will be all black.
+NOTE: Laplacian pyramid images are like edge images only. Can adjust the screen brighter to see the 
+contour of the image below or it will be all black.
 ```
 ![](README_IMG/Laplacian.png)
 
