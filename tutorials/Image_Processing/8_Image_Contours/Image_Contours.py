@@ -15,8 +15,8 @@ import numpy as np
 import argparse
 from matplotlib import pyplot as plt
 
+# ------------------- Function to draw contour points ------------------- #
 def draw_points(image, contours):
-    temp_Image = np.zeros(image.shape,np.uint8)
     temp_Image = image.copy()
     for i in range(len(contours)):
         for p in range(len(contours[i])):
@@ -28,7 +28,7 @@ def draw_points(image, contours):
 def Image_Contour(image):
     # convert to grayscale image
     gray_img = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
-    # apply threshold for the image
+    # apply threshold to the image
     ret,thresh = cv2.threshold(gray_img,250,255,cv2.THRESH_BINARY_INV)
 
     # find contours
@@ -40,7 +40,7 @@ def Image_Contour(image):
     # draw contours
     contour_img = cv2.drawContours(image, contours, -1, (255,0,0), 3)
 
-    # show result (should trun the screen brighter to see the result)
+    # show result
     plt.subplot(131),plt.imshow(cv2.cvtColor(contour_img, cv2.COLOR_BGR2RGB))
     plt.title('draw Image'), plt.xticks([]), plt.yticks([])
     plt.subplot(132),plt.imshow(cv2.cvtColor(contour_img_1, cv2.COLOR_BGR2RGB))
