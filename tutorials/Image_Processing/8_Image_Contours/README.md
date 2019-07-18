@@ -51,7 +51,9 @@ NOTE:
 ### More - drawpoint function
 ```
 cv2.findContours() will return contour pixels, and cv2.drawContours() will automatically connect all 
-the pixels. In order to see the real return contour points, here use cv2.circle() to draw a dot on each pixel.
+the pixels. In order to see the real return contour points, here use cv2.circle() to draw a dot on 
+each pixel.
+
   * Function: cv2.circle(src_img, center, radius, color, thickness)
 ```
 
