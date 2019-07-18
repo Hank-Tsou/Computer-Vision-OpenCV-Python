@@ -1,15 +1,41 @@
-# Image Pyramids
+# Image Contours
 
 ## Outline
-- Image pyramid
-    - Gaussian pyramid
-    - Laplacian pyramid
+- Image Contours
+- Contour Features
+    - 
 
-### Image Pyramids
+### Image Contours
+In OpenCV, finding contours is like finding white object from black background. So object to be found should be white and background should be black.  - (from openCV-python tutorial)
 ```
-- Input image: dog.jpg
-- Command Line: python Image_Pyramid.py -i dog.jpg
+- Input image: shapes.png
+- Command Line: python Image_Contours.py -i shapes.png
 ```
+```
+Function: image, contours, hierarchy = cv2.findContours(src_img, mode, method)
+  - mode:
+    * CV_RETR_EXTERNAL: retrieves only the extreme outer contours.
+    * CV_RETR_LIST: retrieves all of the contours without establishing any hierarchical relationships.
+    * CV_RETR_CCOMP: retrieves all of the contours and organizes them into a two-level hierarchy. 
+    * CV_RETR_TREE: retrieves all of the contours and reconstructs a full hierarchy of nested contours. 
+  - method:
+    * CV_CHAIN_APPROX_NONE: stores absolutely all the contour points. 
+    * CV_CHAIN_APPROX_SIMPLE: stores only several important points.
+```
+```
+NOTE: FindContours function modifies the source image. So can use image.copy() to store the original image.
+```
+
+
+
+
+
+
+
+
+
+
+
 #### 1. Gaussian pyramids
 Each pixel is constructed by calculating a gaussian weighted average of the neighboring pixels of a source image then remove every even-numbered row and column to scale the image down. 
 
