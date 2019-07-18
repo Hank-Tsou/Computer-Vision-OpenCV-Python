@@ -122,7 +122,7 @@ Main Function for "rotated rectangle":
     * box = cv2.boxPoints(rectangle)
 ```
 ```
-NOTE: use numpy to ge the rotated box contours --> box = np.int0(box)
+NOTE: use numpy to get the rotated box contours --> box = np.int0(box)
 ```
 ![](README_IMG/bonding_box.png)
  
