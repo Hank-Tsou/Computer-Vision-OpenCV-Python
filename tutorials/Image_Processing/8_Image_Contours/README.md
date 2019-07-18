@@ -18,7 +18,9 @@ In OpenCV, finding contours is like finding white object from black background. 
 - Input image: shapes.png
 - Command Line: python Image_Contours.py -i shapes.png
 ```
+```python
 Main Function: image, contours, hierarchy = cv2.findContours(src_img, mode, method)
+```
 ```python
 - mode:
   * CV_RETR_EXTERNAL: retrieves only the extreme outer contours.
@@ -53,8 +55,9 @@ Function: cv2.circle(src_img, center, radius, color, thickness)
 
 #### a. Moments
 Image moments help you to calculate some features like center of mass of the object, area of the object etc. Check out the wikipedia page on [Image Moments](https://en.wikipedia.org/wiki/Image_moment)   - (from openCV-python tutorial)
-
+```python
 Main Function: M = cv2.moments(contour)
+```
 ```
 Here extract useful data from moments(M) to calculate Centroid:
   * cx = int(M['m10']/M['m00'])
@@ -62,18 +65,41 @@ Here extract useful data from moments(M) to calculate Centroid:
 ```
 
 #### b. Contour Area and Perimeter
+```python
 Main Function:
   (1) area = cv2.contourArea(contour)
   (2) perimeter = cv2.arcLength(contour, isClosed)
       - isClosed: whether the curve is closed or not.
 ```
+```
 NOTE: The unit for the Area and Perimeter is "pixel".
 ```
 
+#### c. Contour Approximation
+It approximates a contour shape to another shape with less number of vertices depending upon the precision we specify.
 
+```python
+Main Function: approx = cv2.approxPolyDP(contour, epsilon, isClosed)
 
+epsilon = 0.02 * cv2.arcLength(contour,isClosed)
+  - epsilon: Parameter specifying the approximation accuracy. This is the maximum distance between 
+             the original curve and its approximation.
+```
+![](README_IMG/approximation.png)
 
-
+#### c. Convex Hull
+ ```
+ Main Function: hull = cv2.convexHull(contour)
+ ```
+ ![](README_IMG/convex_hull.png)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 ![](README_IMG/Gaussian.png)
 ```
 NOTE: In figure above, while doing up sampling, image decrease resolution because the process 
