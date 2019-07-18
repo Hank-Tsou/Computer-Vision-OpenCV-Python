@@ -10,7 +10,7 @@ In OpenCV, finding contours is like finding white object from black background. 
 - Input image: shapes.png
 - Command Line: python Image_Contours.py -i shapes.png
 ```
-- Function: image, contours, hierarchy = cv2.findContours(src_img, mode, method)
+Function: image, contours, hierarchy = cv2.findContours(src_img, mode, method)
 ```python
   - mode:
     * CV_RETR_EXTERNAL: retrieves only the extreme outer contours.
