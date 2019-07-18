@@ -25,7 +25,6 @@ Main Function:
     
   - Draw Contours: contour_img = cv2.drawContours(src_img, contour, contour_index, color, thickness)
     * contour_index = -1, draw all the contours.
-
 ```
 ```python
 cv2.findContours() mode and method:
@@ -35,6 +34,7 @@ cv2.findContours() mode and method:
   * CV_RETR_LIST: retrieves all of the contours without establishing any hierarchical relationships.
   * CV_RETR_CCOMP: retrieves all of the contours and organizes them into a two-level hierarchy. 
   * CV_RETR_TREE: retrieves all of the contours and reconstructs a full hierarchy of nested contours.   
+
 - method:
   * CV_CHAIN_APPROX_NONE: stores absolutely all the contour points. 
   * CV_CHAIN_APPROX_SIMPLE: stores only several important points.
