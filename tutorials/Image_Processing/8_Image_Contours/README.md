@@ -21,10 +21,10 @@ In OpenCV, finding contours is like finding white object from black background. 
 ```
 Main Function: 
   - Find Contours: image, contours, hierarchy = cv2.findContours(src_img, mode, method)
-    - return contour structure(list): [ [contour_1] [contour_2] [contour_3] ... ]
+    * return contour structure(list): [ [contour_1] [contour_2] [contour_3] ... ]
     
   - Draw Contours: contour_img = cv2.drawContours(src_img, contour, contour_index, color, thickness)
-    - contour_index = -1, draw all the contours.
+    * contour_index = -1, draw all the contours.
 
 ```
 ```python
