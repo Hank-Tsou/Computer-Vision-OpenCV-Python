@@ -29,7 +29,9 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
     - [Canny Edge Detection Implementaion](https://github.com/Hank-Tsou/Implement-Edge-Detection)
 7. [Image Pyramids](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/7_Image_Pyramids)
     - [Image Blending Using Image Pyramid Implementaion](https://github.com/Hank-Tsou/Image-Pyramids)
-    
+8. [Image Contours](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/8_Image_Contours)
+    - Contour Feature
+   
     
 ```
 CONTINUE...
