@@ -20,8 +20,8 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
 1. [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
 2. [Image Thesholding](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/2_Image_Thresholding)
 3. [Image Transformation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/3_Image_Transformation)
-    - Geometric Transformations
-    - Morphological Transformations
+    - Geometric Transformations (include)
+    - Morphological Transformations (include)
 4. [Image Filtering](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
     - [Median Filter Implementaion](https://github.com/Hank-Tsou/Implement-median_filter)
 5. [Image Gradients](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/5_Image_Gradient)
@@ -30,7 +30,7 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
 7. [Image Pyramids](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/7_Image_Pyramids)
     - [Image Blending Using Image Pyramid Implementaion](https://github.com/Hank-Tsou/Image-Pyramids)
 8. [Image Contours](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/8_Image_Contours)
-    - Contour Feature
+    - Contour Feature (include)
    
     
 ```
