@@ -11,7 +11,7 @@
   - Minimum Enclosing Circle and Fitting an Ellipse
   - Extreme Points
 
-### Image Contours
+## Image Contours
 In OpenCV, finding contours is like finding white object from black background. So object to be found should be white and background should be black.   - (from openCV-python tutorial)
 ```
 - File: Image_Contours.py
@@ -46,7 +46,7 @@ FindContours() will return contour pixels, here use cv2.circle() to draw a dot o
 Function: cv2.circle(src_img, center, radius, color, thickness)
 ```
 
-### Image Features
+## Image Features
 ```python
 - File: Contour_Feature.py
 - Input image: feature.png
@@ -87,13 +87,13 @@ epsilon = 0.02 * cv2.arcLength(contour,isClosed)
 ```
 ![](README_IMG/approximation.png)
 
-#### c. Convex Hull
+#### d. Convex Hull
  ```
  Main Function: hull = cv2.convexHull(contour)
  ```
  ![](README_IMG/convex_hull.png)
  
-#### d. Bounding Rectangle
+#### e. Bounding Rectangle
 
 ```python
 Main Function for straight rectangle:
@@ -114,7 +114,7 @@ NOTE: use numpy to ge the rotated box contours --> box = np.int0(box)
 ```
 ![](README_IMG/bonding_box.png)
  
-#### d. Minimum Enclosing Circle
+#### f. Minimum Enclosing Circle
  ```python
 Main Function for Enclosing Circle:
   - (x,y),radius = cv2.minEnclosingCircle(cnt)
@@ -128,7 +128,7 @@ Main Function for Fitting an Ellipse:
 
 ![](README_IMG/circle.png)
  
-#### e. Extreme Points
+#### g. Extreme Points
 ```
 Main Function:
   - leftmost = tuple(cnt[cnt[:,:,0].argmin()][0])
@@ -137,6 +137,11 @@ Main Function:
   - bottommost = tuple(cnt[cnt[:,:,1].argmax()][0])
 ```
 ![](README_IMG/extre_point.png)
+
+## More Contour Properties and Functions
+- [Contour Properties](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_contours/py_contour_properties/py_contour_properties.html)
+- [More Functions](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_contours/py_contours_more_functions/py_contours_more_functions.html)
+- [Contours Hierarchy](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_contours/py_contours_hierarchy/py_contours_hierarchy.html)
 
 ## Code
 - [Image Contours](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/8_Image_Contours/Image_Contours.py)
