@@ -22,13 +22,19 @@ Function: image, contours, hierarchy = cv2.findContours(src_img, mode, method)
   * CV_CHAIN_APPROX_SIMPLE: stores only several important points.
 ```
 ```
-NOTE: FindContours() modifies the source image. So can use image.copy() to store the original image.
+NOTE: 
+  * FindContours() modifies the source image. So can use image.copy() to store the original image.
+  * The different between two Contour approximation method show as blow:
+    (1) cv2.CV_CHAIN_APPROX_SIMPLE
+    (2) cv2.CV_CHAIN_APPROX_NONE
 ```
 ![](README_IMG/contour.png)
 
-
-
-
+### More - drawpoint function
+```
+FindContours() will return contour pixels, this function use cv2.circle() to draw a dot on each pixel.
+```
+Function: cv2.circle(src_img, center, radius, color, thickness)
 
 
 
