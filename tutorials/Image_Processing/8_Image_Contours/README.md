@@ -108,7 +108,7 @@ epsilon = 0.02 * cv2.arcLength(contour,isClosed)
 #### e. Bounding Rectangle
 
 ```python
-Main Function for straight rectangle:
+Main Function for "straight rectangle":
   (1) x,y,w,h = cv2.boundingRect(contour)
       - (x,y) is the top-left of the rectangle and (w,h) is its width and height.
       
@@ -117,7 +117,7 @@ Main Function for straight rectangle:
       - point_2: Vertex of the rectangle opposite to point_1 .
 ```
 ```python
-Main Function for rotated rectangle:
+Main Function for "rotated rectangle":
   - rectangle = cv2.minAreaRect(contour)
     * box = cv2.boxPoints(rectangle)
 ```
@@ -128,12 +128,12 @@ NOTE: use numpy to ge the rotated box contours --> box = np.int0(box)
  
 #### f. Minimum Enclosing Circle
  ```python
-Main Function for Enclosing Circle:
+Main Function for "Enclosing Circle":
   - (x,y),radius = cv2.minEnclosingCircle(contour)
     * circle_img = cv2.circle(src_img, center, radius,color, thickness)
 ```
 ```python
-Main Function for Fitting an Ellipse:
+Main Function for "Fitting an Ellipse":
   - ellipse = cv2.fitEllipse(contour)
    * ellipse_img = cv2.ellipse(src_img, ellipse, color, thickness)
 ```
@@ -146,6 +146,9 @@ Main Function:
   - rightmost = tuple(cnt[cnt[:,:,0].argmax()][0])
   - topmost = tuple(cnt[cnt[:,:,1].argmin()][0])
   - bottommost = tuple(cnt[cnt[:,:,1].argmax()][0])
+```
+```
+NOTE: use cv2.circle() to draw a dot on 4 extreme points.
 ```
 ![](README_IMG/extre_point.png)
 
