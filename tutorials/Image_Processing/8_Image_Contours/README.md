@@ -22,9 +22,9 @@ Function: image, contours, hierarchy = cv2.findContours(src_img, mode, method)
   * CV_CHAIN_APPROX_SIMPLE: stores only several important points.
 ```
 ```
-NOTE: FindContours function modifies the source image. So can use image.copy() to store the original image.
+NOTE: FindContours() modifies the source image. So can use image.copy() to store the original image.
 ```
-
+![](README_IMG/Gaussian.png)
 
 
 
