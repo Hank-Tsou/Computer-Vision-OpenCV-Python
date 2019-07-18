@@ -50,13 +50,14 @@ NOTE:
 
 ### More - drawpoint function
 ```
-FindContours() will return contour pixels, here use cv2.circle() to draw a dot on each pixel.
-Function: cv2.circle(src_img, center, radius, color, thickness)
+cv2.findContours() will return contour pixels, and cv2.drawContours() will automatically connect all 
+the pixels. In order to see the real return contour points, here use cv2.circle() to draw a dot on each pixel.
+  * Function: cv2.circle(src_img, center, radius, color, thickness)
 ```
 
 ## Image Features
 ```python
-- File: Contour_Feature.py
+- File name: Contour_Feature.py
 - Input image: feature.png
 - Command Line: python Contour_Feature.py -i feature.png
 ```
@@ -82,9 +83,10 @@ Main Function:
 ```
 NOTE: The unit for the Area and Perimeter is "pixel".
 ```
+![](README_IMG/feature_info.png)
 
 #### c. Contour Approximation
-It approximates a contour shape to another shape with less number of vertices depending upon the precision we specify.
+It approximates a contour shape to another shape with less number of vertices depending upon the precision(epsilon) we specify.
 
 ```python
 Main Function: approx = cv2.approxPolyDP(contour, epsilon, isClosed)
@@ -115,7 +117,7 @@ Main Function for straight rectangle:
 ```python
 Main Function for rotated rectangle:
   - rectangle = cv2.minAreaRect(contour)
-  - box = cv2.boxPoints(rectangle)
+    * box = cv2.boxPoints(rectangle)
 ```
 ```
 NOTE: use numpy to ge the rotated box contours --> box = np.int0(box)
@@ -125,15 +127,14 @@ NOTE: use numpy to ge the rotated box contours --> box = np.int0(box)
 #### f. Minimum Enclosing Circle
  ```python
 Main Function for Enclosing Circle:
-  - (x,y),radius = cv2.minEnclosingCircle(cnt)
-  - circle_img = cv2.circle(temp_Image,(int(x),int(y)),int(radius),(0,255,0),3)
+  - (x,y),radius = cv2.minEnclosingCircle(contour)
+    * circle_img = cv2.circle(src_img, center, radius,color, thickness)
 ```
 ```
 Main Function for Fitting an Ellipse:
-  - ellipse = cv2.fitEllipse(cnt)
-  - ellipse_img = cv2.ellipse(temp_Image,ellipse,(0,255,0),3)
+  - ellipse = cv2.fitEllipse(contour)
+   * ellipse_img = cv2.ellipse(src_img, ellipse, color, thickness)
 ```
-
 ![](README_IMG/circle.png)
  
 #### g. Extreme Points
