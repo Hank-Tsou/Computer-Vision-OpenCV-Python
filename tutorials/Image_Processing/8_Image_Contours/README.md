@@ -132,7 +132,7 @@ Main Function for Enclosing Circle:
   - (x,y),radius = cv2.minEnclosingCircle(contour)
     * circle_img = cv2.circle(src_img, center, radius,color, thickness)
 ```
-```
+```python
 Main Function for Fitting an Ellipse:
   - ellipse = cv2.fitEllipse(contour)
    * ellipse_img = cv2.ellipse(src_img, ellipse, color, thickness)
@@ -140,7 +140,7 @@ Main Function for Fitting an Ellipse:
 ![](README_IMG/circle.png)
  
 #### g. Extreme Points
-```
+```python
 Main Function:
   - leftmost = tuple(cnt[cnt[:,:,0].argmin()][0])
   - rightmost = tuple(cnt[cnt[:,:,0].argmax()][0])
