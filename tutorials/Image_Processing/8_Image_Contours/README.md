@@ -3,9 +3,16 @@
 ## Outline
 - Image Contours
 - Contour Features
+  - Moments
+  - Contour Area and Perimeter
+  - Contour Approximation
+  - Convex Hull
+  - Bounding Rectangle
+  - Minimum Enclosing Circle
+  - Extreme Points
 
 ### Image Contours
-In OpenCV, finding contours is like finding white object from black background. So object to be found should be white and background should be black.  - (from openCV-python tutorial)
+In OpenCV, finding contours is like finding white object from black background. So object to be found should be white and background should be black.   - (from openCV-python tutorial)
 ```
 - Input image: shapes.png
 - Command Line: python Image_Contours.py -i shapes.png
@@ -33,23 +40,13 @@ NOTE:
 ### More - drawpoint function
 ```
 FindContours() will return contour pixels, this function use cv2.circle() to draw a dot on each pixel.
-```
 Function: cv2.circle(src_img, center, radius, color, thickness)
+```
 
-
-
-
-
-
-#### 1. Gaussian pyramids
-Each pixel is constructed by calculating a gaussian weighted average of the neighboring pixels of a source image then remove every even-numbered row and column to scale the image down. 
-
-During down sampling process a M * N image becomes M/2 * N/2 image. So area reduces to 1/4 of original area. The opposite process for doing up sampling.
-
+### Image Features
 ```python
-down_sampling = cv2.pyrDown(src_img, dst_size)
-up_sampling   = cv2.pyrUp(src_img, dst_size)
-    - dst_size: result image size
+- Input image: feature.png
+- Command Line: python Contour_Feature.py -i feature.png
 ```
 ![](README_IMG/Gaussian.png)
 ```
