@@ -14,19 +14,27 @@
 ## Image Contours
 In OpenCV, finding contours is like finding white object from black background. So object to be found should be white and background should be black.   - (from openCV-python tutorial)
 ```
-- File: Image_Contours.py
+- File name: Image_Contours.py
 - Input image: shapes.png
 - Command Line: python Image_Contours.py -i shapes.png
 ```
 ```python
-Main Function: image, contours, hierarchy = cv2.findContours(src_img, mode, method)
+Main Function: 
+  - Find Contours: image, contours, hierarchy = cv2.findContours(src_img, mode, method)
+    - return contour structure(list): [ [contour_1] [contour_2] [contour_3] ... ]
+    
+  - Draw Contours: contour_img = cv2.drawContours(src_img, contour, contour_index, color, thickness)
+    - contour_index = -1, draw all the contours.
+
 ```
 ```python
+Find contour mode and method:
+
 - mode:
   * CV_RETR_EXTERNAL: retrieves only the extreme outer contours.
   * CV_RETR_LIST: retrieves all of the contours without establishing any hierarchical relationships.
   * CV_RETR_CCOMP: retrieves all of the contours and organizes them into a two-level hierarchy. 
-  * CV_RETR_TREE: retrieves all of the contours and reconstructs a full hierarchy of nested contours. 
+  * CV_RETR_TREE: retrieves all of the contours and reconstructs a full hierarchy of nested contours.   
 - method:
   * CV_CHAIN_APPROX_NONE: stores absolutely all the contour points. 
   * CV_CHAIN_APPROX_SIMPLE: stores only several important points.
