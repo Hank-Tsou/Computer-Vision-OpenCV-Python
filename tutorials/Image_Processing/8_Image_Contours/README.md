@@ -8,7 +8,7 @@
   - Contour Approximation
   - Convex Hull
   - Bounding Rectangle
-  - Minimum Enclosing Circle
+  - Minimum Enclosing Circle and Fitting an Ellipse
   - Extreme Points
 
 ### Image Contours
@@ -93,42 +93,54 @@ epsilon = 0.02 * cv2.arcLength(contour,isClosed)
  ```
  ![](README_IMG/convex_hull.png)
  
- 
- 
- 
- 
- 
- 
- 
-![](README_IMG/Gaussian.png)
+#### d. Bounding Rectangle
+
+```python
+Main Function for straight rectangle:
+  (1) x,y,w,h = cv2.boundingRect(contour)
+      - (x,y) is the top-left of the rectangle and (w,h) is its width and height.
+      
+  (2) bonding_box = cv2.rectangle(src_img, point_1, point_2, color, thickness)
+      - point_1: Vertex of the rectangle.
+      - point_2: Vertex of the rectangle opposite to point_1 .
 ```
-NOTE: In figure above, while doing up sampling, image decrease resolution because the process 
-lost information during down sampling.
+```python
+Main Function for rotated rectangle:
+  - rectangle = cv2.minAreaRect(contour)
+  - box = cv2.boxPoints(rectangle)
+```
+```
+NOTE: use numpy to ge the rotated box contours --> box = np.int0(box)
+```
+![](README_IMG/bonding_box.png)
+ 
+#### d. Minimum Enclosing Circle
+ ```python
+Main Function for Enclosing Circle:
+  - (x,y),radius = cv2.minEnclosingCircle(cnt)
+  - circle_img = cv2.circle(temp_Image,(int(x),int(y)),int(radius),(0,255,0),3)
+```
+```
+Main Function for Fitting an Ellipse:
+  - ellipse = cv2.fitEllipse(cnt)
+  - ellipse_img = cv2.ellipse(temp_Image,ellipse,(0,255,0),3)
 ```
 
-#### 2. Laplacian pyramids
-Laplacian Pyramids are formed from the Gaussian Pyramids. A level in Laplacian Pyramid is formed by the difference between that level in Gaussian Pyramid and expanded version of its upper level in Gaussian Pyramid. The process show as below:
-
+![](README_IMG/circle.png)
+ 
+#### e. Extreme Points
 ```
-  * Generate Laplacian Pyramids:               * Re-construct the image using Laplasian pyramid:
-
-    L0 = G0 - G1(Expand)                         re-construct(3) = L3 + L4(Expand)
-    L1 = G1 - G2(Expand)                         re-construct(2) = L2 + re-construct(3)(Expand)
-    L2 = G2 - G3(Expand)                         re-construct(1) = L1 + re-construct(2)(Expand)
-        .                                        re-construct image = L0 + re-construct(1)(Expend)
-        .
-        .
+Main Function:
+  - leftmost = tuple(cnt[cnt[:,:,0].argmin()][0])
+  - rightmost = tuple(cnt[cnt[:,:,0].argmax()][0])
+  - topmost = tuple(cnt[cnt[:,:,1].argmin()][0])
+  - bottommost = tuple(cnt[cnt[:,:,1].argmax()][0])
 ```
-![](README_IMG/pyramid.png)
-```
-NOTE: Laplacian pyramid images are like edge images. Can adjust the screen brighter to see the 
-contour of the image below or it will be all black.
-```
-![](README_IMG/Laplacian.png)
+![](README_IMG/extre_point.png)
 
 ## Code
-- [Image pyramids](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/7_Image_Pyramids)
-- [Implement pyramid image blending](https://github.com/Hank-Tsou/Image-Pyramids)
+- [Image Contours](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/8_Image_Contours/Image_Contours.py)
+- [Contour Features](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/8_Image_Contours/Contour_Feature.py)
 
 ## License
 
@@ -137,5 +149,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
-* (Gaussian pyramid) https://docs.opencv.org/2.4/doc/tutorials/imgproc/pyramids/pyramids.html
-* (Laplacian process) http://www.eng.tau.ac.il/~ipapps/Slides/lecture05.pdf
+* (Contours) https://docs.opencv.org/2.4/modules/imgproc/doc/structural_analysis_and_shape_descriptors.html?highlight=minarearect#double%20arcLength(InputArray%20curve,%20bool%20closed)
+* (Drawing) https://docs.opencv.org/2.4/modules/core/doc/drawing_functions.html
