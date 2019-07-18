@@ -70,7 +70,7 @@ Image moments help you to calculate some features like center of mass of the obj
 Main Function: M = cv2.moments(contour)
 ```
 ```
-Here extract useful data from moments(M) to calculate Centroid:
+Here extract useful data from moments(M) to calculate contour Centroid:
   * cx = int(M['m10']/M['m00'])
   * cy = int(M['m01']/M['m00'])
 ```
