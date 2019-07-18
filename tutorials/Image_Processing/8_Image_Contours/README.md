@@ -14,10 +14,11 @@
 ### Image Contours
 In OpenCV, finding contours is like finding white object from black background. So object to be found should be white and background should be black.   - (from openCV-python tutorial)
 ```
+- File: Image_Contours.py
 - Input image: shapes.png
 - Command Line: python Image_Contours.py -i shapes.png
 ```
-Function: image, contours, hierarchy = cv2.findContours(src_img, mode, method)
+Main Function: image, contours, hierarchy = cv2.findContours(src_img, mode, method)
 ```python
 - mode:
   * CV_RETR_EXTERNAL: retrieves only the extreme outer contours.
@@ -39,15 +40,40 @@ NOTE:
 
 ### More - drawpoint function
 ```
-FindContours() will return contour pixels, this function use cv2.circle() to draw a dot on each pixel.
+FindContours() will return contour pixels, here use cv2.circle() to draw a dot on each pixel.
 Function: cv2.circle(src_img, center, radius, color, thickness)
 ```
 
 ### Image Features
 ```python
+- File: Contour_Feature.py
 - Input image: feature.png
 - Command Line: python Contour_Feature.py -i feature.png
 ```
+
+#### a. Moments
+Image moments help you to calculate some features like center of mass of the object, area of the object etc. Check out the wikipedia page on [Image Moments](https://en.wikipedia.org/wiki/Image_moment)   - (from openCV-python tutorial)
+
+Main Function: M = cv2.moments(contour)
+```
+Here extract useful data from moments(M) to calculate Centroid:
+  * cx = int(M['m10']/M['m00'])
+  * cy = int(M['m01']/M['m00'])
+```
+
+#### b. Contour Area and Perimeter
+Main Function:
+  (1) area = cv2.contourArea(contour)
+  (2) perimeter = cv2.arcLength(contour, isClosed)
+      - isClosed: whether the curve is closed or not.
+```
+NOTE: The unit for the Area and Perimeter is "pixel".
+```
+
+
+
+
+
 ![](README_IMG/Gaussian.png)
 ```
 NOTE: In figure above, while doing up sampling, image decrease resolution because the process 
