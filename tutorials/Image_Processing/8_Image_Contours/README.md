@@ -110,11 +110,11 @@ epsilon = 0.02 * cv2.arcLength(contour,isClosed)
 ```python
 Main Function for "straight rectangle":
   (1) x,y,w,h = cv2.boundingRect(contour)
-      - (x,y) is the top-left of the rectangle and (w,h) is its width and height.
+      * (x,y) is the top-left of the rectangle and (w,h) is its width and height.
       
   (2) bonding_box = cv2.rectangle(src_img, point_1, point_2, color, thickness)
-      - point_1: Vertex of the rectangle.
-      - point_2: Vertex of the rectangle opposite to point_1 .
+      * point_1: Vertex of the rectangle.
+      * point_2: Vertex of the rectangle opposite to point_1 .
 ```
 ```python
 Main Function for "rotated rectangle":
