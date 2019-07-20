@@ -99,7 +99,7 @@ epsilon = 0.02 * cv2.arcLength(contour,isClosed)
 ```
 ![](README_IMG/approximation.png)
 
-#### d. Convex Hull
+#### d. Convex Hull [(Implementation using Graham's Scan)](https://github.com/Hank-Tsou/Convex-Hull)
  ```
  Main Function: hull = cv2.convexHull(contour)
  ```
@@ -160,6 +160,7 @@ NOTE: use cv2.circle() to draw a dot on 4 extreme points.
 ## Code
 - [Image Contours](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/8_Image_Contours/Image_Contours.py)
 - [Contour Features](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/8_Image_Contours/Contour_Feature.py)
+- [Convex Hull Implementation](https://github.com/Hank-Tsou/Convex-Hull)
 
 ## License
 
