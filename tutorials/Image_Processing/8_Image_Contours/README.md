@@ -105,6 +105,10 @@ epsilon = 0.02 * cv2.arcLength(contour,isClosed)
  ```
  ![](README_IMG/convex_hull.png)
  
+ ```
+ NOTE: Provide implementation using Graham Scan Algorithm to find convex hull, see code link.
+ ```
+ 
 #### e. Bounding Rectangle
 
 ```python
