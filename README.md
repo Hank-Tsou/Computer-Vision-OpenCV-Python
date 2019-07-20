@@ -23,15 +23,15 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
     - Geometric Transformations (include)
     - Morphological Transformations (include)
 4. [Image Filtering](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/4_Image_Filtering)
-    - [Median Filter Implementaion](https://github.com/Hank-Tsou/Implement-median_filter)
+    - [(Implementaion) Median Filter](https://github.com/Hank-Tsou/Implement-median_filter)
 5. [Image Gradients](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/5_Image_Gradient)
 6. [Canny Edge Detection](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/6_Canny_Edge_Detection)
-    - [Canny Edge Detection Implementaion](https://github.com/Hank-Tsou/Implement-Edge-Detection)
+    - [(Implementaion) Canny Edge Detection](https://github.com/Hank-Tsou/Implement-Edge-Detection)
 7. [Image Pyramids](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/7_Image_Pyramids)
-    - [Image Blending Using Image Pyramid Implementaion](https://github.com/Hank-Tsou/Image-Pyramids)
+    - [(Implementaion) Image Blending Using Image Pyramid](https://github.com/Hank-Tsou/Image-Pyramids)
 8. [Image Contours](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/8_Image_Contours)
     - Contour Feature (include)
-    - [Convex Hull Implementaion](https://github.com/Hank-Tsou/Convex-Hull)
+    - [(Implementaion) Convex Hull](https://github.com/Hank-Tsou/Convex-Hull)
    
     
 ```
