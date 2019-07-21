@@ -22,7 +22,7 @@ Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
 ![](README_IMG/histo.png)
 
 ```
-NOTE: An singel channel image has 256 different possible intensities (0-255).
+NOTE: An single channel image has 256 different possible intensities (0-255).
 ```
 
 ### (b) Partial Image Histogram
@@ -34,24 +34,24 @@ Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
 ```
 ![](README_IMG/part_histo.png)
 
-#### Useful link:
+### Useful link:
 
 [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
 
 [Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation)
 
 
-## Histogram Equalization
-This method normally increase the global contrast of the image, it stretching out the intensity range of the image. The result shows as below:
+## Histogram Equalization [(Histogram Equalization Implementation)](https://github.com/Hank-Tsou/Histogram)
+This method normally increase the global contrast of the image, it stretching out the intensity range of the image. The process and result shows as below:
 ```python
 Main Function: equ_img = cv2.equalizeHist(src_img)
   * src_img: Source 8-bit single channel image(grayscale image).
 ```
 
-```
-The Process for Image Histogram Equalization:
-```
-Step 1: Calculate probability density function(PDF) P: P(i) is the PDF value at intensity i, in 8-bit single channel image L should be 256.
+
+### The Process for Image Histogram Equalization:
+
+Step 1: Calculate probability density function(PDF): P(i) is the PDF value at intensity i. In 8-bit single channel image L should be 256.
 
 ![](README_IMG/PDF.png)
 
