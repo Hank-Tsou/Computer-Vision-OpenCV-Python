@@ -19,6 +19,8 @@ Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
   * hist_size: Array of histogram sizes in each dimension.
   * range: Boundaries in each dimension
 ```
+![](README_IMG/histo.png)
+
 ```
 NOTE: An singel channel image has 256 different possible intensities (0-255).
 ```
@@ -30,7 +32,8 @@ NOTE: An singel channel image has 256 different possible intensities (0-255).
 Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
   * mask: Input mask = mask
 ```
-  
+![](README_IMG/part_histo.png)
+
 #### Useful link:
 
 [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
@@ -49,13 +52,12 @@ Main Function: equ_img = cv2.equalizeHist(src_img)
 The Process for Image Histogram Equalization:
 ```
 Step 1: Calculate probability density function(PDF) P: P(i) is the PDF value at intensity i, in 8-bit single channel image L should be 256.
-
+![](README_IMG/PDF.png)
 Step 2: Calculate Cumulative Distribution Function(CDF): 
-
+![](README_IMG/CDF.png)
 Step 3: Use the below equation to get new pixel value after histogram equalization.
-
-
-![](README_IMG/extre_point.png)
+![](README_IMG/equation.png)
+![](README_IMG/img_equal.png)
 
 ## Code
 - [Image Histogram](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/9_Image_Histogram)
