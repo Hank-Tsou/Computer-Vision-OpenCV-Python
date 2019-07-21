@@ -20,11 +20,12 @@ Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
   * hist_size: Array of histogram sizes in each dimension.
   * range: Boundaries in each dimension
 ```
-![](README_IMG/histo.png)
+![](README_IMG/hist.png)
 
 ```
-NOTE: An single channel image has 256 different possible intensities (0-255).
-      Can plot three different channels(RGB) on a figure.
+NOTE: 
+     * An single channel image has 256 different possible intensities (0-255).
+     * Can plot three different channels(RGB) on a figure.
 ```
 
 ### (b) Partial Image Histogram
@@ -38,9 +39,9 @@ Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
 
 ### Useful link:
 
-[Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
+- [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
 
-[Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation)
+- [Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation)
 
 
 ## Histogram Equalization 
