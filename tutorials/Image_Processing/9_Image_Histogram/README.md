@@ -55,13 +55,14 @@ Step 1: Calculate probability density function(PDF) P: P(i) is the PDF value at 
 
 ![](README_IMG/PDF.png)
 
-Step 2: Calculate Cumulative Distribution Function(CDF): 
+Step 2: Calculate Cumulative Distribution Function(CDF):
 
 ![](README_IMG/CDF.png)
 
 Step 3: Use the below equation to get new pixel value after histogram equalization.
-
-![](README_IMG/equation.png)
+```
+New pixel value H(i) = ((cdf(i)-cdf[0])/((width*height)-cdf[0])) * (L-1)
+```
 
 ![](README_IMG/img_equal.png)
 
