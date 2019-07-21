@@ -1,20 +1,13 @@
-# Image Contours
+# Image Histogram
 
 ## Outline
-- Image Contours
-- Contour Features
-  - Moments
-  - Contour Area and Perimeter
-  - Contour Approximation
-  - Convex Hull
-  - Bounding Rectangle
-  - Minimum Enclosing Circle and Fitting an Ellipse
-  - Extreme Points
+- Image Histogram
+- Histogram Equalization
 
-## Image Contours [(Code)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/8_Image_Contours/Image_Contours.py)
+## Image Histogram 
 In OpenCV, finding contours is like finding white object from black background. So object to be found should be white and background should be black.   - (from openCV-python tutorial)
 ```
-- File name: Image_Contours.py
+- File name: Histogram.py
 - Input image: shapes.png
 - Command Line: python Image_Contours.py -i shapes.png
 ```
