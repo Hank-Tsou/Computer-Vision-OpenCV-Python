@@ -64,7 +64,7 @@ Step 2: Calculate Cumulative Distribution Function(CDF):
 
 Step 3: Use the below equation to get new pixel value after histogram equalization.
 ```
-New pixel value H(i) = ((cdf(i)-cdf[0])/((width*height)-cdf[0])) * (L-1)
+New pixel value, Pixel(i) = ((cdf(i)-cdf[0])/((width*height)-cdf[0])) * (L-1)
 ```
 
 ![](README_IMG/equ_hist.png)
