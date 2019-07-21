@@ -52,7 +52,7 @@ Main Function: equ_img = cv2.equalizeHist(src_img)
 
 ### The Process for Image Histogram Equalization:
 
-Step 1: Calculate probability density function(PDF): P(i) is the PDF value at intensity i. In 8-bit single channel image L should be 256.
+Step 1: Calculate probability density function(PDF): P(i) is the PDF value at intensity (i). In 8-bit single channel image L should be 256.
 
 ![](README_IMG/PDF.png)
 
