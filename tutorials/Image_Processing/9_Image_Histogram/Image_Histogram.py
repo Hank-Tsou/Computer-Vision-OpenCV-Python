@@ -81,7 +81,7 @@ def Histogram_Equalization():
 # -------------------------- main -------------------------- #
 if __name__ == '__main__':
     # read one input from terminal
-    # (1) command line >> python Histogram.py -i input_image.jpg
+    # (1) command line >> python Image_Histogram.py -i input_image.jpg
 
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", required=True, help="Path to the input image")
