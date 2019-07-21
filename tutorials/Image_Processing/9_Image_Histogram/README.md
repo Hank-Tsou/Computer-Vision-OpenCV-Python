@@ -15,6 +15,7 @@ Image histogram is a graph showing distribution of the pixel intensity values in
 ### (a) Image Histogram
 ```python
 Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
+
   * mask: Input mask or None
   * hist_size: Array of histogram sizes in each dimension.
   * range: Boundaries in each dimension
