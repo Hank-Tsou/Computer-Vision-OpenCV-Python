@@ -69,7 +69,7 @@ New pixel value H(i) = ((cdf(i)-cdf[0])/((width*height)-cdf[0])) * (L-1)
 
 Provide histogram equalization implementation. [(Implementation Code)](https://github.com/Hank-Tsou/Histogram)
 
-## 2D Histogram and Histogram Backprojection
+## More: 2D Histogram and Histogram Backprojection
 - [2D Histogram](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_histograms/py_2d_histogram/py_2d_histogram.html)
 - [Histogram Backprojection](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_histograms/py_histogram_backprojection/py_histogram_backprojection.html)
 
