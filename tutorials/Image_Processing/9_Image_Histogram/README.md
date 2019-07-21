@@ -68,6 +68,7 @@ New pixel value H(i) = ((cdf(i)-cdf[0])/((width*height)-cdf[0])) * (L-1)
 
 ## Code
 - [Image Histogram](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/9_Image_Histogram)
+- [Image Histogram Implementation](https://github.com/Hank-Tsou/Histogram)
 
 ## License
 
