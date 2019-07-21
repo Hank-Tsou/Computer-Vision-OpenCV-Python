@@ -24,6 +24,7 @@ Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
 
 ```
 NOTE: An single channel image has 256 different possible intensities (0-255).
+      Can plot three different channels(RGB) on a figure.
 ```
 
 ### (b) Partial Image Histogram
