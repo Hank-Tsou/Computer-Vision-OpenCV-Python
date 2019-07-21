@@ -64,7 +64,7 @@ Step 3: Use the below equation to get new pixel value after histogram equalizati
 New pixel value H(i) = ((cdf(i)-cdf[0])/((width*height)-cdf[0])) * (L-1)
 ```
 
-![](README_IMG/img_equal.png)
+![](README_IMG/equ_hist.png)
 
 ## Code
 - [Image Histogram](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/9_Image_Histogram)
