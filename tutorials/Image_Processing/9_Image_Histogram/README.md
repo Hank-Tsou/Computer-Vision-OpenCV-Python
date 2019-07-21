@@ -41,7 +41,7 @@ Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
 [Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation)
 
 
-## Histogram Equalization [(Histogram Equalization Implementation)](https://github.com/Hank-Tsou/Histogram)
+## Histogram Equalization 
 This method normally increase the global contrast of the image, it stretching out the intensity range of the image. The process and result shows as below:
 ```python
 Main Function: equ_img = cv2.equalizeHist(src_img)
@@ -65,6 +65,8 @@ New pixel value H(i) = ((cdf(i)-cdf[0])/((width*height)-cdf[0])) * (L-1)
 ```
 
 ![](README_IMG/equ_hist.png)
+
+Provide histogram equalization implementation. [(Implementation Code)](https://github.com/Hank-Tsou/Histogram)
 
 ## Code
 - [Image Histogram](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/9_Image_Histogram)
