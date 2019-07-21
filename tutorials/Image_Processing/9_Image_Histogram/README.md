@@ -12,7 +12,7 @@ Image histogram is a graph showing distribution of the pixel intensity values in
 - Command Line: python Image_Histogram.py -i input_image.jpg
 ```
 
-(a) Image Histogram
+### (a) Image Histogram
 ```python
 Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
   * mask: Input mask or None
@@ -23,7 +23,7 @@ Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
 NOTE: An singel channel image has 256 different possible intensities (0-255).
 ```
 
-(b) Partial Image Histogram
+### (b) Partial Image Histogram
   * Step 1: Generate a binary mask.
   * Step 2: Use mask to select the region for calculate the histogram.
 ```python
@@ -31,29 +31,34 @@ Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
   * mask: Input mask = mask
 ```
   
-Useful link:
+#### Useful link:
+
 [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
+
 [Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation)
 
 
 ## Histogram Equalization
+This method normally increase the global contrast of the image, it stretching out the intensity range of the image. The result shows as below:
 ```python
 Main Function: equ_img = cv2.equalizeHist(src_img)
   * src_img: Source 8-bit single channel image(grayscale image).
 ```
 
+```
+The Process for Image Histogram Equalization:
+```
+Step 1: Calculate probability density function(PDF) P: P(i) is the PDF value at intensity i, in 8-bit single channel image L should be 256.
 
+Step 2: Calculate Cumulative Distribution Function(CDF): 
 
-
-
+Step 3: Use the below equation to get new pixel value after histogram equalization.
 
 
 ![](README_IMG/extre_point.png)
 
 ## Code
-- [Image Contours](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/8_Image_Contours/Image_Contours.py)
-- [Contour Features](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/blob/master/tutorials/Image_Processing/8_Image_Contours/Contour_Feature.py)
-- [Convex Hull Implementation](https://github.com/Hank-Tsou/Convex-Hull)
+- [Image Histogram](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/9_Image_Histogram)
 
 ## License
 
