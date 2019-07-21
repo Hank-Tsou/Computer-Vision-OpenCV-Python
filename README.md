@@ -36,6 +36,10 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
 8. [Image Contours](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/8_Image_Contours)
     - Contour Feature (include)
     - [(Implementaion) Convex Hull](https://github.com/Hank-Tsou/Convex-Hull)
+ 
+9. [Image Histogram](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/9_Image_Histogram)
+    - [(Implementaion) Histogram Equalization](https://github.com/Hank-Tsou/Histogram)
+    - 2D Histogram and Histogram Backprojection (Reference Link)
    
     
 ```
