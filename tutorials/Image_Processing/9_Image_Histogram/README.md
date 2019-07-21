@@ -52,12 +52,15 @@ Main Function: equ_img = cv2.equalizeHist(src_img)
 The Process for Image Histogram Equalization:
 ```
 Step 1: Calculate probability density function(PDF) P: P(i) is the PDF value at intensity i, in 8-bit single channel image L should be 256.
+
 ![](README_IMG/PDF.png)
 
 Step 2: Calculate Cumulative Distribution Function(CDF): 
+
 ![](README_IMG/CDF.png)
 
 Step 3: Use the below equation to get new pixel value after histogram equalization.
+
 ![](README_IMG/equation.png)
 
 ![](README_IMG/img_equal.png)
