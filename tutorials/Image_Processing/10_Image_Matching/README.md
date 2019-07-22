@@ -18,7 +18,7 @@ Main Function: res = cv2.matchTemplate(src_img, target, method)
       * cv2.TM_CCOEFF_NORMED     * cv2.TM_SQDIFF
       * cv2.TM_CCORR             * cv2.TM_SQDIFF_NORMED
 ```
-The mathematic description for methods describe in [OpenCV-Python Documentation](https://docs.opencv.org/2.4/modules/imgproc/doc/object_detection.html)
+* The mathematic description for methods describe in [OpenCV-Python Documentation](https://docs.opencv.org/2.4/modules/imgproc/doc/object_detection.html)
 
 ```python
 NOTE: use function cv2.minMaxLoc() to calculate the region of the target.
@@ -39,11 +39,11 @@ NOTE: use function cv2.minMaxLoc() to calculate the region of the target.
 - Input target: cell_target.jpg
 - Command Line: python Image_Matching.py -i cell.jpg -t cell_target.jpg
 ```
-```python
+```
 Set a threshold for the return value by using numpy.where() for cv2.matchTemplate(), then 
 draw all the region using cv2.rectangle():
 
-  *location = np.where( res >= threshold )
+* location = np.where( res >= threshold )
 ```
 
 ![](README_IMG/multi_match.png)
