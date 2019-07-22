@@ -2,7 +2,7 @@
 
 ## Outline
 - Template Matching
-- Template Matching for Multi-objects
+- Template Matching for Multi-Objects
 
 ## Template Matching
 ```
