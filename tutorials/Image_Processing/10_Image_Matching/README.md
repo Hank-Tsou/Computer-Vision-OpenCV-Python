@@ -20,7 +20,7 @@ Main Function: res = cv2.matchTemplate(src_img, target, method)
 ```
 The mathematic description for methods describe in [OpenCV-Python Documentation](https://docs.opencv.org/2.4/modules/imgproc/doc/object_detection.html)
 
-```
+```python
 NOTE: use function cv2.minMaxLoc() to calculate the region of the target.
   - min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
     * If method = cv2.TM_SQDIFF, cv2.TM_SQDIFF_NORMED, top_left = min_loc, else top_left = max_loc
