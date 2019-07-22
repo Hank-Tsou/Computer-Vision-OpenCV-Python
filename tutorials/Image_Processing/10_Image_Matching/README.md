@@ -11,12 +11,12 @@
 - Input target: target.jpg
 - Command Line: python Image_Matching.py -i brain.jpg -t target.jpg
 ```
-```python
 Main Function: res = cv2.matchTemplate(src_img, target, method)
-  - method:
-      * cv2.TM_CCOEFF            * cv2.TM_CCORR_NORMED
-      * cv2.TM_CCOEFF_NORMED     * cv2.TM_SQDIFF
-      * cv2.TM_CCORR             * cv2.TM_SQDIFF_NORMED
+```python
+- method:
+    * cv2.TM_CCOEFF            * cv2.TM_CCORR_NORMED
+    * cv2.TM_CCOEFF_NORMED     * cv2.TM_SQDIFF
+    * cv2.TM_CCORR             * cv2.TM_SQDIFF_NORMED
 ```
 * The mathematic description for methods describe in [OpenCV-Python Documentation](https://docs.opencv.org/2.4/modules/imgproc/doc/object_detection.html)
 
