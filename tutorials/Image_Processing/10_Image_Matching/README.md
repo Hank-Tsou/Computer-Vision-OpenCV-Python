@@ -12,12 +12,11 @@
 - Command Line: python Image_Matching.py -i brain.jpg -t target.jpg
 ```
 ```python
-Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
-
-  * mask: Input mask or None
-  * hist_size: Array of histogram sizes in each dimension.
-  * range: Boundaries in each dimension
+Main Function: res = cv2.matchTemplate(img,target,method)
 ```
+min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
+cv2.rectangle(img,top_left, bottom_right, 255, 2)
+
 ![](README_IMG/temp_match.png)
 
 ## Template Matching for Multi-objects
@@ -28,23 +27,23 @@ Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
 - Command Line: python Image_Matching.py -i cell.jpg -t cell_target.jpg
 ```
 ```python
-Main Function: hist = cv2.calcHist(src_img, channels, mask, hist_size, range)
-
-  * mask: Input mask or None
-  * hist_size: Array of histogram sizes in each dimension.
-  * range: Boundaries in each dimension
+Main Function: res = cv2.matchTemplate(img_gray,target,cv2.TM_CCOEFF_NORMED)
 ```
+
+loc = np.where( res >= threshold)
+cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0,0,255), 2)
+
 ![](README_IMG/multi_match.png)
 
 ### Useful link:
 
 - [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
 
-- [Bitwise Operation](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Core_Operation)
+- [Image Thresholding](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/2_Image_Thresholding)
 
 ## Code
-- [Image Histogram](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/9_Image_Histogram)
-- [Histogram Equalization Implementation](https://github.com/Hank-Tsou/Histogram)
+- [Image Matching (Template Matching)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/10_Image_Matching)
+- [Image Matching Implementation]
 
 ## License
 
