@@ -1,4 +1,5 @@
 # Image Matching (Template Matching)
+Template Matching is a method in image processing for searching the location of a template or a target image.
 
 ## Outline
 - Template Matching
