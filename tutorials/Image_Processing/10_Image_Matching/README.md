@@ -12,10 +12,23 @@
 - Command Line: python Image_Matching.py -i brain.jpg -t target.jpg
 ```
 ```python
-Main Function: res = cv2.matchTemplate(img,target,method)
+Main Function: res = cv2.matchTemplate(src_img, target, method)
+  - method:
+      * cv2.TM_CCOEFF            * cv2.TM_CCORR_NORMED
+      * cv2.TM_CCOEFF_NORMED     * cv2.TM_SQDIFF
+      * cv2.TM_CCORR             * cv2.TM_SQDIFF_NORMED
 ```
-min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
-cv2.rectangle(img,top_left, bottom_right, 255, 2)
+The mathematic description for methods describe in [OpenCV-Python Documentation](https://docs.opencv.org/2.4/modules/imgproc/doc/object_detection.html)
+
+```
+NOTE: use function cv2.minMaxLoc() to calculate the region of the target.
+  - min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
+    * If method = cv2.TM_SQDIFF, cv2.TM_SQDIFF_NORMED, top_left = min_loc, else top_left = max_loc
+    
+  - cv2.rectangle(src_img, top_left, bottom_right, color, thickness)
+    * top_left = min_loc or max_loc (depend on the method)
+    * bottom_right = (top_left[0] + width, top_left[1] + height)
+```
 
 ![](README_IMG/temp_match.png)
 
@@ -27,11 +40,11 @@ cv2.rectangle(img,top_left, bottom_right, 255, 2)
 - Command Line: python Image_Matching.py -i cell.jpg -t cell_target.jpg
 ```
 ```python
-Main Function: res = cv2.matchTemplate(img_gray,target,cv2.TM_CCOEFF_NORMED)
-```
+Set a threshold for the return value by using numpy.where() for cv2.matchTemplate(), then 
+draw all the region using cv2.rectangle():
 
-loc = np.where( res >= threshold)
-cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0,0,255), 2)
+  *location = np.where( res >= threshold )
+```
 
 ![](README_IMG/multi_match.png)
 
@@ -52,5 +65,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
-* (Histogram) https://docs.opencv.org/2.4/modules/imgproc/doc/histograms.html
-
+* (minMaxLoc) https://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.html#void%20minMaxLoc(InputArray%20src,%20double*%20minVal,%20double*%20maxVal,%20Point*%20minLoc,%20Point*%20maxLoc,%20InputArray%20mask)
+* (matchTemplate) https://docs.opencv.org/2.4/modules/imgproc/doc/object_detection.html
+* (Drawing function) https://docs.opencv.org/2.4/modules/core/doc/drawing_functions.html
