@@ -58,7 +58,7 @@ draw all the region using cv2.rectangle():
 
 ## Code
 - [Image Matching (Template Matching)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/10_Image_Matching)
-- [Image Matching Implementation]
+- [Image Matching Implementation by Using Normalized Cross Correlation]
 
 ## License
 
