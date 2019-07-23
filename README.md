@@ -42,7 +42,7 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
     - 2D Histogram and Histogram Backprojection (Reference Link)
 
 9. [Image Matching (Template Matching)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/10_Image_Matching)
-    - [(Implementaion) Image Matching by Using Normalized Cross Correlation](https://github.com/Hank-Tsou/Template-Matching)
+    - [(Implementaion) Image Matching by Using "Normalized Cross Correlation"](https://github.com/Hank-Tsou/Template-Matching)
    
    
 ```
