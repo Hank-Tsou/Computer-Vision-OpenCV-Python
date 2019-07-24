@@ -151,7 +151,7 @@ Code in bitwiseOp.py
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Reference & Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
 * (resize) Link: https://docs.opencv.org/2.4/modules/imgproc/doc/geometric_transformations.html?highlight=resize
