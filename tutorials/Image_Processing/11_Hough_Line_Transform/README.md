@@ -26,8 +26,8 @@
 ```
 Step 1. Get an edge image from original input image
 ```
-* Read image and convert to grayscale image using cv2.cvtColor().
-* Get edge image by using Canny Edge Detection cv2.Canny().
+* Read image and convert to grayscale using cv2.cvtColor().
+* Get edge image by using Canny Edge Detection, cv2.Canny().
 
 ![](README_IMG/step1.png)
 
