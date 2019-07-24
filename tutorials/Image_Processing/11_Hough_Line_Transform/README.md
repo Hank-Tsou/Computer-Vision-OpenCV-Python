@@ -1,37 +1,39 @@
-# Image Matching (Template Matching)
+# Hough Line Transform
 Template Matching is a method in image processing for searching the location of a template or a target image.
 
 ## Outline
-- Template Matching
-- Template Matching for Multi-Objects
+- Hough Line Transform
+- Probabilistic Hough Line Transform
 
-## Template Matching
+## Hough Line Transform
 ```
-- File name: Image_Matching.py 
-- Input image: brain.jpg 
-- Input target: target.jpg
-- Command Line: python Image_Matching.py -i brain.jpg -t target.jpg
+- File name: Hough_Line_Transform.py
+- Input image: pool.jpg
+- Command Line: python Hough_Line_Transform.py -i pool.jpg
 ```
-* Main Function: res = cv2.matchTemplate(src_img, target, method)
+* Main Function: lines = cv2.HoughLines(src_img, rho, theta, threshold)
 ```python
-Method:
-   * cv2.TM_CCOEFF            * cv2.TM_CCORR_NORMED
-   * cv2.TM_CCOEFF_NORMED     * cv2.TM_SQDIFF
-   * cv2.TM_CCORR             * cv2.TM_SQDIFF_NORMED
+rho: Distance resolution of the accumulator in pixels.
+theta: Angle resolution of the accumulator in radians. (np.pi/180)
+threshold: Accumulator threshold, line selection.
 ```
-* The mathematic description for methods describe in [OpenCV-Python Documentation](https://docs.opencv.org/2.4/modules/imgproc/doc/object_detection.html)
+### Process for hough line transformation:
+```
+General line equation: y = ax+b
+Hough Line Transform use another line representation: x*cos(theta)+y*sin(theta) = rho
+```
+Step 1. Get an edge image for original input image
+  * Read image and convert to grayscale image using cv2.cvtColor().
+  * Get edge image by using Canny Edge Detection cv2.Canny().
 
-```python
-NOTE: use function cv2.minMaxLoc() to calculate the "rectangle" of the target.
-  - min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
-    * If method use "cv2.TM_SQDIFF", "cv2.TM_SQDIFF_NORMED", top_left = min_loc.
-      Else, top_left = max_loc
+Step 2. Generate a matrix for theta and rho
+
+Step 3. Calculate (theta, rho) for each edge pixel (x, y) then add 1 to the matrix(theta, rho)
+
+Step 4. Get the several high value in matrix then use theta and rho value to draw the line.
     
-  - cv2.rectangle(src_img, top_left, bottom_right, color, thickness)
-    * top_left = min_loc or max_loc (depend on the method)
-    * bottom_right = (top_left[0] + width, top_left[1] + height)
-```
-
+    
+    
 ![](README_IMG/temp_match.png)
 
 ## Template Matching for Multi-objects
