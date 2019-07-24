@@ -1,4 +1,4 @@
-# Basic_Operation
+# Core_Operation
 
 ## Descrption:
 - know how to select a ROI (region of interest) in an image.
