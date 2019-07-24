@@ -32,7 +32,7 @@ Step 1. Get an edge image from original input image
 ![](README_IMG/step1.png)
 
 ```
-Step 2. Generate a matrix for theta and rho
+Step 2. Generate a matrix for "theta" and "rho"
 ```
 * General line equation: y = ax+b
 * Hough Line Transform use another line representation: x * cos(theta)+y * sin(theta) = rho
@@ -40,11 +40,22 @@ Step 2. Generate a matrix for theta and rho
 ![](README_IMG/step2.png)
 
 ```
-Step 3. Calculate (theta, rho) for each edge pixel (x, y) then add 1 to the matrix(theta, rho)
+Step 3. Calculate (theta, rho) for each edge pixel (x, y) then add 1 to the matrix (theta, rho)
 ```
 ![](README_IMG/step3.png)
 ```
-Step 4. Get the several high value in matrix then use theta and rho value to draw the line.
+Step 4. Get the several high value in matrix then use that 'theta' and 'rho' value to draw the line.
+```
+```
+a = np.cos(theta)   x0 = a * rho
+b = np.sin(theta)   y0 = b * rho
+
+x1 = int(x0 + 1000*(-b))
+y1 = int(y0 + 1000*(a))
+x2 = int(x0 - 1000*(-b))
+y2 = int(y0 - 1000*(a))
+
+Draw Line: cv2.line(src_img, (x1,y1), (x2,y2), Color, thickness)
 ```
 
 ### Useful link:
@@ -78,3 +89,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
 * (Hough Line) https://docs.opencv.org/2.4/modules/imgproc/doc/feature_detection.html?highlight=houghlines
+* (Draw Line) https://docs.opencv.org/2.4/modules/core/doc/drawing_functions.html
