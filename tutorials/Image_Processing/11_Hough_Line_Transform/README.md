@@ -46,7 +46,7 @@ Step 3. Calculate (theta, rho) for each edge pixel (x, y) then add 1 to the matr
 ```
 Step 4. Get the several high value in matrix then use that 'theta' and 'rho' value to draw the line.
 ```
-```
+```python
 a = np.cos(theta)   x0 = a * rho
 b = np.sin(theta)   y0 = b * rho
 
