@@ -1,25 +1,30 @@
 # Hough Line Transform
-Template Matching is a method in image processing for searching the location of a template or a target image.
+"Hough Transform" is a method to detect any shape with a mathematical shape equation, here describe how hough transform work with line detection.
+
+* Provide Hough Line Transform implement from scatch. [(Code)]
 
 ## Outline
 - Hough Line Transform
 - Probabilistic Hough Line Transform
 
-## Hough Line Transform
+## Hough Transform (Line)
 ```
 - File name: Hough_Line_Transform.py
 - Input image: pool.jpg
 - Command Line: python Hough_Line_Transform.py -i pool.jpg
 ```
+
+## Hough Line Transform
+
 * Main Function: lines = cv2.HoughLines(src_img, rho, theta, threshold)
 ```python
-rho: Distance resolution of the accumulator in pixels.
-theta: Angle resolution of the accumulator in radians. (np.pi/180)
-threshold: Accumulator threshold, line selection.
+* rho: Distance resolution of the accumulator in pixels.
+* theta: Angle resolution of the accumulator in radians. (np.pi/180)
+* threshold: Accumulator threshold, line selection.
 ```
 ### Process for hough line transformation:
 ```
-Step 1. Get an edge image for original input image
+Step 1. Get an edge image from original input image
 ```
 * Read image and convert to grayscale image using cv2.cvtColor().
 * Get edge image by using Canny Edge Detection cv2.Canny().
@@ -30,7 +35,7 @@ Step 1. Get an edge image for original input image
 Step 2. Generate a matrix for theta and rho
 ```
 * General line equation: y = ax+b
-* Hough Line Transform use another line representation: x*cos(theta)+y*sin(theta) = rho
+* Hough Line Transform use another line representation: x * cos(theta)+y * sin(theta) = rho
 
 ![](README_IMG/step2.png)
 
@@ -41,7 +46,14 @@ Step 3. Calculate (theta, rho) for each edge pixel (x, y) then add 1 to the matr
 ```
 Step 4. Get the several high value in matrix then use theta and rho value to draw the line.
 ```
-![](README_IMG/line.png)
+
+### Useful link:
+
+- [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
+- [Canny Edge Detection](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/6_Canny_Edge_Detection)
+- [Youtube: How Hough Transform works](https://www.youtube.com/watch?v=4zHbI-fFIlI)
+
+![](README_IMG/lin5e.png)
     
     
 ![](README_IMG/temp_match.png)
@@ -79,6 +91,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
-* (minMaxLoc) https://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.html#void%20minMaxLoc(InputArray%20src,%20double*%20minVal,%20double*%20maxVal,%20Point*%20minLoc,%20Point*%20maxLoc,%20InputArray%20mask)
-* (matchTemplate) https://docs.opencv.org/2.4/modules/imgproc/doc/object_detection.html
-* (Drawing function) https://docs.opencv.org/2.4/modules/core/doc/drawing_functions.html
+* (Hough Line) https://docs.opencv.org/2.4/modules/imgproc/doc/feature_detection.html?highlight=houghlines
