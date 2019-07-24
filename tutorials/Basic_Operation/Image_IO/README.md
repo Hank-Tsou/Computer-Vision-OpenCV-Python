@@ -94,7 +94,7 @@ cv2.imwrite('test_save.png',img_gray)
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Reference & Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
 * Matplotlib: https://matplotlib.org/api/pyplot_api.html
