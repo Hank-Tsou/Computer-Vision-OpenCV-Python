@@ -83,7 +83,7 @@ New pixel value, Pixel(i) = ((cdf(i)-cdf[0])/((width*height)-cdf[0])) * (L-1)
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Reference & Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
 * (Histogram) https://docs.opencv.org/2.4/modules/imgproc/doc/histograms.html
