@@ -7,45 +7,32 @@
 - Hough Line Transform
 - Probabilistic Hough Line Transform
 
-## Hough Transform (Line)
-```
-- File name: Hough_Line_Transform.py
-- Input image: pool.jpg
-- Command Line: python Hough_Line_Transform.py -i pool.jpg
-```
+## Steps of Process
+* (1) Find edges in the source image
+* (2) Generate a matrix by 'theta' and 'rho'
+* (3) Convert (x, y) Coordinate System to (theta, rho) Coordinate System
+* (4) Use threshold to select the Line
 
-## Hough Line Transform
+### Step 1. Get an edge image from original input image
 
-* Main Function: lines = cv2.HoughLines(src_img, rho, theta, threshold)
-```python
-* rho: Distance resolution of the accumulator in pixels.
-* theta: Angle resolution of the accumulator in radians. (np.pi/180)
-* threshold: Accumulator threshold, line selection.
-```
-### Process for hough line transformation:
-```
-Step 1. Get an edge image from original input image
-```
 * Read image and convert to grayscale using cv2.cvtColor().
 * Get edge image by using Canny Edge Detection, cv2.Canny().
 
 ![](README_IMG/step1.png)
 
-```
-Step 2. Generate a matrix for "theta" and "rho"
-```
+### Step 2. Generate a matrix by "theta" and "rho"
+
 * General line equation: y = ax+b
 * Hough Line Transform use another line representation: x * cos(theta)+y * sin(theta) = rho
 
 ![](README_IMG/step2.png)
 
-```
-Step 3. Calculate (theta, rho) for each edge pixel (x, y) then add 1 to the matrix (theta, rho)
-```
+### Step 3. Calculate (theta, rho) for each edge pixel (x, y) then add 1 to the matrix (theta, rho)
+
 ![](README_IMG/step3.png)
-```
-Step 4. Get the several high value in matrix then use that 'theta' and 'rho' value to draw the line.
-```
+
+### Step 4. Get the several high value in matrix then use that 'theta' and 'rho' value to draw the line.
+
 ```python
 a = np.cos(theta)   x0 = a * rho
 b = np.sin(theta)   y0 = b * rho
@@ -63,6 +50,20 @@ Draw Line: cv2.line(src_img, (x1,y1), (x2,y2), Color, thickness)
 - [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
 - [Canny Edge Detection](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/6_Canny_Edge_Detection)
 - [Youtube: How Hough Transform works](https://www.youtube.com/watch?v=4zHbI-fFIlI)
+
+## Hough Line Transform
+```
+- File name: Hough_Line_Transform.py
+- Input image: pool.jpg
+- Command Line: python Hough_Line_Transform.py -i pool.jpg
+```
+
+* Main Function: lines = cv2.HoughLines(src_img, rho, theta, threshold)
+```python
+* rho: Distance resolution of the accumulator in pixels.
+* theta: Angle resolution of the accumulator in radians. (np.pi/180)
+* threshold: Accumulator threshold, line selection.
+```
 
 ## Probabilistic Hough Line Transform
 Probabilistic Hough Transform is an optimization of Hough Transform we saw. It doesn’t take all the points into consideration, instead take only a random subset of points and that is sufficient for line detection.  --(OpenCV-Python documentation)
