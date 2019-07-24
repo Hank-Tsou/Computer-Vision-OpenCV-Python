@@ -51,7 +51,7 @@ The edge A is above the maxVal, so considered as “sure-edge”. Although edge 
 NOTE: In implementation, we need to implement a function for finding a connected pixels.
 ```
 
-### Canny Edge Detection
+## Canny Edge Detection
 
 ```
 - Input image: Lenna.jpg
