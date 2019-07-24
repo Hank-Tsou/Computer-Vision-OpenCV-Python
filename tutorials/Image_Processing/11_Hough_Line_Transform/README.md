@@ -53,36 +53,22 @@ Step 4. Get the several high value in matrix then use theta and rho value to dra
 - [Canny Edge Detection](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/6_Canny_Edge_Detection)
 - [Youtube: How Hough Transform works](https://www.youtube.com/watch?v=4zHbI-fFIlI)
 
-![](README_IMG/lin5e.png)
-    
-    
-![](README_IMG/temp_match.png)
+## Probabilistic Hough Line Transform
+Probabilistic Hough Transform is an optimization of Hough Transform we saw. It doesn’t take all the points into consideration, instead take only a random subset of points and that is sufficient for line detection.  --(OpenCV-Python documentation)
 
-## Template Matching for Multi-objects
-```
-- File name: Image_Matching.py 
-- Input image: cell.jpg
-- Input target: cell_target.jpg
-- Command Line: python Image_Matching.py -i cell.jpg -t cell_target.jpg
+* Main Function: lines = cv2.HoughLinesP(image, rho, theta, threshold, minLineLength, maxLineGap)
+```python
+* minLineLength: Minimum line length. Line segments shorter than that are rejected.
+* maxLineGap: Maximum allowed gap between points on the same line to link them.
 ```
 ```
-Set a threshold for the return value by using numpy.where() for cv2.matchTemplate(), then 
-draw all the region using cv2.rectangle():
-
-* location = np.where( res >= threshold )
+NOTE: This method returns the two endpoints of lines. HoughLines() only return the parameters of lines.
 ```
 
-![](README_IMG/multi_match.png)
-
-### Useful link:
-
-- [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
-
-- [Image Thresholding](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/2_Image_Thresholding)
+![](README_IMG/line.png)
 
 ## Code
-- [Image Matching (Template Matching)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/10_Image_Matching)
-- [Template Matching Implementation by Using "Normalized Cross Correlation"](https://github.com/Hank-Tsou/Template-Matching)
+- [Hough Line Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/11_Hough_Line_Transform)
 
 ## License
 
