@@ -57,6 +57,13 @@ NOTE: In implementation, we need to implement a function for finding a connected
 - Input image: Lenna.jpg
 - Command Line: python Canny_Edge_Detection.py -i Lenna.jpg
 ```
+* Main function: cv2.Canny(src_img, threshold1, threshold2, apertureSize)
+```
+* src_img: single-channel 8-bit input image. (grayscale image)
+* threshold1: first threshold for the hysteresis procedure.
+* threshold2: second threshold for the hysteresis procedure.
+* apertureSize: aperture size for the Sobel() operator.
+```
 
 ![](README_IMG/canny_edge.png)
 
