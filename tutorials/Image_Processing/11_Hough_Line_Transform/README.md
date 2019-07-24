@@ -81,6 +81,8 @@ NOTE: This method returns the two endpoints of lines. HoughLines() only return t
 ## Code
 - [Hough Line Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/11_Hough_Line_Transform)
 
+## Improvements
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
