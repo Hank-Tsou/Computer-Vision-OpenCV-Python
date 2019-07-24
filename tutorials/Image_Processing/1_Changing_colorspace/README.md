@@ -61,7 +61,7 @@ cv2.inRange(src_image, lowerbound, upperbound)
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Reference & Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
 * (inRange()) Link: https://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.html
