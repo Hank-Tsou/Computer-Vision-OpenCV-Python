@@ -74,9 +74,12 @@ if __name__ == '__main__':
     edges = cv2.Canny(gray,50,150,apertureSize = 3)
 
     # Functions
-    Hough_Line(image, edges)
-    P_Hough_Line(image, edges)
-
+    # Hough_Line(image, edges)
+    # P_Hough_Line(image, edges)
+    # show result
+    cv2.imshow("edge", gray)
+    cv2.waitKey(5000)
+    cv2.destroyAllWindows()
 
 
 # Reference:
