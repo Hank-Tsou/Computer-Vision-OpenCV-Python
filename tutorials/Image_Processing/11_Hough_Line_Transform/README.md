@@ -19,22 +19,28 @@ threshold: Accumulator threshold, line selection.
 ```
 ### Process for hough line transformation:
 ```
-General line equation: y = ax+b
-Hough Line Transform use another line representation: x*cos(theta)+y*sin(theta) = rho
-```
 Step 1. Get an edge image for original input image
-  * Read image and convert to grayscale image using cv2.cvtColor().
-  * Get edge image by using Canny Edge Detection cv2.Canny().
+```
+* Read image and convert to grayscale image using cv2.cvtColor().
+* Get edge image by using Canny Edge Detection cv2.Canny().
 
 ![](README_IMG/step1.png)
 
+```
 Step 2. Generate a matrix for theta and rho
+```
+* General line equation: y = ax+b
+* Hough Line Transform use another line representation: x*cos(theta)+y*sin(theta) = rho
+
 ![](README_IMG/step2.png)
 
+```
 Step 3. Calculate (theta, rho) for each edge pixel (x, y) then add 1 to the matrix(theta, rho)
+```
 ![](README_IMG/step3.png)
-
+```
 Step 4. Get the several high value in matrix then use theta and rho value to draw the line.
+```
 ![](README_IMG/line.png)
     
     
