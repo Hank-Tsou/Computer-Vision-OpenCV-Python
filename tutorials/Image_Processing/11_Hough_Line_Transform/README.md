@@ -7,7 +7,7 @@
 - Hough Line Transform
 - Probabilistic Hough Line Transform
 
-## Steps of Process
+## Steps of the Process
 * (1) Find edges in the source image
 * (2) Generate a matrix by 'theta' and 'rho'
 * (3) Convert (x, y) Coordinate System to (theta, rho) Coordinate System
