@@ -8,12 +8,12 @@
 - Probabilistic Hough Line Transform
 
 ## Step of the process
-* (1) Find edges in the source image
+* (1) Find edges from the source image
 * (2) Generate a matrix by 'theta' and 'rho'
 * (3) Convert (x, y) Coordinate System to (theta, rho) Coordinate System
 * (4) Use threshold to select the Line
 
-### Step 1. Get an edge image from original input image
+### Step 1. Find edges from the source image
 
 * Read image and convert to grayscale using cv2.cvtColor().
 * Get edge image by using Canny Edge Detection, cv2.Canny().
@@ -27,11 +27,13 @@
 
 ![](README_IMG/step2.png)
 
-### Step 3. Calculate (theta, rho) for each edge pixel (x, y) then add 1 to the matrix (theta, rho)
+### Step 3. Convert (x, y) Coordinate System to (theta, rho) Coordinate System
+Calculate (theta, rho) for each edge pixel (x, y) then add 1 to the matrix (theta, rho).
 
 ![](README_IMG/step3.png)
 
-### Step 4. Get the several high value in matrix then use that 'theta' and 'rho' value to draw the line.
+### Step 4. Use threshold to select the Line
+Get the several high value in matrix then use that 'theta' and 'rho' value to draw the line.
 
 ```python
 a = np.cos(theta)   x0 = a * rho
@@ -42,7 +44,7 @@ y1 = int(y0 + 1000*(a))
 x2 = int(x0 - 1000*(-b))
 y2 = int(y0 - 1000*(a))
 
-Draw Line: cv2.line(src_img, (x1,y1), (x2,y2), Color, thickness)
+Line: (x1, y1), (x2, y2)
 ```
 
 ### Useful link:
@@ -64,7 +66,9 @@ Draw Line: cv2.line(src_img, (x1,y1), (x2,y2), Color, thickness)
 * theta: Angle resolution of the accumulator in radians. (np.pi/180)
 * threshold: Accumulator threshold, line selection.
 ```
-
+```
+Draw Line: cv2.line(src_img, (x1,y1), (x2,y2), Color, thickness)
+```
 ## Probabilistic Hough Line Transform
 Probabilistic Hough Transform is an optimization of Hough Transform we saw. It doesn’t take all the points into consideration, instead take only a random subset of points and that is sufficient for line detection.  --(OpenCV-Python documentation)
 
