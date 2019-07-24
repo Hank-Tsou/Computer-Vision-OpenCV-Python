@@ -48,7 +48,7 @@ The explanation below is from "openCV-python documentation":
 The edge A is above the maxVal, so considered as “sure-edge”. Although edge C is below maxVal, it is connected to edge A, so that also considered as valid edge and we get that full curve. But edge B, although it is above minVal and is in same region as that of edge C, it is not connected to any “sure-edge”, so that is discarded. So it is very important that we have to select minVal and maxVal accordingly to get the correct result.
 
 ```
-NOTE: In implementation, we need to implement a function for finding a connected pixels.
+NOTE: In implementation, we need to implement a function for finding connected pixels.
 ```
 
 ## Canny Edge Detection
