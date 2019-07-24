@@ -54,7 +54,7 @@ CONTINUE...
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Reference & Acknowledgments
+## Reference and Acknowledgments
 
 OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
 
