@@ -78,7 +78,7 @@ Function: bilateral = cv2.bilateralFilter(src_img, d, sigmaColor, sigmaSpace)
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Reference & Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
 * (Conv_filter GIF) Link: https://icecreamlabs.com/2018/08/19/3x3-convolution-filters%E2%80%8A-%E2%80%8Aa-popular-choice/
