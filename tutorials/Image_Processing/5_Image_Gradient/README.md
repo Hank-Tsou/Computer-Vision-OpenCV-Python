@@ -79,7 +79,7 @@ We can observe the figure below, the second derivative on an edge is zero. So, w
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Reference & Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
 * (sobel & laplacian) https://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/sobel_derivatives/sobel_derivatives.html?highlight=scharr%20derivatives
