@@ -34,7 +34,8 @@ From equation, we can see we have 3 parameters, so we need a 3D accumulator for 
 ![](README_IMG/line.png)
 
 ## Improvements
-- [Hough Circle Transform - Improve ball detection]()
+- [Hough Circle Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/12_Hough_Circle_Transform)
+- [Hough Circle Transform - Improve ball detection]
 
 ## Code
 - [Hough Line Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/11_Hough_Line_Transform)
