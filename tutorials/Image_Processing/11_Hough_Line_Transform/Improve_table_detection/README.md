@@ -1,5 +1,5 @@
 # Hough Line Transform - Improve table detection
-This project apply preprocess on the original image to improve the result after hough line transform
+This project apply pre-process on the original image to improve the result after hough line transform
 
 ## Outline
 - Improvement: Select object by using color range.
