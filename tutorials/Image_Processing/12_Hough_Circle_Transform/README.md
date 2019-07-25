@@ -10,8 +10,8 @@ File name: hough_circle_transform.py
 Image name: pool.jpg
 Command Line: python hough_circle_transform.py -i pool.jpg
 ```
-Main Function: circles = cv2.HoughCircles(src_img, cv2.HOUGH_GRADIENT, dp, minDist, 
-                                          param1, param2, minRadius, maxRadius)
+* Main Function: circles = cv2.HoughCircles(src_img, cv2.HOUGH_GRADIENT, dp, minDist, 
+..................................................................................... param1, param2, minRadius, maxRadius)
 ```
 * src_img: 8-bit, single-channel, grayscale input image.
 * method: Only CV_HOUGH_GRADIENT
