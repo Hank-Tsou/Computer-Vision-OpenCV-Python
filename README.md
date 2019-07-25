@@ -47,6 +47,7 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
    
 11. [Hough Line Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/11_Hough_Line_Transform)
     - [(Implementaion) Hough Transform for Line Detection](https://github.com/Hank-Tsou/Hough-Transform-Line-Detection)
+    - [(Implementaion) Hough Line Transform - Improve Table Detection](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/11_Hough_Line_Transform/Improve_table_detection)
    
    
    
