@@ -12,7 +12,7 @@ Command Line: python hough_circle_transform.py -i pool.jpg
 ```
 * Main Function: circles = cv2.HoughCircles(src_img, cv2.HOUGH_GRADIENT, dp, minDist, 
 ................................................................................................................ param1, param2, minRadius, maxRadius)
-```
+```python
 * src_img: 8-bit, single-channel, grayscale input image.
 * method: Only CV_HOUGH_GRADIENT
 * dp – Inverse ratio of the accumulator resolution to the image resolution.
@@ -31,7 +31,7 @@ Equation:
 ```
 From equation, we can see we have 3 parameters, so we need a 3D accumulator for hough transform, which would be highly ineffective. So OpenCV uses more trickier method, Hough Gradient Method which uses the gradient information of edges.    (-- From OpenCV-Python Documentation)
 
-![](README_IMG/line.png)
+![](README_IMG/hough_circle.png)
 
 ## Improvements
 - [Hough Circle Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/12_Hough_Circle_Transform)
