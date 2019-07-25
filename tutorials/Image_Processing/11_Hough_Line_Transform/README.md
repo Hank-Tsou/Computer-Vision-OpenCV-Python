@@ -1,7 +1,7 @@
 # Hough Line Transform
 "Hough Transform" is a method to detect any shape with a mathematical shape equation, here describe how hough transform work with line detection.
 
-* Provide Hough Line Transform implement from scatch. [(Code)]
+* Provide Hough Line Transform implement from scatch. [(Code)](https://github.com/Hank-Tsou/Hough-Transform-Line-Detection)
 
 ## Outline
 - Hough Line Transform
