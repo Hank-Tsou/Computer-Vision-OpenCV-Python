@@ -25,7 +25,7 @@ Command line: python table_mask.py
 ### Step of the process
 (1) Using Color Range to Select The Target
 
-(2) Generate target mask (reduce the noise line)
+(2) Generate target mask (reduce noise line)
 
 (3) Edge Detection
 
