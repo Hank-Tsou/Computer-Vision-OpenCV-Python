@@ -12,7 +12,9 @@ Command line: python table_color.py
 ```
 ### Step of the process
 (1) Using Color Range to Select The Target
+
 (2) Edge Detection
+
 (3) Hough Line Transform
 
 ## Improvement: Select object by generate mask for the target
@@ -22,8 +24,11 @@ Command line: python table_mask.py
 ```
 ### Step of the process
 (1) Using Color Range to Select The Target
+
 (2) Generate target mask (reduce the noise line)
+
 (3) Edge Detection
+
 (4) Hough Line Transform
 
 ![](README_IMG/improve_img.png)
