@@ -22,6 +22,9 @@ Command Line: python hough_circle_transform.py -i pool.jpg
 * minRadius – Minimum circle radius.
 * maxRadius – Maximum circle radius.
 ```
+```
+NOTE: Adjust and try all the parameters to get the better result for your input image.
+```
 
 ## Description
 ```
