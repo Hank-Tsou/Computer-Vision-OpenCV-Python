@@ -42,8 +42,12 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
     - [(Implementaion) Histogram Equalization](https://github.com/Hank-Tsou/Histogram)
     - 2D Histogram and Histogram Backprojection (Reference Link)
 
-9. [Image Matching (Template Matching)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/10_Image_Matching)
+10. [Image Matching (Template Matching)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/10_Image_Matching)
     - [(Implementaion) Template Matching by Using "Normalized Cross Correlation"](https://github.com/Hank-Tsou/Template-Matching)
+   
+11. [Hough Line Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/11_Hough_Line_Transform)
+    - [(Implementaion) Hough Transform for Line Detection](https://github.com/Hank-Tsou/Hough-Transform-Line-Detection)
+   
    
    
 ```
