@@ -11,7 +11,7 @@ Image name: pool.jpg
 Command Line: python hough_circle_transform.py -i pool.jpg
 ```
 * Main Function: circles = cv2.HoughCircles(src_img, cv2.HOUGH_GRADIENT, dp, minDist, 
-..................................................................................... param1, param2, minRadius, maxRadius)
+................................................................................................................ param1, param2, minRadius, maxRadius)
 ```
 * src_img: 8-bit, single-channel, grayscale input image.
 * method: Only CV_HOUGH_GRADIENT
@@ -35,7 +35,6 @@ From equation, we can see we have 3 parameters, so we need a 3D accumulator for 
 
 ## Improvements
 - [Hough Circle Transform - Improve ball detection]()
-
 
 ## Code
 - [Hough Line Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/11_Hough_Line_Transform)
