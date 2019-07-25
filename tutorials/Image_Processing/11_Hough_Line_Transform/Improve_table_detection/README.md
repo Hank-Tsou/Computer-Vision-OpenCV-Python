@@ -11,11 +11,11 @@ File name: table_color.py
 Command line: python table_color.py
 ```
 ### Step of the process
-(1) Using Color Range to Select The Target
+  * (1) Using Color Range to Select The Target
 
-(2) Edge Detection
+  * (2) Edge Detection
 
-(3) Hough Line Transform
+  * (3) Hough Line Transform
 
 ## Improvement: Select object by generate mask for the target
 ```
@@ -23,13 +23,13 @@ File name: table_mask.py
 Command line: python table_mask.py
 ```
 ### Step of the process
-(1) Using Color Range to Select The Target
+  * (1) Using Color Range to Select The Target
 
-(2) Generate target mask (reduce noise line)
+  * (2) Generate target mask (reduce noise line)
 
-(3) Edge Detection
+  * (3) Edge Detection
 
-(4) Hough Line Transform
+  * (4) Hough Line Transform
 
 ![](README_IMG/improve_img.png)
 
