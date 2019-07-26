@@ -3,6 +3,7 @@
 
 ## Outline
 - Hough Circle Transform
+- Hough Circle Transform: Improve ball detection
 
 ## Hough Circle Transform
 ```
@@ -26,7 +27,7 @@ Command Line: python hough_circle_transform.py -i pool.jpg
 NOTE: Adjust and try all the parameters to get the better result for your input image.
 ```
 
-## Description
+### Description
 ```
 Equation: 
   - assume (xcenter, ycenter) is the center of the circle, and r is the radius of the circle. 
@@ -36,9 +37,17 @@ From equation, we can see we have 3 parameters, so we need a 3D accumulator for 
 
 ![](README_IMG/hough_circle.png)
 
-## Improvements
-- [Hough Circle Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/12_Hough_Circle_Transform)
-- [Hough Circle Transform - Improve ball detection]
+## Hough Circle Transform - Improve ball detection
+```
+Folder name: Improve_ball_detection
+File name: hough_circle.py
+Command: python hough_circle.py
+```
+### Step of the process
+* (1) Use color information to select pool table
+* (2) Canny Edge Detection
+* (3) Apply mask for the pool table then find contour for the ball
+* (4) Hough Circle Transform
 
 ## Code
 - [Hough Line Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/11_Hough_Line_Transform)
