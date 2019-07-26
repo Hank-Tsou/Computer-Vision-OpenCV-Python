@@ -31,7 +31,7 @@ Command line: python table_mask.py
 
   * (4) Hough Line Transform
 ```
-The result of the improvement result show as below:
+The result of the improvement show as below:
 ```
 ![](README_IMG/improve_img.png)
 
