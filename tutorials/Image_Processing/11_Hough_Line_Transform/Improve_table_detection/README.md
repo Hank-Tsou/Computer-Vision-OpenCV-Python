@@ -35,6 +35,10 @@ The result of the improvement show as below:
 ```
 ![](README_IMG/improve_img.png)
 
+```
+NOTE: Need to adjust the parameters to get the better result.
+```
+
 ### Useful link:
 
 - [Changing Colorspace](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/1_Changing_colorspace)
