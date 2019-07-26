@@ -16,7 +16,7 @@ Command: python hough_circle.py
 ```
 The process and result of the improvement show as below:
 ```
-![](README_IMG/improve_process.png)
+![](../README_IMG/improve_process.png)
 
 ## Code
 - [Hough Circle Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/12_Hough_Circle_Transform)
