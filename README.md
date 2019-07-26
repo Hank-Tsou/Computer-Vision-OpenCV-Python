@@ -50,7 +50,7 @@ Below are the Outlines and Quick Links for this tutorial. Thank You!
     - [(Implementaion) Hough Line Transform - Improve Table Detection](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/11_Hough_Line_Transform/Improve_table_detection)
    
 12. [Hough Circle Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/12_Hough_Circle_Transform)
-    - [(Implementaion) Hough Circle Transform - Improve Ball Detection(https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/12_Hough_Circle_Transform/Improve_ball_detection)
+    - [(Implementaion) Hough Circle Transform - Improve Ball Detection](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/12_Hough_Circle_Transform/Improve_ball_detection)
    
 ```
 CONTINUE...
