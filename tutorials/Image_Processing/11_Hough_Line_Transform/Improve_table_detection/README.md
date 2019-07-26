@@ -2,10 +2,10 @@
 This project apply pre-process on the original image to improve the result after hough line transform
 
 ## Outline
-- Improvement: Select object by using color range.
+- Improvement: Select object by using color information.
 - Improvement: Select object by generate mask for the target.
 
-## Improvement: Select object by using color range
+## Improvement: Select object by using color information
 ```
 File name: table_color.py
 Command line: python table_color.py
