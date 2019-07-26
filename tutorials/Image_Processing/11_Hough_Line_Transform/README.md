@@ -86,7 +86,7 @@ NOTE: This method returns the two endpoints of lines. HoughLines() only return t
 NOTE: Need to adjust the parameters to get the better result.
 ```
 ```
-NOTE: Below Link provide improvement process for table detection with hough line transform.
+NOTE: The link below provide improvement process for table detection with hough line transform.
 ```
 
 ## Improvements
