@@ -3,7 +3,6 @@
 NOTE: This description is same as previous page.
 ```
 ```
-Folder name: Improve_ball_detection
 File name: hough_circle.py
 Command: python hough_circle.py
 ```
