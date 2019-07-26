@@ -1,6 +1,6 @@
 ## Hough Circle Transform - Improve ball detection
 ```
-NOTE: The description is same as previous page "12_Hough_Circle_Transform"
+NOTE: This description is same as previous page.
 ```
 ```
 Folder name: Improve_ball_detection
