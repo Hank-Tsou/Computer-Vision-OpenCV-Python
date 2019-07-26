@@ -83,6 +83,9 @@ NOTE: This method returns the two endpoints of lines. HoughLines() only return t
 
 ![](README_IMG/line.png)
 ```
+NOTE: Need to adjust the parameters to get the better result.
+```
+```
 NOTE: Below Link provide improvement process for table detection with hough line transform.
 ```
 
