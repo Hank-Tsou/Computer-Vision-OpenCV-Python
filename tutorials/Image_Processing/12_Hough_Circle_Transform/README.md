@@ -49,6 +49,11 @@ Command: python hough_circle.py
 * (3) Apply mask for the pool table then find contour for the ball
 * (4) Hough Circle Transform
 
+```
+The process and result of the improvement show as below:
+```
+![](README_IMG/improve_process.png)
+
 ## Code
 - [Hough Line Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/11_Hough_Line_Transform)
 - [Implement Hough Line Transform from Scratch](https://github.com/Hank-Tsou/Hough-Transform-Line-Detection)
