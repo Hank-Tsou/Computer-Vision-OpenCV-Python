@@ -30,7 +30,9 @@ Command line: python table_mask.py
   * (3) Edge Detection
 
   * (4) Hough Line Transform
-
+```
+The result of the improvement result show as below:
+```
 ![](README_IMG/improve_img.png)
 
 ### Useful link:
