@@ -37,7 +37,7 @@ From equation, we can see we have 3 parameters, so we need a 3D accumulator for 
 
 ![](README_IMG/hough_circle.png)
 
-## Hough Circle Transform - Improve ball detection
+## Hough Circle Transform - Improve ball detection [(Code)](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/12_Hough_Circle_Transform/Improve_ball_detection)
 ```
 Folder name: Improve_ball_detection
 File name: hough_circle.py
@@ -55,8 +55,8 @@ The process and result of the improvement show as below:
 ![](README_IMG/improve_process.png)
 
 ## Code
-- [Hough Line Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/11_Hough_Line_Transform)
-- [Implement Hough Line Transform from Scratch](https://github.com/Hank-Tsou/Hough-Transform-Line-Detection)
+- [Hough Circle Transform](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/12_Hough_Circle_Transform)
+- [Hough Circle Transform - Improve ball detection](https://github.com/Hank-Tsou/Computer-Vision-OpenCV-Python/tree/master/tutorials/Image_Processing/12_Hough_Circle_Transform/Improve_ball_detection)
 
 
 ## License
@@ -66,3 +66,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Reference & Acknowledgments
 
 * OpenCV-Python Tutorial: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html
+* (Hough Circle) https://docs.opencv.org/2.4/modules/imgproc/doc/feature_detection.html?highlight=houghcircles
