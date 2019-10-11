@@ -4,8 +4,7 @@
 ```
 NOTE: This project include algorithm implementaion form scratch, NOT using OpenCV functions!
 ```
-This tutorial is basically from opencv-python documentation with some of my implementation and description.
-----------------------------------------------------------------------------------------------------------------
+The tutorial is from opencv-python documentation with my implementation, description and mathematical explanation.
 ```
 Below are the Outlines and Quick Links for this tutorial. Thank You!
 ```
