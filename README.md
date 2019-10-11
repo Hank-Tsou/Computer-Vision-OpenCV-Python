@@ -1,4 +1,4 @@
-# Computer Vision OpenCV-Python Tutorial
+# Computer Vision Algorithm Implementaion and OpenCV-Python Tutorial
 
 ## Descrption:
 This tutorial is basically from opencv-python documentation with some of my implementation and description.
