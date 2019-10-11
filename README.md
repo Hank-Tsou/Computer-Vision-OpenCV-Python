@@ -3,9 +3,9 @@
 ## Descrption:
 This tutorial is basically from opencv-python documentation with some of my implementation and description.
 ```
-NOTE: this project include algorithm implementaion form scratch, NOT using the functions!
+NOTE: This project include algorithm implementaion form scratch, NOT using the functions!
 ```
-
+----------------------------------------------------------------------------------------------------------------
 ```
 Below are the Outlines and Quick Links for this tutorial. Thank You!
 ```
