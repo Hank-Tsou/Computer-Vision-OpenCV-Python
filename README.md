@@ -2,7 +2,7 @@
 
 ## Descrption:
 ```
-NOTE: This project include algorithm implementaion form scratch, NOT using OpenCV functions!
+NOTE: This project include algorithm implementaion form scratch, " NOT " using OpenCV functions!
 ```
 The tutorial is from opencv-python documentation with my implementation, description and mathematical explanation.
 ```
