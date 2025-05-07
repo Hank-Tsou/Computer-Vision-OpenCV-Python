@@ -6,7 +6,7 @@ NOTE: This project include algorithm implementaion form scratch, " NOT " using O
 ```
 The tutorial is from OpenCV documentation with my personal implementation, description and mathematical explanation.
 ```
-Below are the Outlines and Quick Links for this tutorial. Thank You!
+Below are the Outlines and Quick Links for this tutorial. Thank You!!
 ```
 
 ### Basic Operation
